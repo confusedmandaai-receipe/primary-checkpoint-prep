@@ -1,0 +1,89 @@
+{
+ "version": 1,
+ "words": [
+  {
+   "word": "Calculate",
+   "meaning": "Work out a numerical answer. Show your working.",
+   "example": "Calculate the area of the rectangle.",
+   "subjects": "maths"
+  },
+  {
+   "word": "Estimate",
+   "meaning": "Give a sensible approximate answer, usually by rounding first.",
+   "example": "Estimate 49 × 61.",
+   "subjects": "maths"
+  },
+  {
+   "word": "Show (that / your working)",
+   "meaning": "Write every step so the examiner can follow your method.",
+   "example": "Show that 3/4 is greater than 5/8.",
+   "subjects": "maths"
+  },
+  {
+   "word": "Write",
+   "meaning": "Give a short answer in words or numbers.",
+   "example": "Write 0.35 as a percentage.",
+   "subjects": "all"
+  },
+  {
+   "word": "Complete",
+   "meaning": "Fill in the missing parts of a table, diagram, sentence or sequence.",
+   "example": "Complete the table of results.",
+   "subjects": "all"
+  },
+  {
+   "word": "Compare",
+   "meaning": "Say what is the same and what is different, using comparative words (more, less, faster…).",
+   "example": "Compare the two plants’ growth.",
+   "subjects": "all"
+  },
+  {
+   "word": "Describe",
+   "meaning": "Say what something is like or what happens. For data, give the pattern using both variables.",
+   "example": "Describe the pattern in the results.",
+   "subjects": "science"
+  },
+  {
+   "word": "Explain",
+   "meaning": "Give reasons. Use “because” or “so” to link cause and effect.",
+   "example": "Explain why the puddle disappeared.",
+   "subjects": "all"
+  },
+  {
+   "word": "Identify",
+   "meaning": "Pick out or name something from information given.",
+   "example": "Identify the independent variable.",
+   "subjects": "all"
+  },
+  {
+   "word": "Give / State",
+   "meaning": "Give a short, factual answer. No explanation needed.",
+   "example": "Give one property of copper.",
+   "subjects": "all"
+  },
+  {
+   "word": "Predict",
+   "meaning": "Say what you think will happen, ideally with a reason based on evidence or science.",
+   "example": "Predict the temperature after 25 minutes.",
+   "subjects": "science"
+  },
+  {
+   "word": "Suggest",
+   "meaning": "Apply what you know to a new situation. There may be more than one acceptable answer.",
+   "example": "Suggest how to improve the investigation.",
+   "subjects": "science"
+  },
+  {
+   "word": "Sort / Order",
+   "meaning": "Put items into groups or into the correct sequence.",
+   "example": "Order these fractions from smallest to largest.",
+   "subjects": "all"
+  },
+  {
+   "word": "Round",
+   "meaning": "Give a number to a stated degree of accuracy (nearest 10, one decimal place…).",
+   "example": "Round 6.849 to one decimal place.",
+   "subjects": "maths"
+  }
+ ]
+}

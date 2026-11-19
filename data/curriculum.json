@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "note": "Topics are organised around Cambridge Primary Stage 6 learning objectives. All questions and lessons on this site are original.",
+  "subjects": [
+    {
+      "id": "maths",
+      "code": "0096",
+      "name": "Mathematics",
+      "short": "Maths",
+      "color": "#2b5fa6",
+      "icon": "➗",
+      "topics": [
+        { "id": "m-place", "name": "Number and place value", "strand": "Number", "weight": 3, "objectives": ["Read, write and compare whole numbers and decimals", "Round to the nearest 10, 100, 1000 and to one decimal place", "Use negative numbers in context", "Multiply and divide by 10, 100 and 1000"] },
+        { "id": "m-calc", "name": "Operations and calculation", "strand": "Number", "weight": 3, "objectives": ["Use mental strategies and written methods for the four operations", "Apply the order of operations", "Recognise factors, multiples, primes, squares and cubes", "Estimate and check answers"] },
+        { "id": "m-frac", "name": "Fractions", "strand": "Number", "weight": 3, "objectives": ["Find equivalent fractions and simplify", "Compare and order fractions", "Add and subtract fractions", "Multiply and divide fractions by whole numbers", "Find fractions of quantities"] },
+        { "id": "m-decpct", "name": "Decimals and percentages", "strand": "Number", "weight": 3, "objectives": ["Convert between fractions, decimals and percentages", "Calculate with decimals", "Find percentages of quantities"] },
+        { "id": "m-ratio", "name": "Ratio and proportion", "strand": "Number", "weight": 2, "objectives": ["Use ratio to compare parts", "Share an amount in a given ratio", "Solve direct proportion problems"] },
+        { "id": "m-seq", "name": "Sequences and expressions", "strand": "Number", "weight": 2, "objectives": ["Describe and continue linear sequences", "Use the term-to-term and position-to-term rule", "Use simple formulae and expressions"] },
+        { "id": "m-geom", "name": "Geometry", "strand": "Geometry and measure", "weight": 3, "objectives": ["Classify 2D and 3D shapes", "Calculate missing angles", "Use coordinates in four quadrants", "Reflect, translate and rotate shapes", "Recognise symmetry"] },
+        { "id": "m-meas", "name": "Measurement", "strand": "Geometry and measure", "weight": 3, "objectives": ["Convert between units of measure", "Calculate perimeter, area and volume", "Read scales and solve time problems"] },
+        { "id": "m-stats", "name": "Statistics and probability", "strand": "Statistics and probability", "weight": 2, "objectives": ["Interpret tables, bar charts, line graphs and pie charts", "Calculate mean, median, mode and range", "Describe probability and find simple probabilities"] },
+        { "id": "m-reason", "name": "Reasoning and problem-solving", "strand": "Thinking and working mathematically", "weight": 3, "objectives": ["Solve multi-step word problems", "Explain and justify answers", "Spot and correct errors", "Choose an efficient strategy"] }
+      ]
+    },
+    {
+      "id": "science",
+      "code": "0097",
+      "name": "Science",
+      "short": "Science",
+      "color": "#1f7a52",
+      "icon": "🔬",
+      "topics": [
+        { "id": "s-body", "name": "Human body and health", "strand": "Biology", "weight": 3, "objectives": ["Describe the heart, blood vessels and circulation", "Describe digestion and the organs involved", "Explain how diet and exercise affect health", "Know the functions of major organs"] },
+        { "id": "s-plants", "name": "Plants", "strand": "Biology", "weight": 2, "objectives": ["Describe what plants need to grow", "Explain the roles of roots, stem, leaves and flowers", "Describe pollination, seed dispersal and germination", "Know that plants make their own food using light"] },
+        { "id": "s-eco", "name": "Living things and environments", "strand": "Biology", "weight": 3, "objectives": ["Construct and interpret food chains and webs", "Use and make classification keys", "Explain how animals and plants are adapted to habitats", "Describe human impact on the environment"] },
+        { "id": "s-matter", "name": "Materials and states of matter", "strand": "Chemistry", "weight": 3, "objectives": ["Describe properties of solids, liquids and gases using the particle model", "Explain melting, freezing, evaporation, condensation and boiling", "Compare properties of materials and their uses"] },
+        { "id": "s-change", "name": "Mixtures and changes", "strand": "Chemistry", "weight": 3, "objectives": ["Describe dissolving and factors that affect it", "Separate mixtures by sieving, filtering and evaporating", "Distinguish reversible and irreversible changes"] },
+        { "id": "s-forces", "name": "Forces and motion", "strand": "Physics", "weight": 3, "objectives": ["Describe forces including gravity, friction, air resistance and upthrust", "Explain balanced and unbalanced forces", "Know the difference between mass and weight", "Use a forcemeter and newtons"] },
+        { "id": "s-elec", "name": "Electricity and magnetism", "strand": "Physics", "weight": 2, "objectives": ["Build and draw circuits with standard symbols", "Predict the effect of changing a circuit", "Identify conductors and insulators", "Describe magnetic attraction and repulsion"] },
+        { "id": "s-light", "name": "Light and sound", "strand": "Physics", "weight": 2, "objectives": ["Explain how we see objects and how shadows form", "Describe reflection and refraction", "Explain how sounds are made and travel", "Relate pitch and loudness to vibrations"] },
+        { "id": "s-earth", "name": "Earth and space", "strand": "Earth and space", "weight": 2, "objectives": ["Explain day, night and seasons", "Describe the Moon's phases and the solar system", "Describe rocks, soils and the rock cycle", "Describe Earth's structure, volcanoes and earthquakes"] },
+        { "id": "s-design", "name": "Planning investigations and variables", "strand": "Thinking and working scientifically", "weight": 3, "objectives": ["Identify independent, dependent and control variables", "Plan a fair test", "Make predictions with reasons", "Choose suitable equipment and identify risks"] },
+        { "id": "s-data", "name": "Observations, data and conclusions", "strand": "Thinking and working scientifically", "weight": 3, "objectives": ["Record results in tables", "Interpret tables, bar charts and line graphs", "Identify patterns and anomalous results", "Draw conclusions and suggest improvements"] }
+      ]
+    },
+    {
+      "id": "english",
+      "code": "0058",
+      "name": "English",
+      "short": "English",
+      "color": "#74418a",
+      "icon": "📖",
+      "topics": [
+        { "id": "e-retrieve", "name": "Reading: finding information", "strand": "Reading", "weight": 3, "objectives": ["Locate and retrieve information", "Summarise key points", "Skim and scan efficiently"] },
+        { "id": "e-infer", "name": "Reading: inference and interpretation", "strand": "Reading", "weight": 3, "objectives": ["Infer feelings, motives and attitudes", "Support ideas with evidence from the text", "Interpret meaning beyond the literal"] },
+        { "id": "e-language", "name": "Language analysis", "strand": "Reading", "weight": 3, "objectives": ["Explain the effect of word choices", "Identify and explain figurative language", "Comment on the writer's viewpoint and tone"] },
+        { "id": "e-structure", "name": "Text organisation and purpose", "strand": "Reading", "weight": 2, "objectives": ["Identify purpose, audience and text type", "Explain how texts are organised", "Recognise features of different text types"] },
+        { "id": "e-vocab", "name": "Vocabulary", "strand": "Reading", "weight": 2, "objectives": ["Work out meanings from context", "Use prefixes, suffixes and root words", "Choose precise vocabulary, synonyms and antonyms"] },
+        { "id": "e-grammar", "name": "Grammar", "strand": "Writing", "weight": 3, "objectives": ["Use word classes accurately", "Use verb tenses consistently", "Use active and passive voice", "Use clauses and conjunctions"] },
+        { "id": "e-punct", "name": "Punctuation and spelling", "strand": "Writing", "weight": 3, "objectives": ["Use commas, apostrophes and speech marks correctly", "Use colons, semicolons, brackets and dashes", "Spell common tricky words"] },
+        { "id": "e-sentences", "name": "Sentence construction and editing", "strand": "Writing", "weight": 2, "objectives": ["Combine and vary sentences", "Edit for accuracy and clarity", "Use paragraphs and cohesive devices"] }
+      ]
+    }
+  ]
+}

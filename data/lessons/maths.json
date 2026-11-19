@@ -1,0 +1,494 @@
+{
+ "subject": "maths",
+ "version": 1,
+ "lessons": [
+  {
+   "topic": "m-place",
+   "title": "Number and place value",
+   "keyIdea": "The position of a digit decides its value. Each place is 10 times the place to its right.",
+   "sections": [
+    {
+     "heading": "Reading big numbers and decimals",
+     "body": "Group whole numbers in threes from the right: <b>3 472 615</b> is three million, four hundred and seventy-two thousand, six hundred and fifteen. After the decimal point the places are <b>tenths, hundredths, thousandths</b>."
+    },
+    {
+     "heading": "Multiplying and dividing by 10, 100, 1000",
+     "body": "The decimal point stays still — the digits move. × 10 moves digits one place left; × 100 two places; ÷ 1000 three places right. Fill empty places with 0."
+    },
+    {
+     "heading": "Rounding",
+     "body": "Find the digit in the place you are rounding to, then look at the <b>next digit to the right</b> only. 5 or more: round up. 4 or less: keep the digit the same."
+    },
+    {
+     "heading": "Negative numbers",
+     "body": "Use a number line. Moving right is adding, moving left is subtracting. The difference between −6 and 5 is 11 because you count 6 steps to 0, then 5 more."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Round 37.462 to one decimal place.",
+     "steps": [
+      "The tenths digit is 4.",
+      "Look at the hundredths digit: 6.",
+      "6 is 5 or more, so round the 4 up to 5."
+     ],
+     "answer": "37.5"
+    },
+    {
+     "question": "Calculate 0.38 × 100.",
+     "steps": [
+      "× 100 moves each digit two places left.",
+      "0.38 → 38."
+     ],
+     "answer": "38"
+    }
+   ],
+   "commonMistakes": [
+    "Looking at every digit when rounding instead of only the next one (6.849 → 6.8, not 6.9).",
+    "Thinking a decimal with more digits is bigger (0.609 < 0.7).",
+    "Adding zeros after the decimal point when multiplying (3.6 × 100 is 360, not 3.600)."
+   ],
+   "examTip": "Write 3.5 as 3.50 when comparing with 3.45 — equal numbers of decimal places make comparison easy.",
+   "visual": {
+    "type": "placeValue",
+    "columns": [
+     "Ten thousands",
+     "Thousands",
+     "Hundreds",
+     "Tens",
+     "Ones",
+     ".",
+     "Tenths",
+     "Hundredths"
+    ],
+    "digits": [
+     "4",
+     "7",
+     "0",
+     "3",
+     "5",
+     ".",
+     "2",
+     "6"
+    ],
+    "caption": "47 035.26 in a place value chart"
+   }
+  },
+  {
+   "topic": "m-calc",
+   "title": "Operations and calculation",
+   "keyIdea": "Choose a sensible method, follow the order of operations, and always estimate first.",
+   "sections": [
+    {
+     "heading": "Order of operations",
+     "body": "Work out <b>Brackets</b> first, then <b>× and ÷</b> (left to right), then <b>+ and −</b> (left to right). 6 + 4 × 5 = 6 + 20 = 26."
+    },
+    {
+     "heading": "Written multiplication",
+     "body": "Split the number you are multiplying by: 346 × 27 = 346 × 20 + 346 × 7. Line up the place values carefully."
+    },
+    {
+     "heading": "Factors, multiples and primes",
+     "body": "Factors divide exactly into a number. Multiples are in its times table. A <b>prime</b> has exactly two factors: 1 and itself (2, 3, 5, 7, 11, 13 …). 1 is not prime."
+    },
+    {
+     "heading": "Squares and cubes",
+     "body": "5² = 5 × 5 = 25. 4³ = 4 × 4 × 4 = 64."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Calculate 48 − 18 ÷ 3.",
+     "steps": [
+      "Division comes before subtraction.",
+      "18 ÷ 3 = 6.",
+      "48 − 6 = 42."
+     ],
+     "answer": "42"
+    },
+    {
+     "question": "Estimate then calculate 52 × 38.",
+     "steps": [
+      "Estimate: 50 × 40 = 2000.",
+      "52 × 30 = 1560; 52 × 8 = 416.",
+      "1560 + 416 = 1976 — close to 2000, so sensible."
+     ],
+     "answer": "1976"
+    }
+   ],
+   "commonMistakes": [
+    "Working left to right and ignoring the order of operations.",
+    "Thinking 1 is a prime number.",
+    "Forgetting a place-value zero when multiplying by the tens digit."
+   ],
+   "examTip": "In the exam, write your estimate next to the question. If your answer is far from it, check again."
+  },
+  {
+   "topic": "m-frac",
+   "title": "Fractions",
+   "keyIdea": "A fraction is part of a whole. To add or subtract, the denominators must be the same.",
+   "sections": [
+    {
+     "heading": "Equivalent fractions",
+     "body": "Multiply or divide the numerator and denominator by the same number: 3/4 = 6/8 = 9/12. To simplify, divide both by their highest common factor."
+    },
+    {
+     "heading": "Adding and subtracting",
+     "body": "Find a common denominator, convert, then add or subtract the numerators only. 2/3 + 1/4 = 8/12 + 3/12 = 11/12."
+    },
+    {
+     "heading": "Multiplying and dividing by a whole number",
+     "body": "3/8 × 4 = 12/8 = 1 1/2 (multiply the numerator). 2/5 ÷ 2 = 1/5 (share the parts)."
+    },
+    {
+     "heading": "Fractions of amounts",
+     "body": "Divide by the denominator, multiply by the numerator. 3/5 of 40: 40 ÷ 5 = 8, 8 × 3 = 24."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Calculate 3/4 − 1/6.",
+     "steps": [
+      "A common denominator of 4 and 6 is 12.",
+      "3/4 = 9/12 and 1/6 = 2/12.",
+      "9/12 − 2/12 = 7/12."
+     ],
+     "answer": "7/12"
+    },
+    {
+     "question": "Which is larger, 5/8 or 3/5?",
+     "steps": [
+      "Common denominator 40.",
+      "5/8 = 25/40; 3/5 = 24/40.",
+      "25/40 is larger."
+     ],
+     "answer": "5/8"
+    }
+   ],
+   "commonMistakes": [
+    "Adding the denominators: 2/3 + 1/4 is not 3/7.",
+    "Forgetting to simplify when the question asks for the simplest form.",
+    "Thinking a bigger denominator means a bigger fraction."
+   ],
+   "examTip": "Read whether the question wants a mixed number or the simplest form, and give exactly that.",
+   "visual": {
+    "type": "fractionBars",
+    "bars": [
+     {
+      "parts": 4,
+      "shaded": 3,
+      "label": "3/4"
+     },
+     {
+      "parts": 8,
+      "shaded": 6,
+      "label": "6/8"
+     },
+     {
+      "parts": 12,
+      "shaded": 9,
+      "label": "9/12"
+     }
+    ],
+    "caption": "Equivalent fractions take up the same amount of the bar"
+   }
+  },
+  {
+   "topic": "m-decpct",
+   "title": "Decimals and percentages",
+   "keyIdea": "Fractions, decimals and percentages are three ways to write the same amount. Percent means “out of 100”.",
+   "sections": [
+    {
+     "heading": "Converting",
+     "body": "1/2 = 0.5 = 50%. 1/4 = 0.25 = 25%. 1/5 = 0.2 = 20%. 1/10 = 0.1 = 10%. To change a decimal to a percentage, multiply by 100."
+    },
+    {
+     "heading": "Calculating with decimals",
+     "body": "Line up the decimal points when adding or subtracting, and fill gaps with zeros (9 = 9.00). To multiply, ignore the point, multiply, then put the point back: 2.4 × 3 → 24 × 3 = 72 → 7.2."
+    },
+    {
+     "heading": "Percentages of amounts",
+     "body": "Find 10% (÷ 10) and 1% (÷ 100), then build up. 15% = 10% + 5%. 25% = a quarter."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Find 35% of 60.",
+     "steps": [
+      "10% of 60 = 6, so 30% = 18.",
+      "5% of 60 = 3.",
+      "18 + 3 = 21."
+     ],
+     "answer": "21"
+    },
+    {
+     "question": "A $40 game is reduced by 20%. Find the sale price.",
+     "steps": [
+      "20% of 40 = 8.",
+      "40 − 8 = 32."
+     ],
+     "answer": "$32"
+    }
+   ],
+   "commonMistakes": [
+    "Giving the discount instead of the new price.",
+    "Misaligning decimal points when adding (4.7 + 12.85).",
+    "Writing 7% as 0.7 instead of 0.07."
+   ],
+   "examTip": "For “which is largest” questions, convert everything to decimals first."
+  },
+  {
+   "topic": "m-ratio",
+   "title": "Ratio and proportion",
+   "keyIdea": "A ratio compares parts with parts. Proportion problems scale everything by the same amount.",
+   "sections": [
+    {
+     "heading": "Ratio",
+     "body": "“For every 2 red there are 3 blue” is written 2 : 3. Simplify by dividing both sides by a common factor. Order matters: red : blue is not blue : red."
+    },
+    {
+     "heading": "Sharing in a ratio",
+     "body": "Add the parts, find one part, then multiply. Share 35 in the ratio 3 : 4 → 7 parts → 5 each → 15 and 20."
+    },
+    {
+     "heading": "Direct proportion",
+     "body": "Find the value of one (the unit value), then multiply. 4 pens cost $6 → 1 pen $1.50 → 10 pens $15."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Share $60 in the ratio 1 : 5.",
+     "steps": [
+      "1 + 5 = 6 parts.",
+      "60 ÷ 6 = $10 per part.",
+      "1 × 10 = $10 and 5 × 10 = $50."
+     ],
+     "answer": "$10 and $50"
+    },
+    {
+     "question": "3 bags of rice weigh 4.5 kg. How much do 7 bags weigh?",
+     "steps": [
+      "1 bag: 4.5 ÷ 3 = 1.5 kg.",
+      "7 × 1.5 = 10.5 kg."
+     ],
+     "answer": "10.5 kg"
+    }
+   ],
+   "commonMistakes": [
+    "Dividing by one side of the ratio instead of the total number of parts.",
+    "Writing the ratio the wrong way round.",
+    "Adding the same amount instead of multiplying (proportion is multiplicative)."
+   ],
+   "examTip": "Draw a bar model: one box per part. It makes ratio problems much clearer."
+  },
+  {
+   "topic": "m-seq",
+   "title": "Sequences and expressions",
+   "keyIdea": "A sequence follows a rule. Spot the difference between terms, then use it.",
+   "sections": [
+    {
+     "heading": "Term-to-term rule",
+     "body": "Describes how to get from one term to the next: 7, 11, 15 … “add 4”."
+    },
+    {
+     "heading": "Position-to-term rule",
+     "body": "Connects the position number n to the term. For 7, 11, 15 … the rule is 4n + 3 (when n = 1, 4 + 3 = 7). This lets you find the 100th term quickly."
+    },
+    {
+     "heading": "Expressions and formulae",
+     "body": "4n means 4 × n. To substitute, replace the letter with the number and follow the order of operations. If n = 6, 4n − 5 = 24 − 5 = 19."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Find the rule for 5, 8, 11, 14 … and the 20th term.",
+     "steps": [
+      "It goes up by 3, so start with 3n.",
+      "When n = 1, 3n = 3, but the term is 5: add 2.",
+      "Rule: 3n + 2. 20th term: 3 × 20 + 2 = 62."
+     ],
+     "answer": "62"
+    }
+   ],
+   "commonMistakes": [
+    "Using the term-to-term rule (add 3) as if it were n + 3.",
+    "Reading 4n as 46 when n = 6.",
+    "Counting the first term as position 0."
+   ],
+   "examTip": "Check your position-to-term rule by testing it on the first two terms."
+  },
+  {
+   "topic": "m-geom",
+   "title": "Geometry",
+   "keyIdea": "Know the angle facts and the properties of shapes, and you can find any missing angle.",
+   "sections": [
+    {
+     "heading": "Angle facts",
+     "body": "Angles in a triangle add to <b>180°</b>. On a straight line: <b>180°</b>. Around a point: <b>360°</b>. In a quadrilateral: <b>360°</b>. Acute < 90°, obtuse 90°–180°, reflex > 180°."
+    },
+    {
+     "heading": "Shapes",
+     "body": "Isosceles triangles have two equal sides and two equal angles. Squares are special rectangles. A trapezium has one pair of parallel sides; a parallelogram has two."
+    },
+    {
+     "heading": "Coordinates and transformations",
+     "body": "(x, y): across first, then up. Translating moves a shape without turning it. Reflecting in the x-axis changes the sign of y. Rotating turns it about a point."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Two angles of a triangle are 64° and 71°. Find the third.",
+     "steps": [
+      "Angles in a triangle total 180°.",
+      "64 + 71 = 135.",
+      "180 − 135 = 45."
+     ],
+     "answer": "45°"
+    },
+    {
+     "question": "Translate (−2, 3) by 5 right and 4 down.",
+     "steps": [
+      "x: −2 + 5 = 3.",
+      "y: 3 − 4 = −1."
+     ],
+     "answer": "(3, −1)"
+    }
+   ],
+   "commonMistakes": [
+    "Using 360° for a triangle.",
+    "Mixing up x and y in coordinates.",
+    "Assuming a diagram is drawn to scale when it says it is not."
+   ],
+   "examTip": "Write the angle fact you used next to your working — it can earn method marks.",
+   "visual": {
+    "type": "svg",
+    "svg": "<svg viewBox=\"0 0 320 120\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"13\"><polygon points=\"10,105 110,105 45,20\" fill=\"#eef4fb\" stroke=\"#1d2b44\" stroke-width=\"2\"/><text x=\"20\" y=\"118\">a + b + c = 180°</text><line x1=\"140\" y1=\"80\" x2=\"300\" y2=\"80\" stroke=\"#1d2b44\" stroke-width=\"2\"/><line x1=\"220\" y1=\"80\" x2=\"270\" y2=\"25\" stroke=\"#1d2b44\" stroke-width=\"2\"/><text x=\"180\" y=\"105\">angles on a line = 180°</text></svg>",
+    "caption": "Two key angle facts"
+   }
+  },
+  {
+   "topic": "m-meas",
+   "title": "Measurement",
+   "keyIdea": "Convert units before you calculate, and use the right formula for perimeter, area or volume.",
+   "sections": [
+    {
+     "heading": "Converting units",
+     "body": "1 km = 1000 m, 1 m = 100 cm, 1 cm = 10 mm, 1 kg = 1000 g, 1 l = 1000 ml. Bigger unit → smaller unit: multiply. Smaller → bigger: divide."
+    },
+    {
+     "heading": "Perimeter, area and volume",
+     "body": "Perimeter is the distance around (add the sides). Area of a rectangle = length × width (cm²). Area of a triangle = ½ × base × height. Volume of a cuboid = length × width × height (cm³)."
+    },
+    {
+     "heading": "Time",
+     "body": "There are 60 minutes in an hour, not 100. Count on to the next hour, then on again: 09:38 → 10:00 (22 min) → 11:15 (75 min) = 97 min."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Find the area of a triangle with base 12 cm and height 5 cm.",
+     "steps": [
+      "½ × base × height.",
+      "½ × 12 × 5 = 30."
+     ],
+     "answer": "30 cm²"
+    },
+    {
+     "question": "A film starts at 17:50 and lasts 2 h 25 min. When does it end?",
+     "steps": [
+      "17:50 + 2 h = 19:50.",
+      "19:50 + 10 min = 20:00.",
+      "20:00 + 15 min = 20:15."
+     ],
+     "answer": "20:15"
+    }
+   ],
+   "commonMistakes": [
+    "Mixing up area and perimeter.",
+    "Adding times as if there were 100 minutes in an hour.",
+    "Calculating with two different units (kg and g) without converting."
+   ],
+   "examTip": "Always write the unit, including ² for area and ³ for volume."
+  },
+  {
+   "topic": "m-stats",
+   "title": "Statistics and probability",
+   "keyIdea": "Read graphs carefully, and choose the right average for the job.",
+   "sections": [
+    {
+     "heading": "Averages and range",
+     "body": "<b>Mean</b>: add all values, divide by how many. <b>Median</b>: the middle value when in order (halfway between the two middle values if there is an even number). <b>Mode</b>: most common. <b>Range</b>: largest − smallest."
+    },
+    {
+     "heading": "Reading graphs",
+     "body": "Check the scale on the axis first — each square may stand for 2, 5 or 10. Line graphs show change over time; bar charts compare categories; pie charts show fractions of a whole."
+    },
+    {
+     "heading": "Probability",
+     "body": "Probability = favourable outcomes ÷ total outcomes. It goes from 0 (impossible) to 1 (certain). A fair dice: P(4) = 1/6."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Find the mean and median of 6, 2, 9, 4, 9.",
+     "steps": [
+      "Mean: 6 + 2 + 9 + 4 + 9 = 30; 30 ÷ 5 = 6.",
+      "Median: order 2, 4, 6, 9, 9 → 6."
+     ],
+     "answer": "Mean 6, median 6"
+    }
+   ],
+   "commonMistakes": [
+    "Finding the median without ordering the data.",
+    "Misreading the scale on a graph.",
+    "Giving the total instead of the mean."
+   ],
+   "examTip": "For a missing value with a known mean, multiply the mean by how many values there should be."
+  },
+  {
+   "topic": "m-reason",
+   "title": "Reasoning and problem-solving",
+   "keyIdea": "Understand the problem, plan the steps, calculate, then check that the answer makes sense.",
+   "sections": [
+    {
+     "heading": "A four-step routine",
+     "body": "<b>1. Read</b>: underline the question and the key numbers. <b>2. Plan</b>: what do you need to find first? <b>3. Calculate</b>: show each step. <b>4. Check</b>: use an inverse or an estimate, and ask “is this sensible?”"
+    },
+    {
+     "heading": "Remainders in context",
+     "body": "If 75 eggs go in boxes of 6, 75 ÷ 6 = 12 r 3. You need 13 boxes (round up). If you have $50 and tickets cost $12, you can buy 4 (round down)."
+    },
+    {
+     "heading": "Explaining and spotting errors",
+     "body": "When asked to explain, use a calculation or example as evidence: “298 × 4 must be less than 300 × 4 = 1200.”"
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "A school has $500. Tickets cost $12. How many can it buy, and how much is left?",
+     "steps": [
+      "500 ÷ 12 = 41 remainder 8.",
+      "41 tickets cost 492.",
+      "500 − 492 = 8."
+     ],
+     "answer": "41 tickets, $8 left"
+    },
+    {
+     "question": "I think of a number, double it and add 7 to get 31. What is it?",
+     "steps": [
+      "Work backwards: 31 − 7 = 24.",
+      "24 ÷ 2 = 12.",
+      "Check: 12 × 2 + 7 = 31 ✓"
+     ],
+     "answer": "12"
+    }
+   ],
+   "commonMistakes": [
+    "Stopping after the first step of a multi-step problem.",
+    "Rounding the wrong way when there is a remainder.",
+    "Not checking whether the answer is sensible."
+   ],
+   "examTip": "Show every step. Even if the final answer is wrong, correct working can earn marks."
+  }
+ ]
+}

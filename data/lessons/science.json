@@ -1,0 +1,421 @@
+{
+ "subject": "science",
+ "version": 1,
+ "lessons": [
+  {
+   "topic": "s-body",
+   "title": "Human body and health",
+   "keyIdea": "Organ systems work together: the heart pumps blood, the lungs bring in oxygen, and the digestive system breaks down food.",
+   "sections": [
+    {
+     "heading": "Circulation",
+     "body": "The heart pumps blood through <b>arteries</b> (away from the heart), tiny <b>capillaries</b>, and <b>veins</b> (back to the heart). Red blood cells carry oxygen to every cell."
+    },
+    {
+     "heading": "Digestion",
+     "body": "Mouth (chewing, saliva) → oesophagus → stomach (acid and churning) → small intestine (digested food absorbed into blood) → large intestine (water absorbed)."
+    },
+    {
+     "heading": "Health",
+     "body": "A balanced diet includes carbohydrates (energy), proteins (growth and repair), fats (stored energy), vitamins, minerals, fibre and water. Exercise strengthens the heart; smoking damages the lungs."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Explain why pulse rate rises during exercise.",
+     "steps": [
+      "Muscles work harder and need more oxygen and glucose.",
+      "The heart beats faster to deliver more blood."
+     ],
+     "answer": "More blood carries more oxygen to working muscles."
+    }
+   ],
+   "commonMistakes": [
+    "Mixing up arteries and veins.",
+    "Thinking the large intestine absorbs most food.",
+    "Saying the heart “makes” oxygen."
+   ],
+   "examTip": "For “explain” questions, link cause and effect: “…because the muscles need more oxygen”."
+  },
+  {
+   "topic": "s-plants",
+   "title": "Plants",
+   "keyIdea": "Plants make their own food using light. Each part of the plant has a job.",
+   "sections": [
+    {
+     "heading": "Parts and functions",
+     "body": "<b>Roots</b> absorb water and minerals and anchor the plant. The <b>stem</b> supports it and carries water. <b>Leaves</b> use light to make food. <b>Flowers</b> make seeds."
+    },
+    {
+     "heading": "Life cycle",
+     "body": "Pollination (pollen moves from anther to stigma) → fertilisation → seed formation → seed dispersal (wind, animals, water, explosion) → germination (needs water, warmth and air)."
+    },
+    {
+     "heading": "Growth",
+     "body": "Plants need light, water, warmth, air and nutrients. Without light, leaves turn yellow and the plant becomes weak."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Why are dandelion seeds light and fluffy?",
+     "steps": [
+      "The fluff acts like a parachute.",
+      "Wind carries the seed far away.",
+      "Seedlings then do not compete with the parent."
+     ],
+     "answer": "For wind dispersal"
+    }
+   ],
+   "commonMistakes": [
+    "Saying seeds need light to germinate.",
+    "Confusing pollination with seed dispersal.",
+    "Thinking plants get their food from the soil."
+   ],
+   "examTip": "Learn the difference between germination, pollination and dispersal — they are often tested together."
+  },
+  {
+   "topic": "s-eco",
+   "title": "Living things and environments",
+   "keyIdea": "Energy passes along food chains, and living things are adapted to where they live.",
+   "sections": [
+    {
+     "heading": "Food chains",
+     "body": "Every chain starts with a <b>producer</b> (a green plant). Arrows point from the food to the eater, showing the flow of energy. Herbivores eat plants; carnivores eat animals; omnivores eat both."
+    },
+    {
+     "heading": "Changes in a chain",
+     "body": "If one population changes, others are affected. Fewer foxes → more rabbits → less grass."
+    },
+    {
+     "heading": "Classification and adaptation",
+     "body": "Keys use yes/no questions to identify organisms. Adaptations are features that help survival: thick fur, camouflage, spines to save water."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "In grass → grasshopper → frog → snake, what happens if frogs are removed?",
+     "steps": [
+      "Grasshoppers have fewer predators, so they increase.",
+      "More grasshoppers eat more grass, so grass decreases.",
+      "Snakes have less food, so they decrease."
+     ],
+     "answer": "Grasshoppers up, grass down, snakes down"
+    }
+   ],
+   "commonMistakes": [
+    "Drawing arrows from eater to food.",
+    "Saying the Sun is a producer.",
+    "Describing only one effect of a change instead of following the chain."
+   ],
+   "examTip": "For “predict” questions, follow the chain one step at a time in both directions."
+  },
+  {
+   "topic": "s-matter",
+   "title": "Materials and states of matter",
+   "keyIdea": "Solids, liquids and gases are made of particles. Heating and cooling change the state.",
+   "sections": [
+    {
+     "heading": "The particle model",
+     "body": "<b>Solid</b>: close, fixed pattern, vibrate. <b>Liquid</b>: close, can move past each other, takes the shape of its container. <b>Gas</b>: far apart, move fast in all directions, fills its container."
+    },
+    {
+     "heading": "Changes of state",
+     "body": "Melting (solid → liquid), freezing (liquid → solid), evaporating/boiling (liquid → gas), condensing (gas → liquid). Water melts at 0 °C and boils at 100 °C."
+    },
+    {
+     "heading": "Properties and uses",
+     "body": "Choose materials by property: copper conducts electricity (wires), plastic and wood are insulators (handles), glass is transparent (windows)."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Explain why a cold can gets wet on the outside.",
+     "steps": [
+      "Air contains water vapour.",
+      "It cools on the cold surface.",
+      "It condenses into liquid droplets."
+     ],
+     "answer": "Condensation of water vapour from the air"
+    }
+   ],
+   "commonMistakes": [
+    "Thinking water on a cold glass leaked through.",
+    "Confusing evaporation with boiling (evaporation happens at any temperature).",
+    "Saying particles in a solid do not move at all."
+   ],
+   "examTip": "Use the key words (evaporate, condense) — they are often what earns the mark.",
+   "visual": {
+    "type": "svg",
+    "svg": "<svg viewBox=\"0 0 330 110\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"13\"><circle cx=\"20\" cy=\"20\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"38\" cy=\"20\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"56\" cy=\"20\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"74\" cy=\"20\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"20\" cy=\"38\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"38\" cy=\"38\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"56\" cy=\"38\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"74\" cy=\"38\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"20\" cy=\"56\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"38\" cy=\"56\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"56\" cy=\"56\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"74\" cy=\"56\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"20\" cy=\"74\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"38\" cy=\"74\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"56\" cy=\"74\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"74\" cy=\"74\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"130\" cy=\"40\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"146\" cy=\"50\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"162\" cy=\"38\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"128\" cy=\"62\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"150\" cy=\"72\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"170\" cy=\"64\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"138\" cy=\"84\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"160\" cy=\"86\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"240\" cy=\"20\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"300\" cy=\"30\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"260\" cy=\"70\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"320\" cy=\"85\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><circle cx=\"230\" cy=\"90\" r=\"8\" fill=\"#9cc3f0\" stroke=\"#1d2b44\"/><text x=\"30\" y=\"105\">solid</text><text x=\"135\" y=\"105\">liquid</text><text x=\"260\" y=\"105\">gas</text></svg>",
+    "caption": "Particle arrangement in the three states"
+   }
+  },
+  {
+   "topic": "s-change",
+   "title": "Mixtures and changes",
+   "keyIdea": "Some changes can be reversed; others make new materials. Mixtures can be separated using differences in properties.",
+   "sections": [
+    {
+     "heading": "Dissolving",
+     "body": "A soluble solid (sugar, salt) breaks into tiny particles spread through the liquid to make a solution. It has not disappeared. Warm water, stirring and smaller grains make it dissolve faster."
+    },
+    {
+     "heading": "Separating mixtures",
+     "body": "<b>Sieving</b>: different-sized solids. <b>Filtering</b>: insoluble solid from a liquid. <b>Evaporating</b>: dissolved solid from a liquid. <b>Magnet</b>: magnetic materials such as iron."
+    },
+    {
+     "heading": "Reversible and irreversible",
+     "body": "Melting, freezing and dissolving are reversible. Burning, cooking, rusting and mixing vinegar with bicarbonate of soda make new materials — they are irreversible."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "How would you separate sand, salt and water?",
+     "steps": [
+      "Filter: sand stays on the filter paper.",
+      "Evaporate the salty water that passed through.",
+      "Salt crystals are left behind."
+     ],
+     "answer": "Filter, then evaporate"
+    }
+   ],
+   "commonMistakes": [
+    "Saying salt can be filtered out of salt water.",
+    "Saying dissolving is the same as melting.",
+    "Calling cooking reversible."
+   ],
+   "examTip": "Name the equipment and explain why it works: “filter paper lets water through but traps sand grains”."
+  },
+  {
+   "topic": "s-forces",
+   "title": "Forces and motion",
+   "keyIdea": "Forces are pushes and pulls, measured in newtons. Balanced forces mean no change in motion.",
+   "sections": [
+    {
+     "heading": "Types of force",
+     "body": "Gravity pulls objects towards Earth. Friction acts between surfaces and opposes motion. Air resistance and water resistance slow moving objects. Upthrust pushes up on objects in water."
+    },
+    {
+     "heading": "Balanced and unbalanced",
+     "body": "Balanced forces: the object stays still or keeps moving at a steady speed. Unbalanced forces: it speeds up, slows down or changes direction."
+    },
+    {
+     "heading": "Mass and weight",
+     "body": "Mass is the amount of matter (kg) and stays the same everywhere. Weight is the force of gravity on that mass (N) — it is less on the Moon."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "A rock weighs 20 N in air and 14 N in water. What is the upthrust?",
+     "steps": [
+      "Upthrust reduces the reading.",
+      "20 − 14 = 6."
+     ],
+     "answer": "6 N"
+    }
+   ],
+   "commonMistakes": [
+    "Measuring force in kilograms.",
+    "Saying a moving object at steady speed has no forces on it.",
+    "Thinking mass changes on the Moon."
+   ],
+   "examTip": "Draw force arrows: the longer arrow shows the bigger force and the direction of change."
+  },
+  {
+   "topic": "s-elec",
+   "title": "Electricity and magnetism",
+   "keyIdea": "Current flows only around a complete circuit. More cells make lamps brighter; more lamps in series make them dimmer.",
+   "sections": [
+    {
+     "heading": "Circuits",
+     "body": "A circuit needs a complete loop from one end of the cell to the other. A switch opens (breaks) or closes (completes) the loop. Use standard symbols in diagrams."
+    },
+    {
+     "heading": "Changing a circuit",
+     "body": "Adding cells → brighter lamps, faster motors. Adding lamps in series → dimmer lamps. Longer or thinner wires → dimmer lamps."
+    },
+    {
+     "heading": "Conductors and magnets",
+     "body": "Metals conduct electricity; plastic, wood, rubber and glass are insulators. Iron, steel, nickel and cobalt are magnetic — aluminium and copper are not. Like poles repel, opposite poles attract."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Predict what happens when a third lamp is added in series.",
+     "steps": [
+      "The same cell pushes current through more lamps.",
+      "Resistance goes up, current goes down."
+     ],
+     "answer": "All the lamps become dimmer."
+    }
+   ],
+   "commonMistakes": [
+    "Saying all metals are magnetic.",
+    "Thinking one lamp goes out but the other stays lit in a series circuit.",
+    "Leaving gaps in circuit drawings."
+   ],
+   "examTip": "In “predict” questions, give the change AND the reason."
+  },
+  {
+   "topic": "s-light",
+   "title": "Light and sound",
+   "keyIdea": "Light travels in straight lines and we see objects when reflected light enters our eyes. Sounds are vibrations.",
+   "sections": [
+    {
+     "heading": "Seeing and shadows",
+     "body": "Light comes from a source (Sun, lamp, flame), reflects off objects and enters the eye. Opaque objects block light, making shadows. Moving the object closer to the light makes the shadow bigger."
+    },
+    {
+     "heading": "Reflection and refraction",
+     "body": "Mirrors reflect light. Refraction is when light changes direction moving between materials, which makes a straw look bent in water."
+    },
+    {
+     "heading": "Sound",
+     "body": "Sounds are made by vibrations passed through solids, liquids and gases (not a vacuum). Bigger vibrations → louder. Faster vibrations → higher pitch (shorter, tighter or thinner strings)."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Why is a shadow the same shape as the object?",
+     "steps": [
+      "Light travels in straight lines.",
+      "The object blocks the light that hits it.",
+      "The outline of the blocked area matches the object."
+     ],
+     "answer": "Light travels in straight lines"
+    }
+   ],
+   "commonMistakes": [
+    "Saying light travels from the eyes.",
+    "Calling the Moon a light source.",
+    "Mixing up pitch (high/low) with volume (loud/quiet)."
+   ],
+   "examTip": "Draw arrows on light ray diagrams — direction matters."
+  },
+  {
+   "topic": "s-earth",
+   "title": "Earth and space",
+   "keyIdea": "Earth spins on its axis (day and night) and orbits the Sun (a year). Its tilt causes the seasons.",
+   "sections": [
+    {
+     "heading": "Day, night and seasons",
+     "body": "Earth rotates once every 24 hours. It orbits the Sun once every 365¼ days. The tilt of its axis means each hemisphere gets more direct sunlight at different times — summer and winter."
+    },
+    {
+     "heading": "The Moon and solar system",
+     "body": "The Moon orbits Earth about every 28 days; we see different amounts of its sunlit half (phases). Eight planets orbit the Sun, starting with Mercury."
+    },
+    {
+     "heading": "Rocks and the Earth",
+     "body": "Igneous rock forms from cooled magma or lava. Sedimentary rock forms in layers and may contain fossils. Metamorphic rock is changed by heat and pressure. Earth has a crust, mantle and core; earthquakes and volcanoes happen where plates meet."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Why does the Sun appear to move across the sky?",
+     "steps": [
+      "The Sun is not moving around Earth.",
+      "Earth rotates from west to east.",
+      "So the Sun appears to rise in the east and set in the west."
+     ],
+     "answer": "Because Earth rotates"
+    }
+   ],
+   "commonMistakes": [
+    "Saying the seasons are caused by distance from the Sun.",
+    "Saying the Earth’s shadow causes the Moon’s phases.",
+    "Confusing rotation (a day) with orbit (a year)."
+   ],
+   "examTip": "Use the exact words “rotate”, “orbit” and “axis”."
+  },
+  {
+   "topic": "s-design",
+   "title": "Planning investigations and variables",
+   "keyIdea": "Change one variable, measure one variable, and keep everything else the same.",
+   "sections": [
+    {
+     "heading": "Variables",
+     "body": "The <b>independent variable</b> is what you change. The <b>dependent variable</b> is what you measure. <b>Control variables</b> are kept the same to make the test fair."
+    },
+    {
+     "heading": "Predictions",
+     "body": "A good prediction states the relationship and gives a reason: “The higher the ramp, the further the car will go, because it will be moving faster at the bottom.”"
+    },
+    {
+     "heading": "Equipment, repeats and safety",
+     "body": "Choose equipment that measures accurately (measuring cylinder for volume, stopwatch for time, forcemeter for force). Repeat measurements to spot anomalies. Identify risks and how to reduce them."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Plan a fair test: does water temperature affect how fast sugar dissolves?",
+     "steps": [
+      "Change: water temperature.",
+      "Measure: time to dissolve.",
+      "Keep the same: volume of water, amount and type of sugar, stirring."
+     ],
+     "answer": "Change one thing, measure one thing, control the rest"
+    }
+   ],
+   "commonMistakes": [
+    "Mixing up independent and dependent variables.",
+    "Changing two things at once.",
+    "Writing a prediction with no reason."
+   ],
+   "examTip": "Remember: I change it (Independent), it Depends on what I change (Dependent)."
+  },
+  {
+   "topic": "s-data",
+   "title": "Observations, data and conclusions",
+   "keyIdea": "Look for the pattern, check for anomalies, and say what the evidence shows — no more.",
+   "sections": [
+    {
+     "heading": "Tables and graphs",
+     "body": "Put the independent variable in the first column and on the x-axis. Use a line graph for continuous data that changes over time or with another measured variable, and a bar chart for categories."
+    },
+    {
+     "heading": "Patterns and anomalies",
+     "body": "Describe patterns using both variables: “As temperature increases, the time to dissolve decreases.” An anomalous result does not fit the pattern — repeat it."
+    },
+    {
+     "heading": "Conclusions and improvements",
+     "body": "A conclusion answers the question using the data. Results are more reliable when there are more samples and repeats."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Results: 20 °C → 120 s, 40 °C → 75 s, 60 °C → 42 s. Describe the pattern.",
+     "steps": [
+      "Look at both columns together.",
+      "Temperature goes up while time goes down."
+     ],
+     "answer": "As temperature increases, dissolving time decreases."
+    }
+   ],
+   "commonMistakes": [
+    "Describing only one variable (“the time goes down”).",
+    "Drawing conclusions from one result.",
+    "Including anomalous results in a mean without checking them."
+   ],
+   "examTip": "When reading values from a graph, use a ruler and go up and across carefully.",
+   "visual": {
+    "type": "line",
+    "labels": [
+     "20",
+     "40",
+     "60",
+     "80"
+    ],
+    "values": [
+     120,
+     75,
+     42,
+     25
+    ],
+    "caption": "Dissolving time against water temperature",
+    "yLabel": "Time (s)",
+    "xLabel": "Temperature (°C)"
+   }
+  }
+ ]
+}

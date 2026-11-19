@@ -1,0 +1,283 @@
+{
+ "subject": "english",
+ "version": 1,
+ "lessons": [
+  {
+   "topic": "e-retrieve",
+   "title": "Reading: finding information",
+   "keyIdea": "Retrieval answers are in the text. Find the right paragraph, then read it carefully.",
+   "sections": [
+    {
+     "heading": "Skim and scan",
+     "body": "<b>Skim</b> to get the gist of each paragraph. <b>Scan</b> for key words from the question (names, numbers, dates)."
+    },
+    {
+     "heading": "Use the question words",
+     "body": "If a question says “according to paragraph 3”, the answer is there — not anywhere else. Give exactly the number of points asked for."
+    },
+    {
+     "heading": "Summarising",
+     "body": "A summary gives the main points in your own words, leaving out small details."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "“Give two materials used to make bee hotels.”",
+     "steps": [
+      "Scan for “bamboo”, “wood”, “straws”.",
+      "Paragraph 2 lists bamboo canes, paper straws and drilled wood.",
+      "Write two of them."
+     ],
+     "answer": "Bamboo canes and paper straws"
+    }
+   ],
+   "commonMistakes": [
+    "Answering from memory instead of the text.",
+    "Giving one point when two are asked for.",
+    "Copying a whole paragraph instead of the answer."
+   ],
+   "examTip": "Underline key words in the question before you look back at the text."
+  },
+  {
+   "topic": "e-infer",
+   "title": "Reading: inference and interpretation",
+   "keyIdea": "Inference is reading between the lines: use clues in the text to work out what is not said directly.",
+   "sections": [
+    {
+     "heading": "Clues",
+     "body": "Look at what characters do, say and notice. Clutching a bag and checking a watch repeatedly suggests worry."
+    },
+    {
+     "heading": "Point – Evidence – Explain",
+     "body": "Make your point, quote a short piece of evidence, then explain how it shows your point: “Amira is anxious. She checks her watch ‘again, then again’, which shows she is worried the bus will not come.”"
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "How does the grandmother feel when Jonah returns?",
+     "steps": [
+      "She is waiting on the slipway in her nightgown.",
+      "She wraps her coat around him without speaking.",
+      "Her actions show relief and love."
+     ],
+     "answer": "Relieved and loving"
+    }
+   ],
+   "commonMistakes": [
+    "Retelling the story instead of explaining.",
+    "Making a guess with no evidence.",
+    "Using long quotations — keep them short."
+   ],
+   "examTip": "For 2-mark inference questions, always give a point AND evidence."
+  },
+  {
+   "topic": "e-language",
+   "title": "Language analysis",
+   "keyIdea": "Writers choose words for effect. Name the technique, then explain what it makes the reader think or feel.",
+   "sections": [
+    {
+     "heading": "Techniques",
+     "body": "<b>Simile</b>: comparison with like/as. <b>Metaphor</b>: says one thing is another. <b>Personification</b>: human qualities for non-human things. <b>Alliteration</b>: repeated starting sounds. <b>Rhetorical question</b>: a question for effect."
+    },
+    {
+     "heading": "Explaining effect",
+     "body": "Do not stop at the name. Say what picture it creates: “the sky turned the colour of a bruise” suggests dark, threatening clouds and hints that Jonah is in danger."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Explain “the engine coughed”.",
+     "steps": [
+      "Technique: personification.",
+      "Engines cannot cough; people cough when ill.",
+      "It suggests the engine is struggling and might fail."
+     ],
+     "answer": "It shows the engine is unreliable, adding tension."
+    }
+   ],
+   "commonMistakes": [
+    "Naming a technique without explaining its effect.",
+    "Writing “it makes it more interesting” — be specific.",
+    "Confusing simile and metaphor."
+   ],
+   "examTip": "Zoom in on one word: what are its connotations?"
+  },
+  {
+   "topic": "e-structure",
+   "title": "Text organisation and purpose",
+   "keyIdea": "Every text has a purpose and an audience, and its structure helps it achieve that purpose.",
+   "sections": [
+    {
+     "heading": "Purpose and audience",
+     "body": "Is the text trying to <b>inform</b>, <b>persuade</b>, <b>instruct</b>, <b>entertain</b> or <b>recount</b>? Who is it written for?"
+    },
+    {
+     "heading": "Structural features",
+     "body": "Headings, paragraphs, chronological order, short paragraphs for emphasis, an opening hook and a concluding paragraph that sums up or speaks to the reader."
+    },
+    {
+     "heading": "Fiction structure",
+     "body": "Writers build tension with short sentences, cliffhangers and pacing, and end with a resolution or a twist."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Why is paragraph 2 of “The Audition” one sentence long?",
+     "steps": [
+      "It is much shorter than the paragraphs around it.",
+      "It stands out to the reader.",
+      "It emphasises Leila’s sudden panic."
+     ],
+     "answer": "To emphasise the shock"
+    }
+   ],
+   "commonMistakes": [
+    "Describing what happens instead of how the text is organised.",
+    "Confusing purpose (why) with audience (who)."
+   ],
+   "examTip": "Look at the beginning and the end of the text — they often show the structure most clearly."
+  },
+  {
+   "topic": "e-vocab",
+   "title": "Vocabulary",
+   "keyIdea": "Work out word meanings from context and from word parts.",
+   "sections": [
+    {
+     "heading": "Context clues",
+     "body": "Read the whole sentence: “The scientist was meticulous, checking every measurement three times” → meticulous means very careful."
+    },
+    {
+     "heading": "Word parts",
+     "body": "Prefixes change meaning (un-, dis-, mis-, im-, re-). Suffixes change word class (-ment, -ness, -ly, -ful). Roots carry meaning (aqua = water, port = carry)."
+    },
+    {
+     "heading": "Precise choices",
+     "body": "Choose the word that fits exactly: “trudged” is more precise than “walked” for a tired soldier."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "What does “illegible” mean in “His writing was so messy it was illegible”?",
+     "steps": [
+      "il- means not.",
+      "“legible” means able to be read.",
+      "The sentence talks about messy writing."
+     ],
+     "answer": "Impossible to read"
+    }
+   ],
+   "commonMistakes": [
+    "Choosing a word that looks similar instead of one that means the same.",
+    "Ignoring the sentence around the word."
+   ],
+   "examTip": "Swap your answer into the sentence. If it still makes sense, it is probably right."
+  },
+  {
+   "topic": "e-grammar",
+   "title": "Grammar",
+   "keyIdea": "Grammar is how words work together. Keep tenses consistent and make subjects and verbs agree.",
+   "sections": [
+    {
+     "heading": "Word classes",
+     "body": "Noun (thing), verb (action/being), adjective (describes a noun), adverb (describes a verb), preposition (position/time), conjunction (joins clauses), pronoun (replaces a noun)."
+    },
+    {
+     "heading": "Tense and agreement",
+     "body": "Keep the same tense unless the time changes. Singular subjects take singular verbs: “Neither of the boys was ready.”"
+    },
+    {
+     "heading": "Active and passive",
+     "body": "Active: “The ball broke the window.” Passive: “The window was broken (by the ball).” The passive puts the focus on what the action happened to."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Change to the passive: “The chef cooked the meal.”",
+     "steps": [
+      "Object becomes the subject: the meal.",
+      "Use was/were + past participle: was cooked.",
+      "Add “by the chef”."
+     ],
+     "answer": "The meal was cooked by the chef."
+    }
+   ],
+   "commonMistakes": [
+    "Switching tenses mid-sentence.",
+    "Using “less” for countable things.",
+    "Confusing adjectives and adverbs."
+   ],
+   "examTip": "Read your sentence aloud in your head — mistakes often sound wrong."
+  },
+  {
+   "topic": "e-punct",
+   "title": "Punctuation and spelling",
+   "keyIdea": "Punctuation makes meaning clear. Learn the rules for apostrophes, speech and the colon family.",
+   "sections": [
+    {
+     "heading": "Apostrophes",
+     "body": "Contraction: they’re = they are, it’s = it is. Possession: the dog’s bowl (one dog), the girls’ room (several girls). Never use an apostrophe just to make a plural."
+    },
+    {
+     "heading": "Speech",
+     "body": "“Are you coming?” asked Sam. The spoken words and their punctuation go inside the speech marks. Start a new line for a new speaker."
+    },
+    {
+     "heading": "Colons, semicolons, brackets and dashes",
+     "body": "A colon introduces a list or explanation. A semicolon joins two related complete sentences. Brackets and dashes add extra information."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Punctuate: its time to go said mum",
+     "steps": [
+      "“It’s” = it is, so it needs an apostrophe.",
+      "Speech marks around the spoken words, with a comma inside.",
+      "Capital letter for the start and full stop at the end."
+     ],
+     "answer": "“It’s time to go,” said Mum."
+    }
+   ],
+   "commonMistakes": [
+    "Its / it’s confusion.",
+    "Putting the question mark outside the speech marks.",
+    "Using a comma to join two sentences."
+   ],
+   "examTip": "Check every apostrophe: can you expand it, or does it show ownership? If neither, delete it."
+  },
+  {
+   "topic": "e-sentences",
+   "title": "Sentence construction and editing",
+   "keyIdea": "Vary your sentences and join ideas correctly so your writing is clear and interesting.",
+   "sections": [
+    {
+     "heading": "Sentence types",
+     "body": "Simple: one main clause. Compound: two main clauses joined with and/but/or/so. Complex: a main clause plus a subordinate clause (because, when, although, if)."
+    },
+    {
+     "heading": "Avoiding comma splices",
+     "body": "“It was raining, we stayed in” is wrong. Fix it with a conjunction (“so”), a full stop or a semicolon."
+    },
+    {
+     "heading": "Editing",
+     "body": "Check capital letters, full stops, verb agreement, tense and repetition. Cut unnecessary words and choose precise vocabulary."
+    }
+   ],
+   "workedExamples": [
+    {
+     "question": "Combine: “The fox was hungry. The fox crept towards the henhouse.”",
+     "steps": [
+      "Avoid repeating “the fox”.",
+      "Turn “hungry” into an adjective."
+     ],
+     "answer": "The hungry fox crept towards the henhouse."
+    }
+   ],
+   "commonMistakes": [
+    "Joining sentences with a comma alone.",
+    "Starting too many sentences with “Then”.",
+    "Repeating the same word."
+   ],
+   "examTip": "Begin some sentences with a fronted adverbial (“Without a sound,”) — and remember the comma."
+  }
+ ]
+}

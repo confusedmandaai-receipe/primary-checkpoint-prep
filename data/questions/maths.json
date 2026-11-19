@@ -1,0 +1,2812 @@
+{
+ "subject": "maths",
+ "version": 1,
+ "questions": [
+  {
+   "id": "m-place-d01",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What is the value of the digit 7 in 3 472 615?",
+   "type": "mcq",
+   "options": [
+    "700 000",
+    "7000",
+    "70 000",
+    "7"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "1": "Counted place values from the wrong end",
+    "0": "Shifted one place too far left",
+    "3": "Gave the digit, not its value"
+   },
+   "hint": "Name the column of each digit, starting from the ones on the right.",
+   "explanation": "3 472 615 = 3 millions, 4 hundred thousands, 7 ten thousands … so the 7 is worth 70 000."
+  },
+  {
+   "id": "m-place-d02",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "round",
+   "prompt": "Round 6.849 to one decimal place.",
+   "type": "numeric",
+   "answer": 6.8,
+   "mistakes": {
+    "6.9": "Rounded up because of the 9 instead of looking at the hundredths digit",
+    "6.85": "Rounded to two decimal places"
+   },
+   "hint": "Look only at the digit in the hundredths place to decide.",
+   "explanation": "The hundredths digit is 4, which is less than 5, so round down: 6.849 → 6.8."
+  },
+  {
+   "id": "m-place-p01",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Write the number forty thousand and sixty in figures.",
+   "type": "numeric",
+   "answer": 40060,
+   "mistakes": {
+    "4060": "Missed out a zero placeholder",
+    "400060": "Added an extra zero"
+   },
+   "hint": "Forty thousand is 40 000. Then add sixty.",
+   "explanation": "40 000 + 60 = 40 060. The hundreds column is empty, so it needs a 0 placeholder."
+  },
+  {
+   "id": "m-place-p02",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Calculate 3.6 × 100.",
+   "type": "numeric",
+   "answer": 360,
+   "mistakes": {
+    "3.6": "Added zeros after the decimal point instead of moving digits",
+    "36": "Multiplied by 10 instead of 100"
+   },
+   "hint": "Multiplying by 100 moves every digit two places to the left.",
+   "explanation": "3.6 × 100 = 360. Each digit moves two places to the left."
+  },
+  {
+   "id": "m-place-p03",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Calculate 4520 ÷ 1000.",
+   "type": "numeric",
+   "answer": 4.52,
+   "mistakes": {
+    "45.2": "Divided by 100 instead of 1000",
+    "452": "Divided by 10"
+   },
+   "hint": "Dividing by 1000 moves every digit three places to the right.",
+   "explanation": "4520 ÷ 1000 = 4.52."
+  },
+  {
+   "id": "m-place-p04",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "compare",
+   "prompt": "Which of these decimals is the largest?",
+   "type": "mcq",
+   "options": [
+    "0.7",
+    "0.609",
+    "0.69",
+    "0.65"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "1": "Thought more digits means a bigger number",
+    "2": "Compared 69 with 7 instead of comparing tenths first"
+   },
+   "hint": "Compare the tenths digit first, then hundredths.",
+   "explanation": "0.7 has 7 tenths; the others have only 6 tenths, so 0.7 is largest."
+  },
+  {
+   "id": "m-place-p05",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The temperature at night was −6 °C. By midday it had risen by 11 degrees. What was the midday temperature?",
+   "type": "numeric",
+   "answer": 5,
+   "unit": "°C",
+   "mistakes": {
+    "-17": "Moved the wrong way on the number line",
+    "17": "Added 6 and 11 ignoring the negative sign",
+    "-5": "Got the right size but the wrong sign"
+   },
+   "hint": "Picture a thermometer: start at −6 and count up 11.",
+   "explanation": "From −6 up to 0 is 6 degrees. 11 − 6 = 5 more degrees above zero, so 5 °C."
+  },
+  {
+   "id": "m-place-p06",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "round",
+   "prompt": "Round 248 517 to the nearest thousand.",
+   "type": "numeric",
+   "answer": 249000,
+   "mistakes": {
+    "248000": "Rounded down — the hundreds digit 5 means round up",
+    "250000": "Rounded to the nearest ten thousand"
+   },
+   "hint": "Look at the hundreds digit.",
+   "explanation": "The hundreds digit is 5, so round the thousands up: 248 517 → 249 000."
+  },
+  {
+   "id": "m-place-p07",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Ali says “3.45 is bigger than 3.5 because 45 is bigger than 5.” Which statement explains his mistake?",
+   "type": "mcq",
+   "options": [
+    "3.45 and 3.5 are equal because they both start with 3",
+    "He is correct because 3.45 has more digits",
+    "He should have rounded both numbers to the nearest whole number first",
+    "He compared 45 hundredths with 5 tenths; 3.5 = 3.50, which is bigger than 3.45"
+   ],
+   "answer": 3,
+   "hint": "Write 3.5 with two decimal places.",
+   "explanation": "3.5 = 3.50. Comparing tenths: 5 tenths > 4 tenths, so 3.5 > 3.45."
+  },
+  {
+   "id": "m-place-p08",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "write",
+   "prompt": "A number rounded to the nearest 10 is 350. What is the smallest whole number it could be?",
+   "type": "numeric",
+   "answer": 345,
+   "mistakes": {
+    "340": "Forgot that 340 rounds to 340",
+    "346": "Did not realise 345 rounds up to 350",
+    "355": "Gave a number that rounds to 360"
+   },
+   "hint": "Which numbers round up to 350, and which round down to 350?",
+   "explanation": "Numbers from 345 to 354 round to 350. The smallest is 345."
+  },
+  {
+   "id": "m-place-p09",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "Write these in order from smallest to largest: −3, 2, −8, 0. Type them separated by commas.",
+   "type": "text",
+   "answer": [
+    "-8, -3, 0, 2",
+    "−8, −3, 0, 2",
+    "-8,-3,0,2",
+    "−8,−3,0,2"
+   ],
+   "hint": "On a number line, numbers further left are smaller.",
+   "explanation": "−8 is furthest left, then −3, then 0, then 2."
+  },
+  {
+   "id": "m-place-x01",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What is the value of the digit 4 in 18.743?",
+   "type": "mcq",
+   "options": [
+    "4 tenths",
+    "4 thousandths",
+    "4 hundredths",
+    "4 ones"
+   ],
+   "answer": 2,
+   "hint": "After the decimal point: tenths, hundredths, thousandths.",
+   "explanation": "In 18.743 the digits after the point are 7 tenths, 4 hundredths, 3 thousandths."
+  },
+  {
+   "id": "m-place-x02",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A box holds 1000 paper clips. Each clip weighs 0.45 g. What is the total mass of the paper clips in grams?",
+   "type": "numeric",
+   "answer": 450,
+   "unit": "g",
+   "hint": "Multiply by 1000.",
+   "explanation": "0.45 × 1000 = 450 g."
+  },
+  {
+   "id": "m-place-x03",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The temperature in a freezer is −18 °C. The kitchen is 22 °C. What is the difference in temperature?",
+   "type": "numeric",
+   "answer": 40,
+   "unit": "°C",
+   "mistakes": {
+    "4": "Subtracted 18 from 22 without considering the negative"
+   },
+   "hint": "Count from −18 up to 0, then from 0 up to 22.",
+   "explanation": "18 + 22 = 40 degrees."
+  },
+  {
+   "id": "m-place-x04",
+   "subject": "maths",
+   "topic": "m-place",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Sara rounds 7.96 to one decimal place and writes 7.10. What should the answer be?",
+   "type": "mcq",
+   "options": [
+    "8.1",
+    "8.0",
+    "7.9",
+    "7.10"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "2": "Truncated instead of rounding",
+    "3": "Treated 9 + 1 as 10 tenths without regrouping"
+   },
+   "hint": "9 tenths + 1 tenth makes a whole one.",
+   "explanation": "The hundredths digit is 6, so round the tenths up: 9 tenths + 1 tenth = 10 tenths = 1 whole. 7.96 → 8.0."
+  },
+  {
+   "id": "m-calc-d01",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Calculate 6 + 4 × 5.",
+   "type": "numeric",
+   "answer": 26,
+   "mistakes": {
+    "50": "Worked left to right instead of multiplying first"
+   },
+   "hint": "Multiplication comes before addition.",
+   "explanation": "4 × 5 = 20 first, then 6 + 20 = 26."
+  },
+  {
+   "id": "m-calc-d02",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 346 × 27.",
+   "type": "numeric",
+   "answer": 9342,
+   "mistakes": {
+    "6927": "Forgot to multiply 346 by 7",
+    "3114": "Only multiplied by 9 or misaligned columns"
+   },
+   "hint": "Split it: 346 × 20 and 346 × 7, then add.",
+   "explanation": "346 × 27 = 9342.",
+   "steps": [
+    "346 × 20 = 6920",
+    "346 × 7 = 2422",
+    "6920 + 2422 = 9342"
+   ]
+  },
+  {
+   "id": "m-calc-p01",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Calculate (15 − 3) × 4.",
+   "type": "numeric",
+   "answer": 48,
+   "mistakes": {
+    "3": "Ignored the brackets: 15 − 12"
+   },
+   "hint": "Brackets first.",
+   "explanation": "15 − 3 = 12, then 12 × 4 = 48."
+  },
+  {
+   "id": "m-calc-p02",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Which of these numbers is a prime number?",
+   "type": "mcq",
+   "options": [
+    "29",
+    "21",
+    "27",
+    "39"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "2": "27 = 3 × 9",
+    "1": "21 = 3 × 7",
+    "3": "39 = 3 × 13"
+   },
+   "hint": "A prime has exactly two factors: 1 and itself.",
+   "explanation": "29 can only be divided by 1 and 29. The others are all multiples of 3."
+  },
+  {
+   "id": "m-calc-p03",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "What is 9 squared?",
+   "type": "numeric",
+   "answer": 81,
+   "mistakes": {
+    "18": "Multiplied by 2 instead of by itself"
+   },
+   "hint": "Squared means multiplied by itself.",
+   "explanation": "9² = 9 × 9 = 81."
+  },
+  {
+   "id": "m-calc-p04",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 1458 ÷ 6.",
+   "type": "numeric",
+   "answer": 243,
+   "hint": "Use short division: how many 6s in 14, then carry the remainder.",
+   "explanation": "1458 ÷ 6 = 243.",
+   "steps": [
+    "14 ÷ 6 = 2 remainder 2",
+    "25 ÷ 6 = 4 remainder 1",
+    "18 ÷ 6 = 3",
+    "Answer: 243"
+   ]
+  },
+  {
+   "id": "m-calc-p05",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "List all the common factors of 18 and 24. Type them separated by commas, smallest first.",
+   "type": "text",
+   "answer": [
+    "1, 2, 3, 6",
+    "1,2,3,6"
+   ],
+   "hint": "List the factors of each number, then find the ones in both lists.",
+   "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. Common: 1, 2, 3, 6."
+  },
+  {
+   "id": "m-calc-p06",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "estimate",
+   "prompt": "Which is the best estimate for 49 × 61?",
+   "type": "mcq",
+   "options": [
+    "2400",
+    "3000",
+    "3600",
+    "300"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "3": "Lost a zero when estimating"
+   },
+   "hint": "Round each number to the nearest 10.",
+   "explanation": "49 ≈ 50 and 61 ≈ 60. 50 × 60 = 3000."
+  },
+  {
+   "id": "m-calc-p07",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Without calculating exactly, how do you know that 298 × 4 cannot be 1292?",
+   "type": "mcq",
+   "options": [
+    "Because 298 is not a multiple of 4",
+    "Because you cannot multiply by 4 mentally",
+    "300 × 4 = 1200, and 298 × 4 must be a little less than 1200",
+    "Because 1292 is an odd number"
+   ],
+   "answer": 2,
+   "hint": "Round 298 to a friendly number.",
+   "explanation": "298 is less than 300, so 298 × 4 < 1200. The exact answer is 1192."
+  },
+  {
+   "id": "m-calc-p08",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Find the smallest number that is a multiple of both 6 and 8.",
+   "type": "numeric",
+   "answer": 24,
+   "mistakes": {
+    "48": "Multiplied 6 × 8 — that is a common multiple but not the smallest",
+    "2": "Found a common factor instead of a multiple"
+   },
+   "hint": "List multiples of 8 and check which is also a multiple of 6.",
+   "explanation": "Multiples of 8: 8, 16, 24 … 24 is the first that is also a multiple of 6."
+  },
+  {
+   "id": "m-calc-p09",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "What is 4 cubed?",
+   "type": "numeric",
+   "answer": 64,
+   "mistakes": {
+    "12": "Multiplied by 3 instead of using 4 × 4 × 4",
+    "16": "Squared instead of cubed"
+   },
+   "hint": "Cubed means three lots multiplied: 4 × 4 × 4.",
+   "explanation": "4 × 4 = 16, 16 × 4 = 64."
+  },
+  {
+   "id": "m-calc-p10",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Calculate 36 ÷ (2 + 4) × 3.",
+   "type": "numeric",
+   "answer": 18,
+   "mistakes": {
+    "2": "Multiplied before dividing; division and multiplication go left to right"
+   },
+   "hint": "Brackets first, then divide and multiply from left to right.",
+   "explanation": "2 + 4 = 6. 36 ÷ 6 = 6. 6 × 3 = 18."
+  },
+  {
+   "id": "m-calc-x01",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Calculate 5004 − 1867.",
+   "type": "numeric",
+   "answer": 3137,
+   "hint": "Exchange across the zeros carefully.",
+   "explanation": "5004 − 1867 = 3137."
+  },
+  {
+   "id": "m-calc-x02",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 23 × 148.",
+   "type": "numeric",
+   "answer": 3404,
+   "hint": "148 × 20 + 148 × 3.",
+   "explanation": "2960 + 444 = 3404."
+  },
+  {
+   "id": "m-calc-x03",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "Which number is both a square number and a cube number?",
+   "type": "mcq",
+   "options": [
+    "36",
+    "16",
+    "64",
+    "27"
+   ],
+   "answer": 2,
+   "hint": "Check 8², 4³ …",
+   "explanation": "64 = 8 × 8 and 64 = 4 × 4 × 4."
+  },
+  {
+   "id": "m-calc-x04",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "write",
+   "prompt": "Where should brackets go to make this true? 3 + 5 × 2 − 1 = 15",
+   "type": "mcq",
+   "options": [
+    "3 + (5 × 2 − 1)",
+    "3 + 5 × (2 − 1)",
+    "(3 + 5) × 2 − 1",
+    "(3 + 5 × 2) − 1"
+   ],
+   "answer": 2,
+   "hint": "Try each one: work out the brackets first.",
+   "explanation": "(3 + 5) × 2 − 1 = 8 × 2 − 1 = 16 − 1 = 15."
+  },
+  {
+   "id": "m-calc-x05",
+   "subject": "maths",
+   "topic": "m-calc",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 2184 ÷ 7.",
+   "type": "numeric",
+   "answer": 312,
+   "hint": "Short division.",
+   "explanation": "21 ÷ 7 = 3, 8 ÷ 7 = 1 r1, 14 ÷ 7 = 2. Answer 312."
+  },
+  {
+   "id": "m-frac-d01",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What fraction of this bar is shaded? Give your answer in its simplest form.",
+   "type": "text",
+   "answer": [
+    "3/4"
+   ],
+   "mistakes": {
+    "6/8": "Correct fraction but not simplified",
+    "2/8": "Counted the unshaded parts"
+   },
+   "hint": "Count shaded parts out of total parts, then simplify.",
+   "explanation": "6 out of 8 parts are shaded. 6/8 = 3/4 (divide top and bottom by 2).",
+   "stimulus": {
+    "type": "svg",
+    "svg": "<svg viewBox=\"0 0 240 40\" xmlns=\"http://www.w3.org/2000/svg\"><rect x=\"2.0\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#9cc3f0\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"31.5\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#9cc3f0\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"61.0\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#9cc3f0\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"90.5\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#9cc3f0\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"120.0\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#9cc3f0\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"149.5\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#9cc3f0\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"179.0\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#fff\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/><rect x=\"208.5\" y=\"4\" width=\"29.5\" height=\"32\" fill=\"#fff\" stroke=\"#1d2b44\" stroke-width=\"1.5\"/></svg>"
+   }
+  },
+  {
+   "id": "m-frac-d02",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 2/3 + 1/4. Give your answer as a fraction.",
+   "type": "text",
+   "answer": [
+    "11/12"
+   ],
+   "mistakes": {
+    "3/7": "Added numerators and denominators separately"
+   },
+   "hint": "Use a common denominator of 12.",
+   "explanation": "2/3 + 1/4 = 11/12.",
+   "steps": [
+    "2/3 = 8/12",
+    "1/4 = 3/12",
+    "8/12 + 3/12 = 11/12"
+   ]
+  },
+  {
+   "id": "m-frac-p01",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Simplify 12/18 fully.",
+   "type": "text",
+   "answer": [
+    "2/3"
+   ],
+   "mistakes": {
+    "6/9": "Simplified, but not fully",
+    "4/6": "Simplified, but not fully"
+   },
+   "hint": "Find the highest common factor of 12 and 18.",
+   "explanation": "HCF of 12 and 18 is 6. 12 ÷ 6 = 2, 18 ÷ 6 = 3 → 2/3."
+  },
+  {
+   "id": "m-frac-p02",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Find 3/5 of 40.",
+   "type": "numeric",
+   "answer": 24,
+   "mistakes": {
+    "8": "Found 1/5 but did not multiply by 3",
+    "120": "Multiplied by 3 without dividing by 5"
+   },
+   "hint": "Find 1/5 first, then multiply by 3.",
+   "explanation": "40 ÷ 5 = 8. 8 × 3 = 24."
+  },
+  {
+   "id": "m-frac-p03",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "compare",
+   "prompt": "Which fraction is greater than 1/2?",
+   "type": "mcq",
+   "options": [
+    "5/8",
+    "4/9",
+    "3/7",
+    "2/5"
+   ],
+   "answer": 0,
+   "hint": "Compare each numerator with half of its denominator.",
+   "explanation": "Half of 8 is 4, and 5 > 4, so 5/8 > 1/2. The others are all less than half."
+  },
+  {
+   "id": "m-frac-p04",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 5/6 − 1/3. Give your answer in its simplest form.",
+   "type": "text",
+   "answer": [
+    "1/2"
+   ],
+   "mistakes": {
+    "4/3": "Subtracted numerators and denominators separately",
+    "3/6": "Correct but not simplified"
+   },
+   "hint": "1/3 = 2/6.",
+   "explanation": "5/6 − 2/6 = 3/6 = 1/2."
+  },
+  {
+   "id": "m-frac-p05",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "Write 17/5 as a mixed number.",
+   "type": "text",
+   "answer": [
+    "3 2/5"
+   ],
+   "mistakes": {
+    "3 1/5": "Remainder wrong: 17 − 15 = 2"
+   },
+   "hint": "How many whole 5s go into 17?",
+   "explanation": "17 ÷ 5 = 3 remainder 2, so 17/5 = 3 2/5."
+  },
+  {
+   "id": "m-frac-p06",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 3/8 × 4. Give your answer as a mixed number in simplest form.",
+   "type": "text",
+   "answer": [
+    "1 1/2"
+   ],
+   "mistakes": {
+    "12/32": "Multiplied the denominator as well",
+    "12/8": "Correct but not simplified"
+   },
+   "hint": "Multiply the numerator by 4.",
+   "explanation": "3/8 × 4 = 12/8 = 1 4/8 = 1 1/2."
+  },
+  {
+   "id": "m-frac-p07",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Calculate 2/5 ÷ 2. Give your answer as a fraction.",
+   "type": "text",
+   "answer": [
+    "1/5"
+   ],
+   "mistakes": {
+    "4/5": "Multiplied instead of divided",
+    "2/10": "Correct but not simplified"
+   },
+   "hint": "Halving 2 fifths…",
+   "explanation": "Half of 2 fifths is 1 fifth: 2/5 ÷ 2 = 1/5."
+  },
+  {
+   "id": "m-frac-p08",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Maya ate 3/8 of a pizza and Leo ate 1/4 of the same pizza. Which statement is true?",
+   "type": "mcq",
+   "options": [
+    "Together they ate 4/12 of the pizza",
+    "Together they ate 5/8, so 3/8 is left",
+    "Leo ate more because 4 is less than 8",
+    "Together they ate 4/8, so half is left"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "0": "Added numerators and denominators",
+    "2": "Compared denominators only"
+   },
+   "hint": "Write 1/4 in eighths.",
+   "explanation": "1/4 = 2/8. 3/8 + 2/8 = 5/8 eaten; 8/8 − 5/8 = 3/8 left."
+  },
+  {
+   "id": "m-frac-p09",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A ribbon is 2 1/2 m long. 3/4 m is cut off. How long is the remaining ribbon in metres? Give a mixed number.",
+   "type": "text",
+   "answer": [
+    "1 3/4"
+   ],
+   "hint": "Change to quarters: 2 1/2 = 10/4.",
+   "explanation": "10/4 − 3/4 = 7/4 = 1 3/4 m."
+  },
+  {
+   "id": "m-frac-x01",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Which fraction is equivalent to 3/4?",
+   "type": "mcq",
+   "options": [
+    "6/9",
+    "9/12",
+    "4/5",
+    "3/8"
+   ],
+   "answer": 1,
+   "hint": "Multiply top and bottom by the same number.",
+   "explanation": "3 × 3 = 9 and 4 × 3 = 12, so 3/4 = 9/12."
+  },
+  {
+   "id": "m-frac-x02",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 1/2 + 2/5. Give your answer as a fraction.",
+   "type": "text",
+   "answer": [
+    "9/10"
+   ],
+   "hint": "Common denominator 10.",
+   "explanation": "5/10 + 4/10 = 9/10."
+  },
+  {
+   "id": "m-frac-x03",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A class has 32 students. 5/8 of them walk to school. How many walk?",
+   "type": "numeric",
+   "answer": 20,
+   "hint": "32 ÷ 8 × 5.",
+   "explanation": "32 ÷ 8 = 4, 4 × 5 = 20."
+  },
+  {
+   "id": "m-frac-x04",
+   "subject": "maths",
+   "topic": "m-frac",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "write",
+   "prompt": "Order these from smallest to largest: 2/3, 3/5, 7/10. Type them separated by commas.",
+   "type": "text",
+   "answer": [
+    "3/5, 2/3, 7/10",
+    "3/5,2/3,7/10"
+   ],
+   "hint": "Convert to thirtieths, or to decimals.",
+   "explanation": "3/5 = 0.6, 2/3 ≈ 0.67, 7/10 = 0.7."
+  },
+  {
+   "id": "m-decpct-d01",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Write 0.35 as a percentage.",
+   "type": "numeric",
+   "answer": 35,
+   "unit": "%",
+   "display": "35%",
+   "mistakes": {
+    "3.5": "Moved the decimal point only one place",
+    "0.35": "Did not convert"
+   },
+   "hint": "Percent means “out of 100”.",
+   "explanation": "0.35 = 35/100 = 35%."
+  },
+  {
+   "id": "m-decpct-d02",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Find 15% of 80.",
+   "type": "numeric",
+   "answer": 12,
+   "mistakes": {
+    "8": "Found 10% only",
+    "4": "Found 5% only",
+    "65": "Subtracted 15 from 80"
+   },
+   "hint": "Find 10% and 5%, then add.",
+   "explanation": "15% of 80 = 12.",
+   "steps": [
+    "10% of 80 = 8",
+    "5% of 80 = 4",
+    "8 + 4 = 12"
+   ]
+  },
+  {
+   "id": "m-decpct-p01",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Write 3/5 as a decimal.",
+   "type": "numeric",
+   "answer": 0.6,
+   "mistakes": {
+    "3.5": "Wrote the digits next to each other",
+    "0.35": "Wrote the digits next to each other"
+   },
+   "hint": "3/5 = 6/10.",
+   "explanation": "3/5 = 6/10 = 0.6."
+  },
+  {
+   "id": "m-decpct-p02",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Write 40% as a fraction in its simplest form.",
+   "type": "text",
+   "answer": [
+    "2/5"
+   ],
+   "mistakes": {
+    "40/100": "Correct but not simplified",
+    "4/10": "Simplified, but not fully"
+   },
+   "hint": "40% = 40/100. Then simplify.",
+   "explanation": "40/100 = 2/5."
+  },
+  {
+   "id": "m-decpct-p03",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 4.7 + 12.85.",
+   "type": "numeric",
+   "answer": 17.55,
+   "mistakes": {
+    "13.32": "Lined up the digits instead of the decimal points",
+    "59.85": "Misaligned place values"
+   },
+   "hint": "Line up the decimal points: 4.70 + 12.85.",
+   "explanation": "4.70 + 12.85 = 17.55."
+  },
+  {
+   "id": "m-decpct-p04",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 9 − 3.46.",
+   "type": "numeric",
+   "answer": 5.54,
+   "mistakes": {
+    "6.46": "Subtracted the smaller digit from the larger in each column"
+   },
+   "hint": "Write 9 as 9.00.",
+   "explanation": "9.00 − 3.46 = 5.54."
+  },
+  {
+   "id": "m-decpct-p05",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 2.4 × 3.",
+   "type": "numeric",
+   "answer": 7.2,
+   "mistakes": {
+    "72": "Lost the decimal point",
+    "6.12": "Multiplied the parts separately and joined them"
+   },
+   "hint": "24 × 3 = 72, then place the decimal point.",
+   "explanation": "2.4 × 3 = 7.2."
+  },
+  {
+   "id": "m-decpct-p06",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A jacket costs $60. It is reduced by 25% in a sale. What is the sale price?",
+   "type": "numeric",
+   "answer": 45,
+   "unit": "$",
+   "display": "$45",
+   "mistakes": {
+    "15": "Found the discount, not the new price",
+    "35": "Subtracted 25 instead of 25%"
+   },
+   "hint": "25% is a quarter.",
+   "explanation": "25% of 60 = 15. 60 − 15 = $45."
+  },
+  {
+   "id": "m-decpct-p07",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "compare",
+   "prompt": "Which is largest?",
+   "type": "mcq",
+   "options": [
+    "2/3",
+    "0.7",
+    "0.67",
+    "65%"
+   ],
+   "answer": 1,
+   "hint": "Convert them all to decimals.",
+   "explanation": "65% = 0.65, 2/3 ≈ 0.667, 0.67, and 0.7. The largest is 0.7."
+  },
+  {
+   "id": "m-decpct-p08",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "In a survey of 200 people, 36% said blue was their favourite colour. How many people is that?",
+   "type": "numeric",
+   "answer": 72,
+   "hint": "1% of 200 is 2.",
+   "explanation": "36 × 2 = 72 people."
+  },
+  {
+   "id": "m-decpct-p09",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Calculate 7.2 ÷ 4.",
+   "type": "numeric",
+   "answer": 1.8,
+   "hint": "72 ÷ 4 = 18.",
+   "explanation": "7.2 ÷ 4 = 1.8."
+  },
+  {
+   "id": "m-decpct-x01",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Write 7% as a decimal.",
+   "type": "numeric",
+   "answer": 0.07,
+   "mistakes": {
+    "0.7": "7% is 7 hundredths, not 7 tenths"
+   },
+   "hint": "7 out of 100.",
+   "explanation": "7% = 7/100 = 0.07."
+  },
+  {
+   "id": "m-decpct-x02",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Find 30% of 250.",
+   "type": "numeric",
+   "answer": 75,
+   "hint": "10% of 250 = 25.",
+   "explanation": "25 × 3 = 75."
+  },
+  {
+   "id": "m-decpct-x03",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Three books cost $4.85, $7.50 and $3.25. What is the total cost in dollars?",
+   "type": "numeric",
+   "answer": 15.6,
+   "unit": "$",
+   "display": "$15.60",
+   "hint": "Line up the decimal points.",
+   "explanation": "4.85 + 7.50 + 3.25 = 15.60."
+  },
+  {
+   "id": "m-decpct-x04",
+   "subject": "maths",
+   "topic": "m-decpct",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A shop says “50% off, then a further 50% off the new price.” Tom says that makes the item free. Which is correct?",
+   "type": "mcq",
+   "options": [
+    "The final price is 50% of the original",
+    "The final price is 25% of the original",
+    "Tom is right: 50% + 50% = 100%",
+    "The final price is 0% of the original"
+   ],
+   "answer": 1,
+   "hint": "Try it with a price of $100.",
+   "explanation": "$100 → $50 → $25. The item costs 25% of the original price."
+  },
+  {
+   "id": "m-ratio-d01",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Share 35 sweets between Ana and Ben in the ratio 3 : 4. How many sweets does Ben get?",
+   "type": "numeric",
+   "answer": 20,
+   "mistakes": {
+    "15": "Gave Ana’s share",
+    "4": "Gave one part only",
+    "5": "Found one part but did not multiply"
+   },
+   "hint": "How many parts altogether? 3 + 4.",
+   "explanation": "Ben gets 20 sweets.",
+   "steps": [
+    "3 + 4 = 7 parts",
+    "35 ÷ 7 = 5 per part",
+    "Ben: 4 × 5 = 20"
+   ]
+  },
+  {
+   "id": "m-ratio-d02",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "4 pens cost $6. How much do 10 pens cost?",
+   "type": "numeric",
+   "answer": 15,
+   "unit": "$",
+   "display": "$15",
+   "mistakes": {
+    "12": "Added 6 to 6 without using a unit price",
+    "24": "Multiplied 6 × 4"
+   },
+   "hint": "Find the cost of 1 pen, or 2 pens.",
+   "explanation": "2 pens cost $3, so 10 pens cost 5 × $3 = $15."
+  },
+  {
+   "id": "m-ratio-p01",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "In a bag there are 6 red and 9 blue beads. Write the ratio red : blue in its simplest form.",
+   "type": "text",
+   "answer": [
+    "2:3",
+    "2 : 3"
+   ],
+   "mistakes": {
+    "6:9": "Correct but not simplified",
+    "3:2": "Ratio is the wrong way round"
+   },
+   "hint": "Divide both numbers by their highest common factor.",
+   "explanation": "6 : 9 = 2 : 3 (divide both by 3)."
+  },
+  {
+   "id": "m-ratio-p02",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A recipe uses 200 g of flour for 8 biscuits. How much flour is needed for 20 biscuits?",
+   "type": "numeric",
+   "answer": 500,
+   "unit": "g",
+   "hint": "Find the flour for 4 biscuits first.",
+   "explanation": "8 biscuits → 200 g, so 4 → 100 g, and 20 → 500 g."
+  },
+  {
+   "id": "m-ratio-p03",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "For every 2 boys in a club there are 3 girls. There are 12 boys. How many girls are there?",
+   "type": "numeric",
+   "answer": 18,
+   "mistakes": {
+    "13": "Added 1 instead of scaling",
+    "8": "Scaled the wrong way"
+   },
+   "hint": "12 boys is 6 lots of 2.",
+   "explanation": "12 ÷ 2 = 6, and 6 × 3 = 18 girls."
+  },
+  {
+   "id": "m-ratio-p04",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Paint is mixed using blue and yellow in the ratio 1 : 4. How many litres of yellow are in 15 litres of the mix?",
+   "type": "numeric",
+   "answer": 12,
+   "unit": "litres",
+   "mistakes": {
+    "3": "Found one part only",
+    "4": "Used the ratio number, not the amount"
+   },
+   "hint": "1 + 4 = 5 parts.",
+   "explanation": "15 ÷ 5 = 3 litres per part; yellow = 4 × 3 = 12 litres."
+  },
+  {
+   "id": "m-ratio-p05",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "In class A the ratio of boys to girls is 1 : 2. In class B it is 2 : 3. Which class has the greater fraction of girls?",
+   "type": "mcq",
+   "options": [
+    "Class B, because it has more parts",
+    "Class A, because 2/3 of the class are girls and 2/3 > 3/5",
+    "They are the same",
+    "Class B, because 3 is bigger than 2"
+   ],
+   "answer": 1,
+   "hint": "Turn each ratio into a fraction of the whole class.",
+   "explanation": "Class A: 2 out of 3 = 2/3 ≈ 0.67. Class B: 3 out of 5 = 0.6. Class A has a greater fraction of girls."
+  },
+  {
+   "id": "m-ratio-p06",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Sam and Priya share some money in the ratio 2 : 5. Priya gets $45. How much money was there in total?",
+   "type": "numeric",
+   "answer": 63,
+   "unit": "$",
+   "display": "$63",
+   "mistakes": {
+    "18": "Found Sam’s share only",
+    "45": "Gave Priya’s share"
+   },
+   "hint": "5 parts = $45, so one part = ?",
+   "explanation": "One part = 45 ÷ 5 = $9. Total = 7 parts = $63."
+  },
+  {
+   "id": "m-ratio-p07",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A car travels 150 km in 3 hours at a steady speed. How far does it travel in 5 hours?",
+   "type": "numeric",
+   "answer": 250,
+   "unit": "km",
+   "hint": "Find the distance in 1 hour.",
+   "explanation": "150 ÷ 3 = 50 km per hour; 50 × 5 = 250 km."
+  },
+  {
+   "id": "m-ratio-x01",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Write the ratio 15 : 25 in its simplest form.",
+   "type": "text",
+   "answer": [
+    "3:5",
+    "3 : 5"
+   ],
+   "hint": "Divide both by 5.",
+   "explanation": "15 : 25 = 3 : 5."
+  },
+  {
+   "id": "m-ratio-x02",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Share $56 in the ratio 3 : 5. What is the larger share in dollars?",
+   "type": "numeric",
+   "answer": 35,
+   "unit": "$",
+   "display": "$35",
+   "hint": "8 parts altogether.",
+   "explanation": "56 ÷ 8 = 7; 5 × 7 = $35."
+  },
+  {
+   "id": "m-ratio-x03",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "6 identical bottles hold 4.5 litres altogether. How many litres do 10 bottles hold?",
+   "type": "numeric",
+   "answer": 7.5,
+   "unit": "litres",
+   "hint": "One bottle holds 4.5 ÷ 6.",
+   "explanation": "One bottle: 0.75 litres. 10 bottles: 7.5 litres."
+  },
+  {
+   "id": "m-ratio-x04",
+   "subject": "maths",
+   "topic": "m-ratio",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Orange squash is made with 1 part squash to 6 parts water. Jo uses 420 ml of water. How much squash does she need in ml?",
+   "type": "numeric",
+   "answer": 70,
+   "unit": "ml",
+   "hint": "420 ÷ 6.",
+   "explanation": "420 ÷ 6 = 70 ml."
+  },
+  {
+   "id": "m-seq-d01",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What is the next number in the sequence 7, 11, 15, 19, …?",
+   "type": "numeric",
+   "answer": 23,
+   "mistakes": {
+    "21": "Added 2 instead of 4"
+   },
+   "hint": "What is added each time?",
+   "explanation": "The sequence goes up by 4: 19 + 4 = 23."
+  },
+  {
+   "id": "m-seq-d02",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The rule for a sequence is “multiply the position number by 3, then add 2.” What is the 10th term?",
+   "type": "numeric",
+   "answer": 32,
+   "mistakes": {
+    "50": "Added 2 before multiplying",
+    "30": "Forgot to add 2"
+   },
+   "hint": "Position 10: 10 × 3 + 2.",
+   "explanation": "10 × 3 = 30, 30 + 2 = 32."
+  },
+  {
+   "id": "m-seq-p01",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What is the next number: 50, 44, 38, 32, …?",
+   "type": "numeric",
+   "answer": 26,
+   "hint": "How much is subtracted each time?",
+   "explanation": "Subtract 6 each time: 32 − 6 = 26."
+  },
+  {
+   "id": "m-seq-p02",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Find the missing number: 3, 6, 12, __, 48",
+   "type": "numeric",
+   "answer": 24,
+   "mistakes": {
+    "18": "Assumed it adds 6 each time"
+   },
+   "hint": "Is it adding or multiplying?",
+   "explanation": "Each term doubles: 12 × 2 = 24, and 24 × 2 = 48."
+  },
+  {
+   "id": "m-seq-p03",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "A sequence starts at −5 and goes up by 3 each time. What is the 4th term?",
+   "type": "numeric",
+   "answer": 4,
+   "mistakes": {
+    "7": "Counted one term too many",
+    "1": "Counted one term too few"
+   },
+   "hint": "Write the terms: −5, −2, …",
+   "explanation": "−5, −2, 1, 4. The 4th term is 4."
+  },
+  {
+   "id": "m-seq-p04",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "If n = 6, what is the value of 4n − 5?",
+   "type": "numeric",
+   "answer": 19,
+   "mistakes": {
+    "41": "Treated 4n as 46",
+    "14": "Subtracted before multiplying"
+   },
+   "hint": "4n means 4 × n.",
+   "explanation": "4 × 6 = 24, 24 − 5 = 19."
+  },
+  {
+   "id": "m-seq-p05",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A taxi charges $3 plus $2 for every kilometre. Cost = 3 + 2k. How much is a 9 km journey?",
+   "type": "numeric",
+   "answer": 21,
+   "unit": "$",
+   "display": "$21",
+   "mistakes": {
+    "45": "Added 3 + 2 first, then multiplied"
+   },
+   "hint": "Replace k with 9.",
+   "explanation": "3 + 2 × 9 = 3 + 18 = $21."
+  },
+  {
+   "id": "m-seq-p06",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Pattern: 1 square uses 4 matchsticks, 2 squares in a row use 7, 3 squares use 10. Which rule gives the number of matchsticks for n squares?",
+   "type": "mcq",
+   "options": [
+    "4n",
+    "3n + 1",
+    "n + 3",
+    "3n + 4"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "0": "Did not notice shared sides between squares"
+   },
+   "hint": "The number goes up by 3 each time, so start with 3n.",
+   "explanation": "Goes up by 3 → 3n. When n = 1, 3 × 1 = 3, so add 1: 3n + 1."
+  },
+  {
+   "id": "m-seq-p07",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Using the rule 3n + 1, how many matchsticks are needed for 20 squares in a row?",
+   "type": "numeric",
+   "answer": 61,
+   "hint": "Substitute n = 20.",
+   "explanation": "3 × 20 + 1 = 61."
+  },
+  {
+   "id": "m-seq-p08",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "The sequence 5, 9, 13, 17 … continues. Will 100 be in the sequence?",
+   "type": "mcq",
+   "options": [
+    "No — because 100 is too big",
+    "Yes — because 100 is even",
+    "Yes — the sequence goes on for ever, so it reaches every number",
+    "No — every term is 1 more than a multiple of 4, and 100 is a multiple of 4"
+   ],
+   "answer": 3,
+   "hint": "Look at the terms when you divide by 4.",
+   "explanation": "Terms are 4n + 1: 5, 9, 13 … each leaves remainder 1 when divided by 4. 100 leaves remainder 0, so it is not in the sequence."
+  },
+  {
+   "id": "m-seq-x01",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What is the next term: 2.5, 3.0, 3.5, 4.0, …?",
+   "type": "numeric",
+   "answer": 4.5,
+   "hint": "Add 0.5 each time.",
+   "explanation": "4.0 + 0.5 = 4.5."
+  },
+  {
+   "id": "m-seq-x02",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The nth term of a sequence is 5n − 2. What is the 8th term?",
+   "type": "numeric",
+   "answer": 38,
+   "hint": "5 × 8 − 2.",
+   "explanation": "40 − 2 = 38."
+  },
+  {
+   "id": "m-seq-x03",
+   "subject": "maths",
+   "topic": "m-seq",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "write",
+   "prompt": "The first term of a sequence is 4 and the term-to-term rule is “double then subtract 1”. What is the third term?",
+   "type": "numeric",
+   "answer": 13,
+   "hint": "4 → ? → ?",
+   "explanation": "4 × 2 − 1 = 7; 7 × 2 − 1 = 13."
+  },
+  {
+   "id": "m-geom-d01",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Find the size of angle x in the triangle.",
+   "type": "numeric",
+   "answer": 75,
+   "unit": "°",
+   "mistakes": {
+    "105": "Added the two angles but did not subtract from 180",
+    "255": "Used 360° instead of 180°"
+   },
+   "hint": "Angles in a triangle add up to 180°.",
+   "explanation": "180 − 58 − 47 = 75°.",
+   "stimulus": {
+    "type": "svg",
+    "svg": "<svg viewBox=\"0 0 220 140\" xmlns=\"http://www.w3.org/2000/svg\"><polygon points=\"20,120 200,120 70,20\" fill=\"#eef4fb\" stroke=\"#1d2b44\" stroke-width=\"2\"/><text x=\"40\" y=\"112\" font-size=\"14\">58°</text><text x=\"160\" y=\"112\" font-size=\"14\">47°</text><text x=\"66\" y=\"48\" font-size=\"16\" font-weight=\"bold\">x</text></svg>",
+    "caption": "Not drawn to scale"
+   }
+  },
+  {
+   "id": "m-geom-d02",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "How many lines of symmetry does a regular hexagon have?",
+   "type": "numeric",
+   "answer": 6,
+   "mistakes": {
+    "3": "Counted only lines through opposite corners",
+    "2": "Counted only vertical and horizontal lines"
+   },
+   "hint": "A regular polygon has as many lines of symmetry as sides.",
+   "explanation": "A regular hexagon has 6 lines of symmetry: 3 through opposite corners and 3 through midpoints of opposite sides."
+  },
+  {
+   "id": "m-geom-p01",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "Which 3D shape has 6 faces, 12 edges and 8 vertices?",
+   "type": "mcq",
+   "options": [
+    "Square-based pyramid",
+    "Cuboid",
+    "Cylinder",
+    "Triangular prism"
+   ],
+   "answer": 1,
+   "hint": "Think of a box.",
+   "explanation": "A cuboid (like a box) has 6 rectangular faces, 12 edges and 8 vertices."
+  },
+  {
+   "id": "m-geom-p02",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "An angle measures 125°. What type of angle is it?",
+   "type": "mcq",
+   "options": [
+    "Right angle",
+    "Obtuse",
+    "Reflex",
+    "Acute"
+   ],
+   "answer": 1,
+   "hint": "Acute < 90°, obtuse between 90° and 180°.",
+   "explanation": "125° is between 90° and 180°, so it is obtuse."
+  },
+  {
+   "id": "m-geom-p03",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Angles on a straight line: one angle is 68°. What is the other angle?",
+   "type": "numeric",
+   "answer": 112,
+   "unit": "°",
+   "mistakes": {
+    "292": "Used 360° instead of 180°",
+    "22": "Used 90° instead of 180°"
+   },
+   "hint": "Angles on a straight line add to 180°.",
+   "explanation": "180 − 68 = 112°."
+  },
+  {
+   "id": "m-geom-p04",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Three angles meet at a point. Two of them are 140° and 95°. What is the third angle?",
+   "type": "numeric",
+   "answer": 125,
+   "unit": "°",
+   "hint": "Angles around a point add to 360°.",
+   "explanation": "360 − 140 − 95 = 125°."
+  },
+  {
+   "id": "m-geom-p05",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "The point (3, −2) is translated 4 squares left and 5 squares up. What are the new coordinates? Write as (x, y).",
+   "type": "text",
+   "answer": [
+    "(-1, 3)",
+    "(-1,3)",
+    "(−1, 3)",
+    "(−1,3)",
+    "-1, 3",
+    "-1,3"
+   ],
+   "mistakes": {
+    "(7, 3)": "Moved right instead of left",
+    "(-1, -7)": "Moved down instead of up"
+   },
+   "hint": "Left changes x; up changes y.",
+   "explanation": "x: 3 − 4 = −1. y: −2 + 5 = 3. New point (−1, 3)."
+  },
+  {
+   "id": "m-geom-p06",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "The point (2, 5) is reflected in the x-axis. What are the new coordinates?",
+   "type": "text",
+   "answer": [
+    "(2, -5)",
+    "(2,-5)",
+    "(2, −5)",
+    "(2,−5)",
+    "2, -5"
+   ],
+   "mistakes": {
+    "(-2, 5)": "Reflected in the y-axis instead"
+   },
+   "hint": "Reflecting in the x-axis keeps x the same and changes the sign of y.",
+   "explanation": "(2, 5) → (2, −5)."
+  },
+  {
+   "id": "m-geom-p07",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Lin says “All squares are rectangles, but not all rectangles are squares.” Is she right?",
+   "type": "mcq",
+   "options": [
+    "Yes — because squares are smaller",
+    "No — squares and rectangles are completely different shapes",
+    "Yes — a square has four right angles, so it is a special rectangle with equal sides",
+    "No — all rectangles are squares"
+   ],
+   "answer": 2,
+   "hint": "What properties make a shape a rectangle?",
+   "explanation": "A rectangle has four right angles and opposite sides equal. A square has these properties and all sides equal, so it is a special rectangle."
+  },
+  {
+   "id": "m-geom-p08",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "An isosceles triangle has one angle of 40°. The other two angles are equal. What size is each of them?",
+   "type": "numeric",
+   "answer": 70,
+   "unit": "°",
+   "mistakes": {
+    "100": "Subtracted 40 from 180 but did not halve",
+    "40": "Assumed all angles equal 40°"
+   },
+   "hint": "180 − 40, then share between two equal angles.",
+   "explanation": "180 − 40 = 140; 140 ÷ 2 = 70°."
+  },
+  {
+   "id": "m-geom-p09",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "Which quadrilateral has exactly one pair of parallel sides?",
+   "type": "mcq",
+   "options": [
+    "Trapezium",
+    "Rectangle",
+    "Rhombus",
+    "Parallelogram"
+   ],
+   "answer": 0,
+   "hint": "Parallelograms have two pairs.",
+   "explanation": "A trapezium has exactly one pair of parallel sides."
+  },
+  {
+   "id": "m-geom-p10",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "What is the size of each interior angle of a regular pentagon? (The interior angles of a pentagon add up to 540°.)",
+   "type": "numeric",
+   "answer": 108,
+   "unit": "°",
+   "hint": "Share 540° between 5 equal angles.",
+   "explanation": "540 ÷ 5 = 108°."
+  },
+  {
+   "id": "m-geom-x01",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "How many faces does a triangular prism have?",
+   "type": "numeric",
+   "answer": 5,
+   "mistakes": {
+    "6": "Confused with a cuboid"
+   },
+   "hint": "2 triangles and some rectangles.",
+   "explanation": "2 triangular faces + 3 rectangular faces = 5."
+  },
+  {
+   "id": "m-geom-x02",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Two angles in a triangle are 90° and 34°. Find the third angle.",
+   "type": "numeric",
+   "answer": 56,
+   "unit": "°",
+   "hint": "180 − 90 − 34.",
+   "explanation": "56°."
+  },
+  {
+   "id": "m-geom-x03",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "A, B and C are three corners of a square: A(1, 1), B(1, 4), C(4, 4). What are the coordinates of the fourth corner? Write as (x, y).",
+   "type": "text",
+   "answer": [
+    "(4, 1)",
+    "(4,1)",
+    "4, 1",
+    "4,1"
+   ],
+   "hint": "Sketch it.",
+   "explanation": "The square has sides of length 3; the missing corner is (4, 1)."
+  },
+  {
+   "id": "m-geom-x04",
+   "subject": "maths",
+   "topic": "m-geom",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A shape is rotated 90° clockwise, then another 180° clockwise. What single rotation, in degrees clockwise, has the same effect?",
+   "type": "numeric",
+   "answer": 270,
+   "unit": "°",
+   "hint": "Add the turns.",
+   "explanation": "90 + 180 = 270° clockwise (the same as 90° anticlockwise)."
+  },
+  {
+   "id": "m-meas-d01",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Convert 2.5 kilograms to grams.",
+   "type": "numeric",
+   "answer": 2500,
+   "unit": "g",
+   "mistakes": {
+    "250": "Multiplied by 100 instead of 1000",
+    "25": "Multiplied by 10"
+   },
+   "hint": "1 kg = 1000 g.",
+   "explanation": "2.5 × 1000 = 2500 g."
+  },
+  {
+   "id": "m-meas-d02",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A rectangle is 8 cm long and 5 cm wide. What is its area?",
+   "type": "numeric",
+   "answer": 40,
+   "unit": "cm²",
+   "mistakes": {
+    "26": "Calculated the perimeter instead",
+    "13": "Added length and width"
+   },
+   "hint": "Area of a rectangle = length × width.",
+   "explanation": "8 × 5 = 40 cm²."
+  },
+  {
+   "id": "m-meas-p01",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "How many millilitres are in 3.2 litres?",
+   "type": "numeric",
+   "answer": 3200,
+   "unit": "ml",
+   "mistakes": {
+    "320": "Multiplied by 100"
+   },
+   "hint": "1 litre = 1000 ml.",
+   "explanation": "3.2 × 1000 = 3200 ml."
+  },
+  {
+   "id": "m-meas-p02",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Convert 450 cm to metres.",
+   "type": "numeric",
+   "answer": 4.5,
+   "unit": "m",
+   "mistakes": {
+    "45": "Divided by 10 instead of 100",
+    "45000": "Multiplied instead of divided"
+   },
+   "hint": "100 cm = 1 m.",
+   "explanation": "450 ÷ 100 = 4.5 m."
+  },
+  {
+   "id": "m-meas-p03",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A square has a perimeter of 36 cm. What is its area?",
+   "type": "numeric",
+   "answer": 81,
+   "unit": "cm²",
+   "mistakes": {
+    "36": "Gave the perimeter",
+    "9": "Gave the side length"
+   },
+   "hint": "Find the side length first.",
+   "explanation": "36 ÷ 4 = 9 cm per side; area 9 × 9 = 81 cm²."
+  },
+  {
+   "id": "m-meas-p04",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Find the area of a triangle with base 10 cm and perpendicular height 6 cm.",
+   "type": "numeric",
+   "answer": 30,
+   "unit": "cm²",
+   "mistakes": {
+    "60": "Forgot to halve"
+   },
+   "hint": "Area of a triangle = ½ × base × height.",
+   "explanation": "½ × 10 × 6 = 30 cm²."
+  },
+  {
+   "id": "m-meas-p05",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Find the volume of a cuboid 5 cm by 4 cm by 3 cm.",
+   "type": "numeric",
+   "answer": 60,
+   "unit": "cm³",
+   "mistakes": {
+    "12": "Added the dimensions",
+    "47": "Calculated surface area incorrectly"
+   },
+   "hint": "Volume = length × width × height.",
+   "explanation": "5 × 4 × 3 = 60 cm³."
+  },
+  {
+   "id": "m-meas-p06",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A film starts at 18:45 and lasts 1 hour 50 minutes. At what time does it end? Write in 24-hour time, e.g. 20:35.",
+   "type": "text",
+   "answer": [
+    "20:35"
+   ],
+   "mistakes": {
+    "19:95": "Treated time as a decimal number",
+    "20:95": "Did not convert 60 minutes into an hour"
+   },
+   "hint": "Add 1 hour, then 50 minutes, crossing the hour carefully.",
+   "explanation": "18:45 + 1 h = 19:45. 19:45 + 15 min = 20:00, + 35 min = 20:35."
+  },
+  {
+   "id": "m-meas-p07",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A garden is shaped like an L. It is made of a 10 m × 4 m rectangle and a 3 m × 3 m square joined together. What is the total area?",
+   "type": "numeric",
+   "answer": 49,
+   "unit": "m²",
+   "hint": "Find each area, then add.",
+   "explanation": "10 × 4 = 40 m², 3 × 3 = 9 m². Total 49 m²."
+  },
+  {
+   "id": "m-meas-p08",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Two rectangles both have a perimeter of 20 cm. Which statement is true?",
+   "type": "mcq",
+   "options": [
+    "They can have different areas, e.g. 5 × 5 = 25 cm² and 8 × 2 = 16 cm²",
+    "Their areas must both be 20 cm²",
+    "The longer one always has the bigger area",
+    "They must have the same area"
+   ],
+   "answer": 0,
+   "hint": "Try different lengths and widths that add to 10.",
+   "explanation": "Many rectangles have a perimeter of 20 cm (length + width = 10), and their areas differ."
+  },
+  {
+   "id": "m-meas-p09",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A parcel weighs 1.35 kg. Another weighs 870 g. What is their total mass in grams?",
+   "type": "numeric",
+   "answer": 2220,
+   "unit": "g",
+   "mistakes": {
+    "871.35": "Added without converting units"
+   },
+   "hint": "Convert 1.35 kg to grams first.",
+   "explanation": "1350 g + 870 g = 2220 g."
+  },
+  {
+   "id": "m-meas-x01",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Convert 7.5 km to metres.",
+   "type": "numeric",
+   "answer": 7500,
+   "unit": "m",
+   "hint": "1 km = 1000 m.",
+   "explanation": "7.5 × 1000 = 7500 m."
+  },
+  {
+   "id": "m-meas-x02",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A rectangular field is 45 m long and 20 m wide. What is its perimeter?",
+   "type": "numeric",
+   "answer": 130,
+   "unit": "m",
+   "mistakes": {
+    "900": "Calculated area instead",
+    "65": "Added only one length and one width"
+   },
+   "hint": "Add all four sides.",
+   "explanation": "45 + 20 + 45 + 20 = 130 m."
+  },
+  {
+   "id": "m-meas-x03",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A bus leaves at 09:38 and arrives at 11:15. How many minutes is the journey?",
+   "type": "numeric",
+   "answer": 97,
+   "unit": "minutes",
+   "hint": "Count on to 10:00, then to 11:15.",
+   "explanation": "09:38 → 10:00 is 22 min; 10:00 → 11:15 is 75 min. Total 97 minutes."
+  },
+  {
+   "id": "m-meas-x04",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A cube has a volume of 64 cm³. What is the length of one edge?",
+   "type": "numeric",
+   "answer": 4,
+   "unit": "cm",
+   "hint": "Which number cubed is 64?",
+   "explanation": "4 × 4 × 4 = 64, so each edge is 4 cm."
+  },
+  {
+   "id": "m-meas-x05",
+   "subject": "maths",
+   "topic": "m-meas",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Find the area of a triangle with base 7 cm and height 9 cm.",
+   "type": "numeric",
+   "answer": 31.5,
+   "unit": "cm²",
+   "hint": "½ × base × height.",
+   "explanation": "½ × 7 × 9 = 31.5 cm²."
+  },
+  {
+   "id": "m-stats-d01",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Find the mean of 4, 7, 9, 10 and 5.",
+   "type": "numeric",
+   "answer": 7,
+   "mistakes": {
+    "35": "Found the total but did not divide",
+    "9": "Gave the median of the unordered list"
+   },
+   "hint": "Add them up and divide by how many there are.",
+   "explanation": "4 + 7 + 9 + 10 + 5 = 35; 35 ÷ 5 = 7."
+  },
+  {
+   "id": "m-stats-d02",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The bar chart shows books read by a class. How many more books were read in March than in January?",
+   "type": "numeric",
+   "answer": 14,
+   "mistakes": {
+    "50": "Added instead of subtracted"
+   },
+   "hint": "Read both bars carefully, then subtract.",
+   "explanation": "March: 32, January: 18. 32 − 18 = 14.",
+   "stimulus": {
+    "type": "bar",
+    "labels": [
+     "Jan",
+     "Feb",
+     "Mar",
+     "Apr"
+    ],
+    "values": [
+     18,
+     25,
+     32,
+     21
+    ],
+    "caption": "Books read each month",
+    "yLabel": "Books"
+   }
+  },
+  {
+   "id": "m-stats-p01",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Find the median of 3, 8, 6, 1, 9.",
+   "type": "numeric",
+   "answer": 6,
+   "mistakes": {
+    "5.4": "Found the mean instead"
+   },
+   "hint": "Put them in order first.",
+   "explanation": "In order: 1, 3, 6, 8, 9. The middle value is 6."
+  },
+  {
+   "id": "m-stats-p02",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Find the range of 12, 5, 19, 8, 15.",
+   "type": "numeric",
+   "answer": 14,
+   "mistakes": {
+    "7": "Subtracted two neighbouring values"
+   },
+   "hint": "Largest minus smallest.",
+   "explanation": "19 − 5 = 14."
+  },
+  {
+   "id": "m-stats-p03",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "What is the mode of 4, 6, 6, 2, 7, 6, 4?",
+   "type": "numeric",
+   "answer": 6,
+   "hint": "The value that appears most often.",
+   "explanation": "6 appears three times — more than any other number."
+  },
+  {
+   "id": "m-stats-p04",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Find the median of 2, 9, 4, 7, 5, 10.",
+   "type": "numeric",
+   "answer": 6,
+   "mistakes": {
+    "37": "Added the values",
+    "7": "Took one middle value instead of halfway between the two"
+   },
+   "hint": "With an even number of values, find the halfway point between the two middle values.",
+   "explanation": "Ordered: 2, 4, 5, 7, 9, 10. Middle values 5 and 7 → median 6."
+  },
+  {
+   "id": "m-stats-p05",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "write",
+   "prompt": "A fair six-sided dice is rolled. What is the probability of rolling a 4? Give a fraction.",
+   "type": "text",
+   "answer": [
+    "1/6"
+   ],
+   "hint": "How many outcomes? How many are 4?",
+   "explanation": "1 favourable outcome out of 6 equally likely outcomes: 1/6."
+  },
+  {
+   "id": "m-stats-p06",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "write",
+   "prompt": "A bag has 3 red, 5 blue and 2 green counters. One is taken without looking. What is the probability it is blue? Give a fraction in simplest form.",
+   "type": "text",
+   "answer": [
+    "1/2"
+   ],
+   "mistakes": {
+    "5/10": "Correct but not simplified",
+    "5/5": "Used the wrong total"
+   },
+   "hint": "Total counters = 10.",
+   "explanation": "5 blue out of 10 counters = 5/10 = 1/2."
+  },
+  {
+   "id": "m-stats-p07",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The line graph shows the temperature during a day. By how many degrees did the temperature rise between 08:00 and 14:00?",
+   "type": "numeric",
+   "answer": 9,
+   "unit": "°C",
+   "hint": "Read the values at 08:00 and 14:00.",
+   "explanation": "21 − 12 = 9 °C.",
+   "stimulus": {
+    "type": "line",
+    "labels": [
+     "08:00",
+     "10:00",
+     "12:00",
+     "14:00",
+     "16:00"
+    ],
+    "values": [
+     12,
+     15,
+     19,
+     21,
+     17
+    ],
+    "caption": "Temperature during the day",
+    "yLabel": "°C"
+   }
+  },
+  {
+   "id": "m-stats-p08",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "The mean of four numbers is 8. Three of the numbers are 5, 9 and 10. What is the fourth number?",
+   "type": "numeric",
+   "answer": 8,
+   "mistakes": {
+    "24": "Gave the sum of the three known numbers"
+   },
+   "hint": "If the mean is 8, the total of four numbers must be 4 × 8.",
+   "explanation": "Total = 32. 5 + 9 + 10 = 24. 32 − 24 = 8."
+  },
+  {
+   "id": "m-stats-p09",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A pie chart shows 60 children’s favourite fruit. The apple sector is a quarter of the circle. Which statement is correct?",
+   "type": "mcq",
+   "options": [
+    "25 children chose apple",
+    "You cannot tell without the angle",
+    "4 children chose apple",
+    "15 children chose apple"
+   ],
+   "answer": 3,
+   "hint": "A quarter of 60.",
+   "explanation": "¼ of 60 = 15 children."
+  },
+  {
+   "id": "m-stats-x01",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "calculate",
+   "prompt": "Find the range of 34, 27, 41, 30.",
+   "type": "numeric",
+   "answer": 14,
+   "hint": "Largest − smallest.",
+   "explanation": "41 − 27 = 14."
+  },
+  {
+   "id": "m-stats-x02",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Five children scored 6, 8, 8, 9 and 4 in a quiz. Find the mean score.",
+   "type": "numeric",
+   "answer": 7,
+   "hint": "Total ÷ 5.",
+   "explanation": "35 ÷ 5 = 7."
+  },
+  {
+   "id": "m-stats-x03",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "The table shows the number of pets owned by children in a class. How many children were asked?",
+   "type": "numeric",
+   "answer": 25,
+   "mistakes": {
+    "6": "Counted the categories",
+    "26": "Added the pet numbers too"
+   },
+   "hint": "Add the frequencies.",
+   "explanation": "6 + 10 + 7 + 2 = 25 children.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Number of pets",
+     "0",
+     "1",
+     "2",
+     "3"
+    ],
+    "rows": [
+     [
+      "Children",
+      "6",
+      "10",
+      "7",
+      "2"
+     ]
+    ],
+    "caption": "Pets owned"
+   }
+  },
+  {
+   "id": "m-stats-x04",
+   "subject": "maths",
+   "topic": "m-stats",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A spinner has 8 equal sections: 3 red, 4 blue, 1 yellow. Which word best describes the chance of landing on yellow?",
+   "type": "mcq",
+   "options": [
+    "Unlikely",
+    "Impossible",
+    "Even chance",
+    "Certain"
+   ],
+   "answer": 0,
+   "hint": "1 out of 8.",
+   "explanation": "1/8 is less than an even chance but not zero, so unlikely."
+  },
+  {
+   "id": "m-reason-d01",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "diagnostic",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A cinema ticket costs $8 for adults and $5 for children. A family buys 2 adult and 3 child tickets and pays with a $50 note. How much change do they get?",
+   "type": "numeric",
+   "answer": 19,
+   "unit": "$",
+   "display": "$19",
+   "mistakes": {
+    "31": "Gave the total cost, not the change",
+    "24": "Mixed up adult and child prices"
+   },
+   "hint": "Work out the total cost first.",
+   "explanation": "The change is $19.",
+   "steps": [
+    "2 × $8 = $16",
+    "3 × $5 = $15",
+    "Total = $31",
+    "$50 − $31 = $19"
+   ]
+  },
+  {
+   "id": "m-reason-d02",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "diagnostic",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Kai says the answer to 1.2 × 4 is 4.8, because 12 × 4 = 48 and 1.2 is ten times smaller than 12. Is his reasoning correct?",
+   "type": "mcq",
+   "options": [
+    "Yes — dividing 48 by 10 gives 4.8",
+    "No — the answer is 48",
+    "No — the answer is 0.48",
+    "No — you cannot use 12 × 4 to help"
+   ],
+   "answer": 0,
+   "hint": "Check the size of the answer: 1.2 is just over 1.",
+   "explanation": "His reasoning is correct. 1.2 × 4 is roughly 1 × 4 = 4, so 4.8 is sensible."
+  },
+  {
+   "id": "m-reason-p01",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Eggs are packed in boxes of 6. How many boxes are needed for 75 eggs?",
+   "type": "numeric",
+   "answer": 13,
+   "mistakes": {
+    "12": "Rounded down — the 3 extra eggs still need a box",
+    "12.5": "Gave a decimal answer for a number of boxes"
+   },
+   "hint": "75 ÷ 6, then think about any remainder.",
+   "explanation": "75 ÷ 6 = 12 remainder 3. The 3 extra eggs need another box, so 13 boxes."
+  },
+  {
+   "id": "m-reason-p02",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A school orders 18 packs of pencils. Each pack has 24 pencils. They give out 350 pencils. How many are left?",
+   "type": "numeric",
+   "answer": 82,
+   "hint": "Find the total number of pencils first.",
+   "explanation": "18 × 24 = 432. 432 − 350 = 82."
+  },
+  {
+   "id": "m-reason-p03",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "I think of a number, multiply it by 4, then subtract 7. The answer is 29. What was my number?",
+   "type": "numeric",
+   "answer": 9,
+   "mistakes": {
+    "5.5": "Undid the operations in the wrong order"
+   },
+   "hint": "Work backwards: add 7, then divide by 4.",
+   "explanation": "29 + 7 = 36; 36 ÷ 4 = 9."
+  },
+  {
+   "id": "m-reason-p04",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Two numbers add up to 50. One number is 12 more than the other. What is the larger number?",
+   "type": "numeric",
+   "answer": 31,
+   "mistakes": {
+    "38": "Added 12 to 50 ÷ 2 twice",
+    "25": "Split 50 equally"
+   },
+   "hint": "Take away the 12 first, then share equally.",
+   "explanation": "50 − 12 = 38; 38 ÷ 2 = 19. Larger = 19 + 12 = 31."
+  },
+  {
+   "id": "m-reason-p05",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Nina calculated 503 − 198 = 395. Which check shows she has made a mistake?",
+   "type": "mcq",
+   "options": [
+    "503 + 198 = 701",
+    "395 + 198 = 593, not 503",
+    "395 − 198 = 197",
+    "503 is odd, so the answer must be even"
+   ],
+   "answer": 1,
+   "hint": "Use the inverse operation.",
+   "explanation": "Addition undoes subtraction: 395 + 198 = 593 ≠ 503. The correct answer is 305."
+  },
+  {
+   "id": "m-reason-p06",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Juice costs $1.25 per bottle. How many bottles can you buy with $10?",
+   "type": "numeric",
+   "answer": 8,
+   "hint": "How many $1.25s make $10?",
+   "explanation": "$1.25 × 8 = $10."
+  },
+  {
+   "id": "m-reason-p07",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A rectangle has a length that is 3 times its width. Its perimeter is 48 cm. What is its length in cm?",
+   "type": "numeric",
+   "answer": 18,
+   "unit": "cm",
+   "mistakes": {
+    "6": "Gave the width",
+    "12": "Divided the perimeter by 4"
+   },
+   "hint": "Perimeter = width + 3 widths + width + 3 widths = 8 widths.",
+   "explanation": "48 ÷ 8 = 6 cm width; length = 18 cm."
+  },
+  {
+   "id": "m-reason-p08",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Apples cost 35c each or 6 for $1.80. How much do you save by buying 6 at the special price instead of individually? Give your answer in cents.",
+   "type": "numeric",
+   "answer": 30,
+   "unit": "c",
+   "hint": "Find the cost of 6 apples at 35c each.",
+   "explanation": "6 × 35c = $2.10. $2.10 − $1.80 = 30c."
+  },
+  {
+   "id": "m-reason-p09",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Which is the most efficient way to calculate 25 × 36 mentally?",
+   "type": "mcq",
+   "options": [
+    "Add 25 and 36",
+    "25 × 4 = 100, so 25 × 36 = 100 × 9 = 900",
+    "Count up in 25s thirty-six times",
+    "Use long multiplication on paper"
+   ],
+   "answer": 1,
+   "hint": "36 = 4 × 9.",
+   "explanation": "25 × 4 = 100 is easy, and 36 = 4 × 9, so the answer is 900."
+  },
+  {
+   "id": "m-reason-x01",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A minibus holds 14 passengers. How many minibuses are needed to take 100 students on a trip?",
+   "type": "numeric",
+   "answer": 8,
+   "mistakes": {
+    "7": "Rounded down; 2 students would be left behind"
+   },
+   "hint": "100 ÷ 14, then think about the remainder.",
+   "explanation": "100 ÷ 14 = 7 remainder 2, so 8 minibuses."
+  },
+  {
+   "id": "m-reason-x02",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Tickets for a show cost $12 each. The school has $500. What is the greatest number of tickets the school can buy?",
+   "type": "numeric",
+   "answer": 41,
+   "hint": "500 ÷ 12.",
+   "explanation": "12 × 41 = 492, and 12 × 42 = 504, which is too much. 41 tickets."
+  },
+  {
+   "id": "m-reason-x03",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "The total mass of 3 identical boxes and a 2 kg bag is 14 kg. What is the mass of one box in kg?",
+   "type": "numeric",
+   "answer": 4,
+   "unit": "kg",
+   "hint": "Remove the bag first.",
+   "explanation": "14 − 2 = 12 kg; 12 ÷ 3 = 4 kg."
+  },
+  {
+   "id": "m-reason-x04",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Ravi says “When you multiply two numbers, the answer is always bigger than both numbers.” Which example shows he is wrong?",
+   "type": "mcq",
+   "options": [
+    "10 × 10 = 100",
+    "2 × 9 = 18",
+    "0.5 × 8 = 4",
+    "3 × 7 = 21"
+   ],
+   "answer": 2,
+   "hint": "Try multiplying by a number less than 1.",
+   "explanation": "0.5 × 8 = 4, which is smaller than 8."
+  },
+  {
+   "id": "m-reason-x05",
+   "subject": "maths",
+   "topic": "m-reason",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "A shop sells pencils at 3 for $1.20. How much do 12 pencils cost in dollars?",
+   "type": "numeric",
+   "answer": 4.8,
+   "unit": "$",
+   "display": "$4.80",
+   "hint": "12 pencils = 4 lots of 3.",
+   "explanation": "4 × $1.20 = $4.80."
+  }
+ ]
+}

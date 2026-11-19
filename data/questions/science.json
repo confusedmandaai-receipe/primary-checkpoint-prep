@@ -1,0 +1,3108 @@
+{
+ "subject": "science",
+ "version": 1,
+ "questions": [
+  {
+   "id": "s-body-d01",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which organ pumps blood around the body?",
+   "type": "mcq",
+   "options": [
+    "Heart",
+    "Lungs",
+    "Liver",
+    "Stomach"
+   ],
+   "answer": 0,
+   "hint": "It is a muscle in your chest that beats.",
+   "explanation": "The heart is a muscular pump that pushes blood through blood vessels."
+  },
+  {
+   "id": "s-body-d02",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does your heart beat faster when you run?",
+   "type": "mcq",
+   "options": [
+    "Running makes your blood thicker",
+    "Your lungs stop working while you run",
+    "Your muscles need more oxygen and food, so blood must be delivered faster",
+    "The heart is trying to cool you down"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "3": "Sweating cools you; the heart rate rises to supply oxygen"
+   },
+   "hint": "Think about what working muscles need.",
+   "explanation": "Working muscles use more oxygen and glucose. The heart beats faster to carry more blood (and oxygen) to them."
+  },
+  {
+   "id": "s-body-p01",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which blood vessels carry blood away from the heart?",
+   "type": "mcq",
+   "options": [
+    "Arteries",
+    "Veins",
+    "Capillaries",
+    "Nerves"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "1": "Veins carry blood back to the heart"
+   },
+   "hint": "A for Away.",
+   "explanation": "Arteries carry blood away from the heart; veins carry it back."
+  },
+  {
+   "id": "s-body-p02",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Where does most digestion and absorption of food into the blood happen?",
+   "type": "mcq",
+   "options": [
+    "Oesophagus",
+    "Mouth",
+    "Small intestine",
+    "Large intestine"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "3": "The large intestine mainly absorbs water"
+   },
+   "hint": "It is a long, coiled tube after the stomach.",
+   "explanation": "Digested food is absorbed into the blood through the wall of the small intestine."
+  },
+  {
+   "id": "s-body-p03",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "What is the main job of the lungs?",
+   "type": "mcq",
+   "options": [
+    "To filter waste from blood to make urine",
+    "To digest food",
+    "To pump blood",
+    "To take oxygen into the blood and remove carbon dioxide"
+   ],
+   "answer": 3,
+   "hint": "Breathing.",
+   "explanation": "In the lungs, oxygen passes into the blood and carbon dioxide passes out to be breathed out."
+  },
+  {
+   "id": "s-body-p04",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which food group mainly helps the body grow and repair itself?",
+   "type": "mcq",
+   "options": [
+    "Carbohydrates",
+    "Fibre",
+    "Proteins",
+    "Fats"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "0": "Carbohydrates mainly provide energy"
+   },
+   "hint": "Found in eggs, beans, fish and meat.",
+   "explanation": "Proteins are used for growth and repair."
+  },
+  {
+   "id": "s-body-p05",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "sort",
+   "prompt": "Put these in the order food passes through them: stomach, mouth, small intestine, oesophagus. Type them separated by commas.",
+   "type": "text",
+   "answer": [
+    "mouth, oesophagus, stomach, small intestine"
+   ],
+   "hint": "Food starts in the mouth.",
+   "explanation": "Mouth → oesophagus (food pipe) → stomach → small intestine."
+  },
+  {
+   "id": "s-body-p06",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A student’s pulse was 72 beats per minute at rest and 130 after exercise. Five minutes later it was 80. What does this show?",
+   "type": "mcq",
+   "options": [
+    "Heart rate rises during exercise and returns towards the resting rate afterwards",
+    "The pulse was measured incorrectly",
+    "Resting makes the heart beat faster",
+    "Exercise permanently increases heart rate"
+   ],
+   "answer": 0,
+   "hint": "Compare all three readings.",
+   "explanation": "The pulse rose with exercise, then fell back towards 72 during rest — this is recovery."
+  },
+  {
+   "id": "s-body-p07",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "Why do doctors advise eating foods that contain fibre?",
+   "type": "mcq",
+   "options": [
+    "Fibre helps food move through the intestines and prevents constipation",
+    "Fibre builds muscles",
+    "Fibre gives the most energy",
+    "Fibre carries oxygen in the blood"
+   ],
+   "answer": 0,
+   "hint": "Think about the digestive system.",
+   "explanation": "Fibre is not digested but keeps the gut working well, helping food move through."
+  },
+  {
+   "id": "s-body-p08",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which organ filters the blood to remove waste and make urine?",
+   "type": "mcq",
+   "options": [
+    "Liver",
+    "Heart",
+    "Kidneys",
+    "Lungs"
+   ],
+   "answer": 2,
+   "hint": "There are two, in your lower back.",
+   "explanation": "The kidneys filter waste from the blood, producing urine."
+  },
+  {
+   "id": "s-body-x01",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which part of the blood carries oxygen?",
+   "type": "mcq",
+   "options": [
+    "Red blood cells",
+    "Plasma",
+    "Platelets",
+    "White blood cells"
+   ],
+   "answer": 0,
+   "hint": "Their colour comes from a substance that holds oxygen.",
+   "explanation": "Red blood cells carry oxygen around the body."
+  },
+  {
+   "id": "s-body-x02",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why is smoking harmful to the lungs?",
+   "type": "mcq",
+   "options": [
+    "Smoke damages the lungs, making it harder for oxygen to pass into the blood",
+    "Smoke only affects the teeth",
+    "Smoke gives the lungs extra oxygen",
+    "Smoke makes the heart beat more slowly so it rests"
+   ],
+   "answer": 0,
+   "hint": "Think about what the lungs need to do.",
+   "explanation": "Chemicals and tar in smoke damage lung tissue, so less oxygen gets into the blood."
+  },
+  {
+   "id": "s-body-x03",
+   "subject": "science",
+   "topic": "s-body",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "Predict what happens to breathing rate during exercise, and why.",
+   "type": "mcq",
+   "options": [
+    "It stays the same because breathing is automatic",
+    "It stops until the exercise is over",
+    "It decreases, to save energy",
+    "It increases, to take in more oxygen and remove more carbon dioxide"
+   ],
+   "answer": 3,
+   "hint": "Muscles need more oxygen.",
+   "explanation": "Breathing gets faster and deeper so more oxygen reaches the blood and more carbon dioxide is removed."
+  },
+  {
+   "id": "s-plants-d01",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which part of a plant takes in water from the soil?",
+   "type": "mcq",
+   "options": [
+    "Flowers",
+    "Roots",
+    "Petals",
+    "Leaves"
+   ],
+   "answer": 1,
+   "hint": "It is underground.",
+   "explanation": "Roots absorb water and minerals from the soil and anchor the plant."
+  },
+  {
+   "id": "s-plants-d02",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "A plant is kept in a dark cupboard for two weeks. Its leaves turn yellow. Why?",
+   "type": "mcq",
+   "options": [
+    "Plants only need water, so it was over-watered",
+    "Without light the plant cannot make its own food",
+    "The cupboard was too cold for any plant",
+    "The soil turned yellow"
+   ],
+   "answer": 1,
+   "hint": "What do plants need light for?",
+   "explanation": "Plants use light energy to make food in their leaves. Without light they cannot make food and become weak and yellow."
+  },
+  {
+   "id": "s-plants-p01",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What is the main job of the leaves?",
+   "type": "mcq",
+   "options": [
+    "To make food for the plant using light",
+    "To attract insects",
+    "To hold the plant in the soil",
+    "To store seeds"
+   ],
+   "answer": 0,
+   "hint": "They are usually green and flat.",
+   "explanation": "Leaves capture light to make food for the plant."
+  },
+  {
+   "id": "s-plants-p02",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "What is pollination?",
+   "type": "mcq",
+   "options": [
+    "When a plant takes in water",
+    "When a seed starts to grow",
+    "The transfer of pollen from the male part to the female part of a flower",
+    "When seeds are carried away from the plant"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "1": "That is germination",
+    "3": "That is seed dispersal"
+   },
+   "hint": "It involves pollen.",
+   "explanation": "Pollination is the transfer of pollen from the anther (male) to the stigma (female)."
+  },
+  {
+   "id": "s-plants-p03",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "A seed has hooks that stick to animal fur. How is it dispersed?",
+   "type": "mcq",
+   "options": [
+    "By animals",
+    "By wind",
+    "By exploding",
+    "By water"
+   ],
+   "answer": 0,
+   "hint": "Hooks catch onto something.",
+   "explanation": "Hooked seeds catch in fur and are carried to new places by animals."
+  },
+  {
+   "id": "s-plants-p04",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why is it useful for seeds to be dispersed away from the parent plant?",
+   "type": "mcq",
+   "options": [
+    "So the seeds can be eaten more easily",
+    "It is not useful",
+    "So new plants do not compete with the parent for light, water and space",
+    "So the parent plant can rest"
+   ],
+   "answer": 2,
+   "hint": "What would happen if all seeds grew underneath the parent?",
+   "explanation": "Seeds spread out so seedlings are not competing with each other and the parent for resources."
+  },
+  {
+   "id": "s-plants-p05",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which of these is NOT needed for a seed to germinate?",
+   "type": "mcq",
+   "options": [
+    "Light",
+    "Water",
+    "Oxygen (air)",
+    "Warmth"
+   ],
+   "answer": 0,
+   "hint": "Many seeds germinate underground.",
+   "explanation": "Seeds need water, warmth and air to germinate. Light is needed later for growth, once leaves appear."
+  },
+  {
+   "id": "s-plants-p06",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Celery is placed in water with blue food colouring. After a day the leaves have blue streaks. What does this show?",
+   "type": "mcq",
+   "options": [
+    "Leaves make blue colouring",
+    "Roots absorb light",
+    "Water is carried up the stem to the leaves",
+    "The stem stores food"
+   ],
+   "answer": 2,
+   "hint": "Follow the path of the colouring.",
+   "explanation": "The coloured water travelled up tubes in the stem to the leaves, showing how water is transported."
+  },
+  {
+   "id": "s-plants-p07",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "Why do many flowers have brightly coloured petals and a sweet smell?",
+   "type": "mcq",
+   "options": [
+    "To scare away animals",
+    "To absorb more water",
+    "To make more light for the leaves",
+    "To attract insects for pollination"
+   ],
+   "answer": 3,
+   "hint": "What visits flowers?",
+   "explanation": "Colour and scent attract insects, which carry pollen from flower to flower."
+  },
+  {
+   "id": "s-plants-x01",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What does the stem do?",
+   "type": "mcq",
+   "options": [
+    "Absorbs light to make food",
+    "Attracts insects",
+    "Makes seeds",
+    "Supports the plant and carries water to the leaves"
+   ],
+   "answer": 3,
+   "hint": "It holds the plant up.",
+   "explanation": "The stem supports the plant and transports water and nutrients."
+  },
+  {
+   "id": "s-plants-x02",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Dandelion seeds have a light, fluffy “parachute”. How are they dispersed?",
+   "type": "mcq",
+   "options": [
+    "By animals eating them",
+    "By wind",
+    "By the plant throwing them",
+    "By water"
+   ],
+   "answer": 1,
+   "hint": "Light and fluffy.",
+   "explanation": "The parachute catches the wind and carries the seed away."
+  },
+  {
+   "id": "s-plants-x03",
+   "subject": "science",
+   "topic": "s-plants",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "Two identical plants are given the same water and light, but one is kept at 5 °C and one at 22 °C. Predict which grows better.",
+   "type": "mcq",
+   "options": [
+    "Both grow the same because they have the same water and light",
+    "The plant at 22 °C, because warmth helps growth",
+    "The plant at 5 °C, because cold helps growth",
+    "Neither will grow"
+   ],
+   "answer": 1,
+   "hint": "Plants need warmth.",
+   "explanation": "Most plants grow better in warm conditions, so the plant at 22 °C should grow better."
+  },
+  {
+   "id": "s-eco-d01",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "In the food chain grass → rabbit → fox, which is the producer?",
+   "type": "mcq",
+   "options": [
+    "The Sun",
+    "Grass",
+    "Rabbit",
+    "Fox"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "0": "The Sun provides energy but is not a living producer"
+   },
+   "hint": "Producers make their own food.",
+   "explanation": "Grass is a plant; it makes its own food using light, so it is the producer."
+  },
+  {
+   "id": "s-eco-d02",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "diagnostic",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "In the food chain grass → rabbit → fox, what would probably happen to the grass if most of the foxes died?",
+   "type": "mcq",
+   "options": [
+    "No change, because foxes do not eat grass",
+    "More grass, because foxes eat grass",
+    "Less grass, because more rabbits would survive to eat it",
+    "More grass, because rabbits would die out"
+   ],
+   "answer": 2,
+   "hint": "Think about the rabbits first.",
+   "explanation": "Fewer foxes → more rabbits survive → rabbits eat more grass → less grass."
+  },
+  {
+   "id": "s-eco-p01",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "What do the arrows in a food chain show?",
+   "type": "mcq",
+   "options": [
+    "The direction energy (food) is passed",
+    "Which animal eats the arrow’s starting organism",
+    "Which animal is bigger",
+    "Where animals live"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "1": "Close, but the arrow points to the eater, showing energy flow"
+   },
+   "hint": "Arrows point from the food to the eater.",
+   "explanation": "Arrows show the flow of energy from the organism eaten to the organism that eats it."
+  },
+  {
+   "id": "s-eco-p02",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "An animal that eats only plants is called a…",
+   "type": "mcq",
+   "options": [
+    "Producer",
+    "Omnivore",
+    "Herbivore",
+    "Carnivore"
+   ],
+   "answer": 2,
+   "hint": "Herb = plant.",
+   "explanation": "Herbivores eat only plants."
+  },
+  {
+   "id": "s-eco-p03",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Use the key. An animal has six legs and wings. Which group is it in?",
+   "type": "mcq",
+   "options": [
+    "Insect",
+    "Spider",
+    "Bird",
+    "Fish"
+   ],
+   "answer": 0,
+   "hint": "Start at question 1 and follow the answers.",
+   "explanation": "Six legs → question 2 → wings → insect.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Question",
+     "Yes",
+     "No"
+    ],
+    "rows": [
+     [
+      "1. Does it have six legs?",
+      "Go to 2",
+      "Go to 3"
+     ],
+     [
+      "2. Does it have wings?",
+      "Insect",
+      "Insect (without wings)"
+     ],
+     [
+      "3. Does it have eight legs?",
+      "Spider",
+      "Go to 4"
+     ],
+     [
+      "4. Does it have feathers?",
+      "Bird",
+      "Fish"
+     ]
+    ],
+    "caption": "Classification key"
+   }
+  },
+  {
+   "id": "s-eco-p04",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "How is a polar bear adapted to its cold habitat?",
+   "type": "mcq",
+   "options": [
+    "Large ears to lose heat",
+    "Thin skin to feel the snow",
+    "Dark fur to stand out from the snow",
+    "Thick fur and a layer of fat keep it warm"
+   ],
+   "answer": 3,
+   "hint": "What keeps an animal warm?",
+   "explanation": "Thick fur and fat insulate the polar bear; white fur also gives camouflage."
+  },
+  {
+   "id": "s-eco-p05",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why do cactus plants have spines instead of wide leaves?",
+   "type": "mcq",
+   "options": [
+    "Spines lose less water and protect the plant from animals",
+    "Spines absorb more sunlight",
+    "Spines help it float",
+    "Spines attract insects"
+   ],
+   "answer": 0,
+   "hint": "Deserts are very dry.",
+   "explanation": "Spines have a small surface area so the cactus loses less water; they also deter animals."
+  },
+  {
+   "id": "s-eco-p06",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Farmers spray a chemical to kill insects on crops. Birds in the area become fewer. Which is the best explanation?",
+   "type": "mcq",
+   "options": [
+    "The chemical made the crops grow taller",
+    "The birds migrated because it was winter",
+    "The birds had fewer insects to eat, or ate poisoned insects",
+    "Birds do not like the smell of crops"
+   ],
+   "answer": 2,
+   "hint": "Think about the food chain crop → insect → bird.",
+   "explanation": "Killing insects removes the birds’ food, and birds that eat poisoned insects may be harmed."
+  },
+  {
+   "id": "s-eco-p07",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "Which action would best help protect a local habitat?",
+   "type": "mcq",
+   "options": [
+    "Planting native trees and reducing litter",
+    "Draining the pond",
+    "Building a car park on the meadow",
+    "Removing all the insects"
+   ],
+   "answer": 0,
+   "hint": "Which choice gives living things food and shelter?",
+   "explanation": "Native trees provide food and shelter; reducing litter protects animals."
+  },
+  {
+   "id": "s-eco-p08",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "In the food chain leaf → caterpillar → bird → hawk, which animal is the top predator?",
+   "type": "mcq",
+   "options": [
+    "Leaf",
+    "Hawk",
+    "Bird",
+    "Caterpillar"
+   ],
+   "answer": 1,
+   "hint": "Nothing eats it in this chain.",
+   "explanation": "The hawk is at the end of the chain; nothing in the chain eats it."
+  },
+  {
+   "id": "s-eco-x01",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which is a vertebrate?",
+   "type": "mcq",
+   "options": [
+    "Spider",
+    "Frog",
+    "Snail",
+    "Worm"
+   ],
+   "answer": 1,
+   "hint": "Vertebrates have a backbone.",
+   "explanation": "A frog has a backbone; the others are invertebrates."
+  },
+  {
+   "id": "s-eco-x02",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "In the food chain seaweed → limpet → crab → seagull, which organism is a prey but not a predator?",
+   "type": "mcq",
+   "options": [
+    "Seagull",
+    "Crab",
+    "Seaweed",
+    "Limpet"
+   ],
+   "answer": 3,
+   "hint": "It is eaten, but only eats plants.",
+   "explanation": "The limpet is eaten by the crab, but it eats seaweed (a plant), so it is not a predator."
+  },
+  {
+   "id": "s-eco-x03",
+   "subject": "science",
+   "topic": "s-eco",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Camels have wide, flat feet. How does this help them survive in the desert?",
+   "type": "mcq",
+   "options": [
+    "They help it swim",
+    "They spread the camel’s weight so it does not sink into sand",
+    "They store water",
+    "They keep it cool by releasing heat"
+   ],
+   "answer": 1,
+   "hint": "Think about walking on sand.",
+   "explanation": "Wide feet spread the weight over a larger area, so the camel does not sink into soft sand."
+  },
+  {
+   "id": "s-matter-d01",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "Which statement describes the particles in a solid?",
+   "type": "mcq",
+   "options": [
+    "Close together but able to move past each other",
+    "Close together in a fixed pattern, vibrating in place",
+    "Not moving at all and spread far apart",
+    "Far apart and moving quickly in all directions"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "0": "That describes a liquid",
+    "3": "That describes a gas"
+   },
+   "hint": "Solids keep their shape.",
+   "explanation": "Solid particles are tightly packed in a regular pattern and can only vibrate."
+  },
+  {
+   "id": "s-matter-d02",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "A puddle disappears on a sunny day. What has happened to the water?",
+   "type": "mcq",
+   "options": [
+    "It has condensed",
+    "It has frozen",
+    "It has evaporated and become water vapour in the air",
+    "It has melted into the ground"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "0": "Condensation is gas turning to liquid — the opposite"
+   },
+   "hint": "Heat turns liquid into a gas.",
+   "explanation": "The Sun’s heat makes liquid water evaporate into water vapour, a gas."
+  },
+  {
+   "id": "s-matter-p01",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What is the change from a liquid to a solid called?",
+   "type": "mcq",
+   "options": [
+    "Melting",
+    "Condensation",
+    "Evaporation",
+    "Freezing"
+   ],
+   "answer": 3,
+   "hint": "Water becoming ice.",
+   "explanation": "Freezing is when a liquid turns into a solid."
+  },
+  {
+   "id": "s-matter-p02",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which property makes copper a good choice for electrical wires?",
+   "type": "mcq",
+   "options": [
+    "It is soft like rubber",
+    "It conducts electricity",
+    "It is transparent",
+    "It is magnetic"
+   ],
+   "answer": 1,
+   "hint": "Wires carry electric current.",
+   "explanation": "Copper is a good electrical conductor."
+  },
+  {
+   "id": "s-matter-p03",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Water droplets form on the outside of a cold glass of juice. Where does the water come from?",
+   "type": "mcq",
+   "options": [
+    "The ice is evaporating",
+    "Water vapour in the air condenses on the cold glass",
+    "The glass is melting",
+    "Juice leaks through the glass"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "3": "Glass is not permeable; the water comes from the air"
+   },
+   "hint": "The air contains water vapour.",
+   "explanation": "Water vapour in the air cools when it touches the cold glass and condenses into liquid droplets."
+  },
+  {
+   "id": "s-matter-p04",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does a gas fill any container it is put in?",
+   "type": "mcq",
+   "options": [
+    "Its particles are far apart and move freely in all directions",
+    "Gases have a fixed shape",
+    "Its particles are tightly packed",
+    "Its particles are heavier than air"
+   ],
+   "answer": 0,
+   "hint": "Think about particle spacing and movement.",
+   "explanation": "Gas particles move quickly and freely, spreading out to fill the whole space."
+  },
+  {
+   "id": "s-matter-p05",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which material would be best for a saucepan handle?",
+   "type": "mcq",
+   "options": [
+    "Glass, because it is transparent",
+    "Steel, because it conducts heat well",
+    "Copper, because it is shiny",
+    "Wood or plastic, because they are thermal insulators"
+   ],
+   "answer": 3,
+   "hint": "You do not want the handle to get hot.",
+   "explanation": "Handles should be thermal insulators so heat does not travel to your hand."
+  },
+  {
+   "id": "s-matter-p06",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Wet clothes dry faster on a warm, windy day than on a cold, still day. Why?",
+   "type": "mcq",
+   "options": [
+    "The clothes melt in the warmth",
+    "Warmth and wind both increase the rate of evaporation",
+    "Cold air makes water evaporate faster",
+    "Wind adds water to the clothes"
+   ],
+   "answer": 1,
+   "hint": "Think about what speeds up evaporation.",
+   "explanation": "Higher temperature gives particles more energy, and wind carries water vapour away, so evaporation is faster."
+  },
+  {
+   "id": "s-matter-p07",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "At what temperature does pure water boil at sea level?",
+   "type": "mcq",
+   "options": [
+    "50 °C",
+    "100 °C",
+    "0 °C",
+    "212 °C"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "2": "That is the freezing/melting point",
+    "3": "212 is the boiling point in °F, not °C"
+   },
+   "hint": "It is a round number in °C.",
+   "explanation": "Pure water boils at 100 °C at sea level."
+  },
+  {
+   "id": "s-matter-p08",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Chocolate melts in your hand but not in the fridge. What does this tell you?",
+   "type": "mcq",
+   "options": [
+    "Melting needs light",
+    "Hands are colder than fridges",
+    "Its melting point is between fridge temperature and body temperature",
+    "Chocolate cannot freeze"
+   ],
+   "answer": 2,
+   "hint": "Compare the temperatures.",
+   "explanation": "Your hand (about 37 °C) is above chocolate’s melting point; the fridge is below it."
+  },
+  {
+   "id": "s-matter-x01",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which is a gas at room temperature?",
+   "type": "mcq",
+   "options": [
+    "Salt",
+    "Oxygen",
+    "Iron",
+    "Water"
+   ],
+   "answer": 1,
+   "hint": "You breathe it.",
+   "explanation": "Oxygen is a gas at room temperature."
+  },
+  {
+   "id": "s-matter-x02",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does steam on a bathroom mirror turn into water droplets?",
+   "type": "mcq",
+   "options": [
+    "The steam evaporates",
+    "The steam cools on the mirror and condenses",
+    "The mirror absorbs the steam",
+    "The mirror melts the steam"
+   ],
+   "answer": 1,
+   "hint": "Gas → liquid.",
+   "explanation": "Water vapour cools on the cold mirror and condenses into liquid water."
+  },
+  {
+   "id": "s-matter-x03",
+   "subject": "science",
+   "topic": "s-matter",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "Why are winter coats often filled with feathers or fibres that trap air?",
+   "type": "mcq",
+   "options": [
+    "Air makes the coat heavier",
+    "Air conducts heat into the body",
+    "Feathers are magnetic",
+    "Trapped air is a good thermal insulator, reducing heat loss"
+   ],
+   "answer": 3,
+   "hint": "Think about insulators.",
+   "explanation": "Trapped air is a poor conductor of heat, so it slows heat loss from the body."
+  },
+  {
+   "id": "s-change-d01",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "How would you separate sand from water?",
+   "type": "mcq",
+   "options": [
+    "Filtering",
+    "Sieving with large holes",
+    "Melting",
+    "Using a magnet"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "3": "Sand is not magnetic"
+   },
+   "hint": "Filter paper lets water through but not the sand grains.",
+   "explanation": "Filtering traps sand on the filter paper while water passes through."
+  },
+  {
+   "id": "s-change-d02",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which of these is an irreversible change?",
+   "type": "mcq",
+   "options": [
+    "Melting ice",
+    "Freezing water",
+    "Burning wood",
+    "Dissolving sugar in water"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "3": "Dissolving is reversible — evaporating the water gets the sugar back"
+   },
+   "hint": "Which one makes new materials that cannot be changed back?",
+   "explanation": "Burning makes new substances (ash, smoke, gases) and cannot be reversed."
+  },
+  {
+   "id": "s-change-p01",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "When salt dissolves in water, what has happened?",
+   "type": "mcq",
+   "options": [
+    "The salt has disappeared completely",
+    "The salt has turned into water",
+    "The salt has broken into tiny particles mixed among the water particles",
+    "The salt has melted"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "3": "Melting needs heat; dissolving is mixing into a liquid",
+    "0": "The salt is still there — the water tastes salty"
+   },
+   "hint": "Taste the water — is the salt still there?",
+   "explanation": "The salt is still present but spread out as tiny particles: a solution."
+  },
+  {
+   "id": "s-change-p02",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "How could you get the salt back from salty water?",
+   "type": "mcq",
+   "options": [
+    "Evaporate the water",
+    "Filter it",
+    "Use a magnet",
+    "Use a sieve"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "1": "Dissolved salt passes straight through filter paper"
+   },
+   "hint": "Leave it somewhere warm.",
+   "explanation": "Evaporating the water leaves the salt crystals behind."
+  },
+  {
+   "id": "s-change-p03",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "How could you separate iron filings from sand?",
+   "type": "mcq",
+   "options": [
+    "Filter the mixture",
+    "Use a magnet",
+    "Add water and stir",
+    "Evaporate"
+   ],
+   "answer": 1,
+   "hint": "Iron has a special property.",
+   "explanation": "Iron is magnetic and sand is not."
+  },
+  {
+   "id": "s-change-p04",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which change will make sugar dissolve faster in water?",
+   "type": "mcq",
+   "options": [
+    "Using colder water",
+    "Using bigger sugar lumps",
+    "Leaving it completely still",
+    "Using warmer water and stirring"
+   ],
+   "answer": 3,
+   "hint": "Think about temperature, stirring and particle size.",
+   "explanation": "Warm water and stirring both speed up dissolving (as do smaller grains)."
+  },
+  {
+   "id": "s-change-p05",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A student says “Cooking an egg is a reversible change because the egg is still an egg.” Is she right?",
+   "type": "mcq",
+   "options": [
+    "No — because eggs are solids",
+    "Yes — the egg can be cooled back to raw",
+    "No — cooking makes new substances; the egg cannot be made raw again",
+    "Yes — all changes involving heat are reversible"
+   ],
+   "answer": 2,
+   "hint": "Can you un-cook an egg?",
+   "explanation": "Cooking permanently changes the egg — it is an irreversible change."
+  },
+  {
+   "id": "s-change-p06",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "You have a mixture of rice, salt and water. Which order of steps separates all three?",
+   "type": "mcq",
+   "options": [
+    "Sieve out the rice, then evaporate the water to leave salt",
+    "Evaporate first, then filter",
+    "Use a magnet, then sieve",
+    "Filter the salt, then sieve the water"
+   ],
+   "answer": 0,
+   "hint": "Start with the biggest pieces.",
+   "explanation": "A sieve removes the rice; evaporating the salty water leaves the salt."
+  },
+  {
+   "id": "s-change-p07",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which word describes a solid that does NOT dissolve in water?",
+   "type": "mcq",
+   "options": [
+    "Transparent",
+    "Soluble",
+    "Insoluble",
+    "Flexible"
+   ],
+   "answer": 2,
+   "hint": "In- means not.",
+   "explanation": "An insoluble substance does not dissolve."
+  },
+  {
+   "id": "s-change-x01",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which of these is a reversible change?",
+   "type": "mcq",
+   "options": [
+    "Baking a cake",
+    "Burning paper",
+    "Melting chocolate",
+    "Rusting iron"
+   ],
+   "answer": 2,
+   "hint": "Can it be changed back?",
+   "explanation": "Melted chocolate can be cooled to become solid again."
+  },
+  {
+   "id": "s-change-x02",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which equipment separates large stones from fine soil?",
+   "type": "mcq",
+   "options": [
+    "Filter paper",
+    "A thermometer",
+    "A sieve",
+    "A magnet"
+   ],
+   "answer": 2,
+   "hint": "Holes of a certain size.",
+   "explanation": "A sieve lets the fine soil through and keeps the large stones."
+  },
+  {
+   "id": "s-change-x03",
+   "subject": "science",
+   "topic": "s-change",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Why does more sugar dissolve in hot tea than in cold tea?",
+   "type": "mcq",
+   "options": [
+    "Cold tea is already full of sugar",
+    "Particles move faster in hot liquids, so sugar dissolves faster and more of it can dissolve",
+    "Sugar melts in hot tea",
+    "Hot tea contains less water"
+   ],
+   "answer": 1,
+   "hint": "Think about particles and temperature.",
+   "explanation": "In hotter liquids particles move faster, so the solid dissolves faster and more can dissolve before the solution is saturated."
+  },
+  {
+   "id": "s-forces-d01",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What is the unit used to measure force?",
+   "type": "mcq",
+   "options": [
+    "Kilogram (kg)",
+    "Metre (m)",
+    "Newton (N)",
+    "Litre (l)"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "0": "Kilograms measure mass, not force"
+   },
+   "hint": "Named after a famous scientist.",
+   "explanation": "Force is measured in newtons (N) using a forcemeter."
+  },
+  {
+   "id": "s-forces-d02",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "A ball rolling across the grass slows down and stops. Which force causes this?",
+   "type": "mcq",
+   "options": [
+    "Magnetism",
+    "Gravity pulling it forwards",
+    "Friction",
+    "Upthrust"
+   ],
+   "answer": 2,
+   "hint": "This force acts between surfaces that rub.",
+   "explanation": "Friction between the ball and grass acts against the motion and slows the ball down."
+  },
+  {
+   "id": "s-forces-p01",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "What is the difference between mass and weight?",
+   "type": "mcq",
+   "options": [
+    "Mass is the amount of matter (kg); weight is the pull of gravity on it (N)",
+    "Weight is measured in kg and mass in newtons",
+    "Mass changes on the Moon but weight does not",
+    "They are the same thing"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "2": "It is the other way round: weight changes, mass stays the same"
+   },
+   "hint": "One is measured in kg, the other in N.",
+   "explanation": "Mass (kg) stays the same everywhere; weight (N) depends on gravity."
+  },
+  {
+   "id": "s-forces-p02",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "An astronaut goes to the Moon. What happens to her mass and weight?",
+   "type": "mcq",
+   "options": [
+    "Her mass is less; her weight stays the same",
+    "Her mass stays the same; her weight is less",
+    "Both become less",
+    "Both stay the same"
+   ],
+   "answer": 1,
+   "hint": "The Moon’s gravity is weaker.",
+   "explanation": "Mass does not change, but weaker gravity means her weight is less."
+  },
+  {
+   "id": "s-forces-p03",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "A boat floats on water. Which two forces are balanced?",
+   "type": "mcq",
+   "options": [
+    "Upthrust and friction",
+    "Weight (gravity) and upthrust",
+    "Air resistance and magnetism",
+    "Friction and gravity"
+   ],
+   "answer": 1,
+   "hint": "One pulls down, one pushes up.",
+   "explanation": "The boat’s weight acts down and upthrust from the water acts up; they are balanced."
+  },
+  {
+   "id": "s-forces-p04",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does a parachute slow a skydiver down?",
+   "type": "mcq",
+   "options": [
+    "Its large surface area increases air resistance",
+    "It reduces gravity",
+    "It increases upthrust from the ground",
+    "It makes the skydiver lighter"
+   ],
+   "answer": 0,
+   "hint": "More surface pushing against the air…",
+   "explanation": "The large canopy pushes against lots of air, increasing air resistance."
+  },
+  {
+   "id": "s-forces-p05",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "Two people push a box from opposite sides. One pushes with 30 N, the other with 50 N. What happens?",
+   "type": "mcq",
+   "options": [
+    "The box moves towards the person pushing with 30 N",
+    "The box moves towards the person pushing with 50 N",
+    "The box stays still because both are pushing",
+    "The box moves upwards"
+   ],
+   "answer": 0,
+   "hint": "The larger force wins.",
+   "explanation": "There is an unbalanced force of 20 N in the direction of the 50 N push — towards the person pushing with 30 N."
+  },
+  {
+   "id": "s-forces-p06",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A car is moving at a steady speed on a straight road. What can you say about the forces on it?",
+   "type": "mcq",
+   "options": [
+    "The driving force and the resistive forces are balanced",
+    "The driving force is much bigger than friction",
+    "There are no forces acting",
+    "Gravity is pushing it forwards"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "2": "Forces still act, but they are balanced"
+   },
+   "hint": "Steady speed means no change in motion.",
+   "explanation": "At a steady speed, forces are balanced: forward force = friction + air resistance."
+  },
+  {
+   "id": "s-forces-p07",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which surface would give the most friction for a toy car?",
+   "type": "mcq",
+   "options": [
+    "Carpet",
+    "Ice",
+    "Polished wood",
+    "Smooth plastic"
+   ],
+   "answer": 0,
+   "hint": "Rough surfaces grip more.",
+   "explanation": "Carpet is the roughest surface, so it gives most friction."
+  },
+  {
+   "id": "s-forces-x01",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which force pulls objects towards the Earth?",
+   "type": "mcq",
+   "options": [
+    "Friction",
+    "Gravity",
+    "Air resistance",
+    "Upthrust"
+   ],
+   "answer": 1,
+   "hint": "It makes things fall.",
+   "explanation": "Gravity pulls objects towards the centre of the Earth."
+  },
+  {
+   "id": "s-forces-x02",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why are the soles of trainers made with a deep pattern?",
+   "type": "mcq",
+   "options": [
+    "To reduce friction so you run faster",
+    "To make them lighter",
+    "To make them magnetic",
+    "To increase friction and stop slipping"
+   ],
+   "answer": 3,
+   "hint": "Grip.",
+   "explanation": "The pattern increases friction between the shoe and the ground."
+  },
+  {
+   "id": "s-forces-x03",
+   "subject": "science",
+   "topic": "s-forces",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "A forcemeter shows that a rock weighs 12 N in air and 8 N when hanging in water. What is the size of the upthrust in newtons?",
+   "type": "numeric",
+   "answer": 4,
+   "unit": "N",
+   "mistakes": {
+    "20": "Added the readings"
+   },
+   "hint": "Upthrust reduces the reading.",
+   "explanation": "12 − 8 = 4 N of upthrust."
+  },
+  {
+   "id": "s-elec-d01",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "Look at the circuit. What would happen if one lamp was removed?",
+   "type": "mcq",
+   "options": [
+    "The other lamp gets brighter",
+    "The other lamp stays the same",
+    "The other lamp goes out because the circuit is broken",
+    "The battery runs out immediately"
+   ],
+   "answer": 2,
+   "hint": "In a series circuit there is only one path.",
+   "explanation": "In a series circuit the current has one path. Removing a lamp breaks the circuit, so the other lamp goes out.",
+   "stimulus": {
+    "type": "svg",
+    "svg": "<svg viewBox=\"0 0 260 150\" xmlns=\"http://www.w3.org/2000/svg\" font-size=\"12\"><rect x=\"30\" y=\"30\" width=\"200\" height=\"90\" fill=\"none\" stroke=\"#1d2b44\" stroke-width=\"2\"/><rect x=\"105\" y=\"22\" width=\"50\" height=\"16\" fill=\"#fff\"/><line x1=\"115\" y1=\"20\" x2=\"115\" y2=\"40\" stroke=\"#1d2b44\" stroke-width=\"3\"/><line x1=\"125\" y1=\"25\" x2=\"125\" y2=\"35\" stroke=\"#1d2b44\" stroke-width=\"3\"/><line x1=\"135\" y1=\"20\" x2=\"135\" y2=\"40\" stroke=\"#1d2b44\" stroke-width=\"3\"/><line x1=\"145\" y1=\"25\" x2=\"145\" y2=\"35\" stroke=\"#1d2b44\" stroke-width=\"3\"/><circle cx=\"90\" cy=\"120\" r=\"12\" fill=\"#fff\" stroke=\"#1d2b44\" stroke-width=\"2\"/><line x1=\"82\" y1=\"112\" x2=\"98\" y2=\"128\" stroke=\"#1d2b44\" stroke-width=\"2\"/><line x1=\"98\" y1=\"112\" x2=\"82\" y2=\"128\" stroke=\"#1d2b44\" stroke-width=\"2\"/><circle cx=\"170\" cy=\"120\" r=\"12\" fill=\"#fff\" stroke=\"#1d2b44\" stroke-width=\"2\"/><line x1=\"162\" y1=\"112\" x2=\"178\" y2=\"128\" stroke=\"#1d2b44\" stroke-width=\"2\"/><line x1=\"178\" y1=\"112\" x2=\"162\" y2=\"128\" stroke=\"#1d2b44\" stroke-width=\"2\"/><text x=\"112\" y=\"14\">battery</text><text x=\"70\" y=\"145\">lamp</text><text x=\"150\" y=\"145\">lamp</text></svg>",
+    "caption": "A series circuit"
+   }
+  },
+  {
+   "id": "s-elec-d02",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which material is an electrical insulator?",
+   "type": "mcq",
+   "options": [
+    "Steel",
+    "Plastic",
+    "Aluminium",
+    "Copper"
+   ],
+   "answer": 1,
+   "hint": "Wires are covered in it for safety.",
+   "explanation": "Plastic does not let electricity flow through it easily."
+  },
+  {
+   "id": "s-elec-p01",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What does a switch do in a circuit?",
+   "type": "mcq",
+   "options": [
+    "Stores electricity",
+    "Opens or closes the circuit to stop or start the current",
+    "Makes the battery last longer",
+    "Changes the colour of the light"
+   ],
+   "answer": 1,
+   "hint": "Think of turning a light on and off.",
+   "explanation": "A switch completes (closes) or breaks (opens) the circuit."
+  },
+  {
+   "id": "s-elec-p02",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "What happens to the brightness of lamps in a series circuit if you add another lamp?",
+   "type": "mcq",
+   "options": [
+    "Nothing changes",
+    "Only the new lamp lights up",
+    "The lamps become dimmer",
+    "The lamps become brighter"
+   ],
+   "answer": 2,
+   "hint": "The same battery has to push current through more lamps.",
+   "explanation": "More lamps in series means more resistance and less current, so each lamp is dimmer."
+  },
+  {
+   "id": "s-elec-p03",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "What happens if you add a second battery (cell) in series to a circuit with one lamp?",
+   "type": "mcq",
+   "options": [
+    "The lamp goes out",
+    "Nothing changes",
+    "The lamp becomes dimmer",
+    "The lamp becomes brighter"
+   ],
+   "answer": 3,
+   "hint": "More cells, more “push”.",
+   "explanation": "Two cells give a greater voltage, so more current flows and the lamp is brighter."
+  },
+  {
+   "id": "s-elec-p04",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which pair of magnet poles will attract each other?",
+   "type": "mcq",
+   "options": [
+    "None — magnets only repel",
+    "North and north",
+    "North and south",
+    "South and south"
+   ],
+   "answer": 2,
+   "hint": "Opposites…",
+   "explanation": "Opposite poles attract; like poles repel."
+  },
+  {
+   "id": "s-elec-p05",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which object would be attracted to a magnet?",
+   "type": "mcq",
+   "options": [
+    "A plastic ruler",
+    "An aluminium can",
+    "An iron nail",
+    "A copper coin"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "1": "Aluminium is a metal but it is not magnetic",
+    "3": "Copper is not magnetic"
+   },
+   "hint": "Not all metals are magnetic.",
+   "explanation": "Iron is a magnetic material. Aluminium and copper are metals but not magnetic."
+  },
+  {
+   "id": "s-elec-p06",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A lamp in a circuit does not light. Which is the most sensible first check?",
+   "type": "mcq",
+   "options": [
+    "Remove the battery",
+    "Check that all the connections are complete and the switch is closed",
+    "Buy a new circuit",
+    "Add more lamps"
+   ],
+   "answer": 1,
+   "hint": "A circuit must be a complete loop.",
+   "explanation": "A gap in the circuit (loose wire or open switch) is the most common reason a lamp does not light."
+  },
+  {
+   "id": "s-elec-p07",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "How could you test whether a pencil “lead” (graphite) conducts electricity?",
+   "type": "mcq",
+   "options": [
+    "Measure its length",
+    "Hold it near a magnet",
+    "Put it in a gap in a working circuit with a lamp and see if the lamp lights",
+    "Put it in water"
+   ],
+   "answer": 2,
+   "hint": "Use a circuit as a tester.",
+   "explanation": "If the lamp lights when the material completes the circuit, it is a conductor. (Graphite does conduct.)"
+  },
+  {
+   "id": "s-elec-x01",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which of these is a good electrical conductor?",
+   "type": "mcq",
+   "options": [
+    "Copper",
+    "Rubber",
+    "Wood",
+    "Glass"
+   ],
+   "answer": 0,
+   "hint": "Used in wires.",
+   "explanation": "Copper is a metal and a good conductor."
+  },
+  {
+   "id": "s-elec-x02",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "Two lamps are connected in series with one cell. One lamp’s filament breaks. What happens?",
+   "type": "mcq",
+   "options": [
+    "The other lamp becomes brighter",
+    "The cell becomes hotter",
+    "Only the broken lamp goes out",
+    "Both lamps go out"
+   ],
+   "answer": 3,
+   "hint": "Is there still a complete loop?",
+   "explanation": "The circuit is broken, so no current flows and both lamps go out."
+  },
+  {
+   "id": "s-elec-x03",
+   "subject": "science",
+   "topic": "s-elec",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Why do magnets push apart when two north poles face each other?",
+   "type": "mcq",
+   "options": [
+    "Like poles repel each other",
+    "The magnets have run out",
+    "North poles are heavier",
+    "Opposite poles repel"
+   ],
+   "answer": 0,
+   "hint": "Like or unlike?",
+   "explanation": "Like poles (N–N or S–S) repel."
+  },
+  {
+   "id": "s-light-d01",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "How do we see an object such as a book?",
+   "type": "mcq",
+   "options": [
+    "Light from a source reflects off the book into our eyes",
+    "We see it because of sound waves",
+    "Light travels from our eyes to the book",
+    "The book gives out its own light"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "2": "Eyes receive light; they do not send it out"
+   },
+   "hint": "Most objects are not light sources.",
+   "explanation": "Light from a source (like the Sun or a lamp) reflects off the book and enters our eyes."
+  },
+  {
+   "id": "s-light-d02",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does a shadow form behind an object?",
+   "type": "mcq",
+   "options": [
+    "Shadows are made of dark light",
+    "The object blocks light, which travels in straight lines",
+    "Light bends around the object",
+    "The object reflects all the light backwards"
+   ],
+   "answer": 1,
+   "hint": "Light cannot go through an opaque object.",
+   "explanation": "Light travels in straight lines; an opaque object blocks it, leaving a dark area behind."
+  },
+  {
+   "id": "s-light-p01",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which of these is a light source?",
+   "type": "mcq",
+   "options": [
+    "A mirror",
+    "The Moon",
+    "A candle flame",
+    "A white wall"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "1": "The Moon reflects light from the Sun",
+    "0": "A mirror reflects light"
+   },
+   "hint": "It produces its own light.",
+   "explanation": "A candle flame produces its own light; the Moon and mirrors only reflect light."
+  },
+  {
+   "id": "s-light-p02",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "describe",
+   "prompt": "How are sounds made?",
+   "type": "mcq",
+   "options": [
+    "By light reflecting",
+    "By objects vibrating",
+    "By objects staying still",
+    "By magnets attracting"
+   ],
+   "answer": 1,
+   "hint": "Touch your throat while humming.",
+   "explanation": "All sounds are made by vibrations."
+  },
+  {
+   "id": "s-light-p03",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "A guitar string is tightened. What happens to the sound?",
+   "type": "mcq",
+   "options": [
+    "There is no sound",
+    "The pitch becomes lower",
+    "The pitch becomes higher",
+    "The sound becomes quieter"
+   ],
+   "answer": 2,
+   "hint": "Tighter strings vibrate faster.",
+   "explanation": "A tighter string vibrates faster, giving a higher pitch."
+  },
+  {
+   "id": "s-light-p04",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "A torch is moved closer to an object. What happens to the shadow on the screen behind?",
+   "type": "mcq",
+   "options": [
+    "It gets bigger",
+    "It changes colour",
+    "It gets smaller",
+    "It disappears"
+   ],
+   "answer": 0,
+   "hint": "The object blocks more of the light spreading from the torch.",
+   "explanation": "Closer to the light source, the object blocks a wider cone of light, so the shadow is bigger."
+  },
+  {
+   "id": "s-light-p05",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why can sound not travel through space?",
+   "type": "mcq",
+   "options": [
+    "Sound travels too slowly",
+    "Sound needs particles (a medium) to travel through, and space is a vacuum",
+    "Space is too cold",
+    "Space is too dark"
+   ],
+   "answer": 1,
+   "hint": "Sound is passed on by vibrating particles.",
+   "explanation": "Sound travels as vibrations passed between particles. Space has almost no particles."
+  },
+  {
+   "id": "s-light-p06",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A pencil in a glass of water looks bent at the surface. Why?",
+   "type": "mcq",
+   "options": [
+    "The water bends the pencil",
+    "Light reflects off the water",
+    "The glass is magnifying it",
+    "Light changes direction (refracts) as it passes from water to air"
+   ],
+   "answer": 3,
+   "hint": "Light travels at different speeds in different materials.",
+   "explanation": "Light refracts (bends) as it passes between water and air, so the pencil appears bent."
+  },
+  {
+   "id": "s-light-p07",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "Which material would be best for soundproofing a music room?",
+   "type": "mcq",
+   "options": [
+    "Metal sheets",
+    "Smooth tiles",
+    "Thin glass",
+    "Thick foam or fabric panels"
+   ],
+   "answer": 3,
+   "hint": "Soft materials absorb sound.",
+   "explanation": "Soft, thick materials absorb sound vibrations instead of reflecting them."
+  },
+  {
+   "id": "s-light-x01",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What happens to light when it hits a mirror?",
+   "type": "mcq",
+   "options": [
+    "It turns into sound",
+    "It stops existing",
+    "It reflects",
+    "It is absorbed completely"
+   ],
+   "answer": 2,
+   "hint": "You see yourself.",
+   "explanation": "Mirrors reflect light."
+  },
+  {
+   "id": "s-light-x02",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Hitting a drum harder makes the sound…",
+   "type": "mcq",
+   "options": [
+    "louder, because the vibrations are bigger",
+    "quieter",
+    "higher in pitch",
+    "travel slower"
+   ],
+   "answer": 0,
+   "hint": "Bigger vibrations…",
+   "explanation": "Hitting harder makes bigger vibrations, so the sound is louder."
+  },
+  {
+   "id": "s-light-x03",
+   "subject": "science",
+   "topic": "s-light",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "You see lightning before you hear the thunder. What does this tell you?",
+   "type": "mcq",
+   "options": [
+    "Thunder happens after the lightning has finished",
+    "Sound travels faster than light",
+    "Light travels much faster than sound",
+    "Your eyes work faster than your ears"
+   ],
+   "answer": 2,
+   "hint": "They happen at the same time.",
+   "explanation": "Both are made at the same moment, but light reaches you almost instantly; sound is much slower."
+  },
+  {
+   "id": "s-earth-d01",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "diagnostic",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "explain",
+   "prompt": "What causes day and night on Earth?",
+   "type": "mcq",
+   "options": [
+    "The Earth spinning on its axis",
+    "The Earth orbiting the Sun",
+    "The Moon blocking the Sun",
+    "The Sun moving around the Earth"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "1": "Orbiting the Sun takes a year and causes the year, not day and night",
+    "3": "The Sun appears to move because the Earth spins"
+   },
+   "hint": "It takes 24 hours.",
+   "explanation": "The Earth rotates once every 24 hours. The side facing the Sun has day; the side facing away has night."
+  },
+  {
+   "id": "s-earth-d02",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which type of rock forms when lava or magma cools?",
+   "type": "mcq",
+   "options": [
+    "Metamorphic",
+    "Igneous",
+    "Fossil",
+    "Sedimentary"
+   ],
+   "answer": 1,
+   "hint": "Think about fire and volcanoes.",
+   "explanation": "Igneous rocks form when molten rock cools and solidifies."
+  },
+  {
+   "id": "s-earth-p01",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "How long does it take the Earth to orbit the Sun?",
+   "type": "mcq",
+   "options": [
+    "24 hours",
+    "About 365 days",
+    "7 days",
+    "About 28 days"
+   ],
+   "answer": 1,
+   "mistakes": {
+    "0": "That is one rotation (a day)",
+    "3": "That is roughly the Moon’s cycle"
+   },
+   "hint": "One year.",
+   "explanation": "One orbit takes about 365¼ days — one year."
+  },
+  {
+   "id": "s-earth-p02",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which planet is closest to the Sun?",
+   "type": "mcq",
+   "options": [
+    "Mercury",
+    "Venus",
+    "Earth",
+    "Mars"
+   ],
+   "answer": 0,
+   "hint": "It is the smallest planet too.",
+   "explanation": "Mercury is the closest planet to the Sun."
+  },
+  {
+   "id": "s-earth-p03",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does the Moon appear to change shape during a month?",
+   "type": "mcq",
+   "options": [
+    "The Moon actually changes shape",
+    "The Earth’s shadow covers parts of it each night",
+    "Clouds cover parts of it",
+    "We see different amounts of its sunlit half as it orbits the Earth"
+   ],
+   "answer": 3,
+   "mistakes": {
+    "1": "That only happens in a lunar eclipse"
+   },
+   "hint": "Half the Moon is always lit by the Sun.",
+   "explanation": "As the Moon orbits, we see different parts of its sunlit side — the phases."
+  },
+  {
+   "id": "s-earth-p04",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which type of rock often contains fossils?",
+   "type": "mcq",
+   "options": [
+    "Metamorphic",
+    "Sedimentary",
+    "Igneous",
+    "Lava"
+   ],
+   "answer": 1,
+   "hint": "It forms from layers of sediment.",
+   "explanation": "Sedimentary rock forms in layers that can trap the remains of living things."
+  },
+  {
+   "id": "s-earth-p05",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "What is the Earth’s outermost solid layer called?",
+   "type": "mcq",
+   "options": [
+    "Outer core",
+    "Inner core",
+    "Mantle",
+    "Crust"
+   ],
+   "answer": 3,
+   "hint": "Like the crust on bread.",
+   "explanation": "The crust is the thin rocky outer layer."
+  },
+  {
+   "id": "s-earth-p06",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Why are there seasons on Earth?",
+   "type": "mcq",
+   "options": [
+    "The Earth’s axis is tilted, so each hemisphere gets more direct sunlight at different times of the year",
+    "The Earth is much closer to the Sun in summer",
+    "The Sun gets hotter in summer",
+    "The Moon blocks sunlight in winter"
+   ],
+   "answer": 0,
+   "mistakes": {
+    "1": "A common misconception — the tilt matters, not the distance"
+   },
+   "hint": "Think about the tilt of the axis.",
+   "explanation": "Because of the tilt, a hemisphere tilted towards the Sun gets longer days and more direct light — summer."
+  },
+  {
+   "id": "s-earth-p07",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Why do earthquakes and volcanoes often happen in the same places?",
+   "type": "mcq",
+   "options": [
+    "They are caused by the Moon",
+    "They happen near the sea only",
+    "They happen where the plates of the Earth’s crust meet and move",
+    "They happen where it is hottest on the surface"
+   ],
+   "answer": 2,
+   "hint": "The crust is broken into pieces.",
+   "explanation": "Most occur at plate boundaries, where pieces of the crust move against, apart from, or under each other."
+  },
+  {
+   "id": "s-earth-x01",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "mock",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "What is the Sun?",
+   "type": "mcq",
+   "options": [
+    "A star",
+    "A planet",
+    "A moon",
+    "A comet"
+   ],
+   "answer": 0,
+   "hint": "It gives out its own light.",
+   "explanation": "The Sun is a star."
+  },
+  {
+   "id": "s-earth-x02",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "explain",
+   "prompt": "Why does the Sun appear to move across the sky during the day?",
+   "type": "mcq",
+   "options": [
+    "Because the Sun orbits the Earth daily",
+    "Because clouds move it",
+    "Because the Earth is spinning",
+    "Because the Moon pushes it"
+   ],
+   "answer": 2,
+   "hint": "Who is really moving?",
+   "explanation": "The Earth’s rotation makes the Sun appear to rise in the east and set in the west."
+  },
+  {
+   "id": "s-earth-x03",
+   "subject": "science",
+   "topic": "s-earth",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Soil A drains water quickly; soil B holds water for a long time. Soil A is most likely…",
+   "type": "mcq",
+   "options": [
+    "Clay soil with tiny particles",
+    "Frozen soil",
+    "Sandy soil with large particles",
+    "Soil with no particles"
+   ],
+   "answer": 2,
+   "hint": "Large gaps let water through.",
+   "explanation": "Sandy soil has large particles with big gaps, so water drains through quickly."
+  },
+  {
+   "id": "s-design-d01",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "diagnostic",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "identify",
+   "prompt": "Ravi tests whether the height a ball is dropped from affects how high it bounces. Which variable should he change?",
+   "type": "mcq",
+   "options": [
+    "The bounce height",
+    "The surface",
+    "The drop height",
+    "The type of ball"
+   ],
+   "answer": 2,
+   "mistakes": {
+    "0": "That is what he measures (dependent variable)"
+   },
+   "hint": "The variable you change is the one you are testing.",
+   "explanation": "The independent variable — the one he changes — is the drop height."
+  },
+  {
+   "id": "s-design-d02",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "diagnostic",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Why should Ravi use the same ball and the same floor each time?",
+   "type": "mcq",
+   "options": [
+    "To save money",
+    "To make it a fair test, so only drop height affects the result",
+    "Because balls only bounce on floors",
+    "So the results are bigger"
+   ],
+   "answer": 1,
+   "hint": "What makes a test fair?",
+   "explanation": "Keeping other variables the same (control variables) means any change is caused only by the drop height."
+  },
+  {
+   "id": "s-design-p01",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "In an investigation, what is the dependent variable?",
+   "type": "mcq",
+   "options": [
+    "The variable you change",
+    "The variables you keep the same",
+    "The equipment you use",
+    "The variable you measure"
+   ],
+   "answer": 3,
+   "hint": "It depends on what you change.",
+   "explanation": "The dependent variable is what you measure or observe."
+  },
+  {
+   "id": "s-design-p02",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Mia investigates how the temperature of water affects how quickly sugar dissolves. What should she measure?",
+   "type": "mcq",
+   "options": [
+    "The amount of sugar",
+    "The size of the beaker",
+    "The temperature of the water",
+    "The time for the sugar to dissolve"
+   ],
+   "answer": 3,
+   "mistakes": {
+    "2": "That is what she changes"
+   },
+   "hint": "How will she know how quickly it dissolves?",
+   "explanation": "She measures the time taken — the dependent variable."
+  },
+  {
+   "id": "s-design-p03",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "In Mia’s investigation, which should be a control variable?",
+   "type": "mcq",
+   "options": [
+    "The time taken to dissolve",
+    "The amount of water",
+    "The temperature of the water",
+    "Her prediction"
+   ],
+   "answer": 1,
+   "hint": "Something kept the same.",
+   "explanation": "The volume of water should stay the same so the test is fair."
+  },
+  {
+   "id": "s-design-p04",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "predict",
+   "prompt": "Which is the best prediction for an investigation into ramp height and toy car distance?",
+   "type": "mcq",
+   "options": [
+    "The car will travel",
+    "The ramp will be 30 cm",
+    "Cars are fun",
+    "The higher the ramp, the further the car will travel, because it will be going faster at the bottom"
+   ],
+   "answer": 3,
+   "hint": "A good prediction says what will happen and why.",
+   "explanation": "A scientific prediction links the variables and gives a reason."
+  },
+  {
+   "id": "s-design-p05",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Why is it a good idea to repeat measurements in an investigation?",
+   "type": "mcq",
+   "options": [
+    "Because the first result is always wrong",
+    "To make the investigation take longer",
+    "To check results and reduce the effect of errors, so the results are more reliable",
+    "To get different answers each time"
+   ],
+   "answer": 2,
+   "hint": "What if one result is unusual?",
+   "explanation": "Repeating lets you spot anomalous results and calculate an average, making results more reliable."
+  },
+  {
+   "id": "s-design-p06",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "Which equipment is best for measuring 50 ml of water accurately?",
+   "type": "mcq",
+   "options": [
+    "A forcemeter",
+    "A measuring cylinder",
+    "A ruler",
+    "A stopwatch"
+   ],
+   "answer": 1,
+   "hint": "It is marked in ml.",
+   "explanation": "A measuring cylinder measures volume accurately."
+  },
+  {
+   "id": "s-design-p07",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "Leo tests which paper towel absorbs most water. He uses a different volume of water for each towel. What is wrong?",
+   "type": "mcq",
+   "options": [
+    "It is not a fair test because the volume of water should be the same",
+    "He should use more towels",
+    "He should not measure anything",
+    "Nothing is wrong"
+   ],
+   "answer": 0,
+   "hint": "What should be kept the same?",
+   "explanation": "Changing the volume of water as well as the towel means he cannot tell which caused the difference."
+  },
+  {
+   "id": "s-design-p08",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "suggest",
+   "prompt": "What is a safety risk when heating water in a beaker, and how can it be reduced?",
+   "type": "mcq",
+   "options": [
+    "Getting wet — wear a coat",
+    "Electric shock — wear wellingtons",
+    "Burns or scalds — wear goggles, let it cool and use heat-proof gloves or tongs",
+    "There is no risk"
+   ],
+   "answer": 2,
+   "hint": "Hot water can hurt you.",
+   "explanation": "Hot water can cause scalds. Using tongs, eye protection and care reduces the risk."
+  },
+  {
+   "id": "s-design-x01",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "An investigation tests whether the number of turns on a spinner’s wings affects how long it takes to fall. What is the independent variable?",
+   "type": "mcq",
+   "options": [
+    "The time to fall",
+    "The person timing it",
+    "The height it is dropped from",
+    "The number of turns (the change made to the wings)"
+   ],
+   "answer": 3,
+   "hint": "What is deliberately changed?",
+   "explanation": "The independent variable is the factor that is changed on purpose."
+  },
+  {
+   "id": "s-design-x02",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A student wants to find which plant food helps plants grow tallest. Which plan is fairest?",
+   "type": "mcq",
+   "options": [
+    "Use identical plants, the same amount of water and light, and change only the plant food",
+    "Put some plants inside and some outside",
+    "Give each plant a different amount of water and food",
+    "Use different plants for each food"
+   ],
+   "answer": 0,
+   "hint": "Change one thing only.",
+   "explanation": "Only the plant food should change; everything else stays the same."
+  },
+  {
+   "id": "s-design-x03",
+   "subject": "science",
+   "topic": "s-design",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "Predict how the length of a pendulum string affects the time for one swing.",
+   "type": "mcq",
+   "options": [
+    "Pendulums do not swing",
+    "A longer string will swing faster",
+    "A longer string will take longer to swing, because the bob travels a longer path",
+    "String length makes no difference to anything"
+   ],
+   "answer": 2,
+   "hint": "Think of a playground swing with long chains.",
+   "explanation": "A longer pendulum takes more time for each swing."
+  },
+  {
+   "id": "s-data-d01",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "diagnostic",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "describe",
+   "prompt": "Look at the table. What pattern does it show?",
+   "type": "mcq",
+   "options": [
+    "Sugar dissolves only at 80 °C",
+    "As water temperature increases, the time to dissolve decreases",
+    "Temperature has no effect",
+    "As water temperature increases, the time to dissolve increases"
+   ],
+   "answer": 1,
+   "hint": "Read down both columns together.",
+   "explanation": "Higher temperature → shorter time. Sugar dissolves faster in hotter water.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Water temperature (°C)",
+     "Time to dissolve (s)"
+    ],
+    "rows": [
+     [
+      "20",
+      "120"
+     ],
+     [
+      "40",
+      "75"
+     ],
+     [
+      "60",
+      "42"
+     ],
+     [
+      "80",
+      "25"
+     ]
+    ],
+    "caption": "Time for one spoon of sugar to dissolve"
+   }
+  },
+  {
+   "id": "s-data-d02",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "diagnostic",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "Using the table, estimate the time for sugar to dissolve at 50 °C.",
+   "type": "numeric",
+   "answer": 58,
+   "tolerance": 12,
+   "unit": "s",
+   "hint": "50 °C is between 40 °C and 60 °C.",
+   "explanation": "Between 75 s (40 °C) and 42 s (60 °C) — about halfway, so roughly 55–60 s. Answers from 46 to 70 s are accepted.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Water temperature (°C)",
+     "Time to dissolve (s)"
+    ],
+    "rows": [
+     [
+      "20",
+      "120"
+     ],
+     [
+      "40",
+      "75"
+     ],
+     [
+      "60",
+      "42"
+     ],
+     [
+      "80",
+      "25"
+     ]
+    ],
+    "caption": "Time for one spoon of sugar to dissolve"
+   }
+  },
+  {
+   "id": "s-data-p01",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "Which result in the table is most likely to be anomalous?",
+   "type": "mcq",
+   "options": [
+    "Plant B, week 4",
+    "Plant A, week 5",
+    "Plant B, week 1",
+    "Plant A, week 3"
+   ],
+   "answer": 0,
+   "hint": "Look for a value that does not fit the pattern.",
+   "explanation": "Plant B grows 2, 3, 4, then 12, then 6 — the 12 cm reading does not fit the steady pattern.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Week",
+     "Plant A height (cm)",
+     "Plant B height (cm)"
+    ],
+    "rows": [
+     [
+      "1",
+      "2",
+      "2"
+     ],
+     [
+      "2",
+      "4",
+      "3"
+     ],
+     [
+      "3",
+      "7",
+      "4"
+     ],
+     [
+      "4",
+      "9",
+      "12"
+     ],
+     [
+      "5",
+      "12",
+      "6"
+     ]
+    ],
+    "caption": "Plant heights"
+   }
+  },
+  {
+   "id": "s-data-p02",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "How much did Plant A grow between week 1 and week 5?",
+   "type": "numeric",
+   "answer": 10,
+   "unit": "cm",
+   "mistakes": {
+    "12": "Gave the final height, not the growth"
+   },
+   "hint": "Subtract the week 1 height from the week 5 height.",
+   "explanation": "12 − 2 = 10 cm.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Week",
+     "Plant A height (cm)",
+     "Plant B height (cm)"
+    ],
+    "rows": [
+     [
+      "1",
+      "2",
+      "2"
+     ],
+     [
+      "2",
+      "4",
+      "3"
+     ],
+     [
+      "3",
+      "7",
+      "4"
+     ],
+     [
+      "4",
+      "9",
+      "12"
+     ],
+     [
+      "5",
+      "12",
+      "6"
+     ]
+    ],
+    "caption": "Plant heights"
+   }
+  },
+  {
+   "id": "s-data-p03",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "knowledge",
+   "difficulty": 1,
+   "command": "identify",
+   "prompt": "Which type of graph is best for showing how a plant’s height changes over several weeks?",
+   "type": "mcq",
+   "options": [
+    "A line graph",
+    "A Venn diagram",
+    "A pictogram",
+    "A pie chart"
+   ],
+   "answer": 0,
+   "hint": "The data changes continuously over time.",
+   "explanation": "Line graphs show how a measurement changes over time."
+  },
+  {
+   "id": "s-data-p04",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Three repeat measurements of a ball’s bounce were 42 cm, 46 cm and 44 cm. What is the mean?",
+   "type": "numeric",
+   "answer": 44,
+   "unit": "cm",
+   "hint": "Add and divide by 3.",
+   "explanation": "(42 + 46 + 44) ÷ 3 = 132 ÷ 3 = 44 cm."
+  },
+  {
+   "id": "s-data-p05",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "describe",
+   "prompt": "Describe what the graph shows.",
+   "type": "mcq",
+   "options": [
+    "The water cools at a steady rate",
+    "The water heats up",
+    "The water cools quickly at first, then more slowly",
+    "The temperature stays the same"
+   ],
+   "answer": 2,
+   "hint": "Compare the drop in the first 5 minutes with the last 5.",
+   "explanation": "It drops 18 °C in the first 5 minutes but only 5 °C in the last 5 — cooling slows down.",
+   "stimulus": {
+    "type": "line",
+    "labels": [
+     "0",
+     "5",
+     "10",
+     "15",
+     "20"
+    ],
+    "values": [
+     80,
+     62,
+     50,
+     42,
+     37
+    ],
+    "caption": "Temperature of a cup of water as it cools",
+    "yLabel": "°C",
+    "xLabel": "Time (minutes)"
+   }
+  },
+  {
+   "id": "s-data-p06",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "predict",
+   "prompt": "Use the graph to predict the temperature of the water after 25 minutes.",
+   "type": "numeric",
+   "answer": 34,
+   "tolerance": 3,
+   "unit": "°C",
+   "hint": "The drop is getting smaller each time.",
+   "explanation": "Drops are 18, 12, 8, 5 … the next drop will be about 3, so about 33–35 °C. Answers from 31 to 37 are accepted.",
+   "stimulus": {
+    "type": "line",
+    "labels": [
+     "0",
+     "5",
+     "10",
+     "15",
+     "20"
+    ],
+    "values": [
+     80,
+     62,
+     50,
+     42,
+     37
+    ],
+    "caption": "Temperature of a cup of water as it cools",
+    "yLabel": "°C",
+    "xLabel": "Time (minutes)"
+   }
+  },
+  {
+   "id": "s-data-p07",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A student concludes: “Plants grow best in red light.” She tested one plant in red light and one in blue light. Why is her conclusion weak?",
+   "type": "mcq",
+   "options": [
+    "She tested only one plant in each colour, so the result could be due to chance",
+    "She measured the plants",
+    "She should have used no light",
+    "Red light is not real"
+   ],
+   "answer": 0,
+   "hint": "How much evidence did she collect?",
+   "explanation": "With only one plant per condition, differences could be due to that individual plant. More plants and repeats are needed."
+  },
+  {
+   "id": "s-data-p08",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "practice",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "suggest",
+   "prompt": "How could the student improve the investigation into light colour?",
+   "type": "mcq",
+   "options": [
+    "Use several plants for each colour and repeat the measurements",
+    "Stop measuring the plants",
+    "Change the amount of water as well",
+    "Use one plant for both colours at the same time"
+   ],
+   "answer": 0,
+   "hint": "More evidence makes conclusions stronger.",
+   "explanation": "More plants and repeats give more reliable results."
+  },
+  {
+   "id": "s-data-x01",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "identify",
+   "prompt": "The bar chart shows how far paper planes flew. Which design flew furthest?",
+   "type": "mcq",
+   "options": [
+    "Wide wing",
+    "Stunt",
+    "Dart",
+    "Glider"
+   ],
+   "answer": 3,
+   "hint": "Tallest bar.",
+   "explanation": "The glider flew 8.2 m — the furthest.",
+   "stimulus": {
+    "type": "bar",
+    "labels": [
+     "Dart",
+     "Glider",
+     "Stunt",
+     "Wide wing"
+    ],
+    "values": [
+     6.5,
+     8.2,
+     4.1,
+     7.4
+    ],
+    "caption": "Distance flown",
+    "yLabel": "Metres"
+   }
+  },
+  {
+   "id": "s-data-x02",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "mock",
+   "skill": "application",
+   "difficulty": 2,
+   "command": "calculate",
+   "prompt": "Using the same bar chart, how much further did the Glider fly than the Stunt plane?",
+   "type": "numeric",
+   "answer": 4.1,
+   "unit": "m",
+   "hint": "8.2 − 4.1.",
+   "explanation": "8.2 − 4.1 = 4.1 m.",
+   "stimulus": {
+    "type": "bar",
+    "labels": [
+     "Dart",
+     "Glider",
+     "Stunt",
+     "Wide wing"
+    ],
+    "values": [
+     6.5,
+     8.2,
+     4.1,
+     7.4
+    ],
+    "caption": "Distance flown",
+    "yLabel": "Metres"
+   }
+  },
+  {
+   "id": "s-data-x03",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "explain",
+   "prompt": "A table shows that the more a spring is stretched by masses, the longer it gets. Which conclusion is best?",
+   "type": "mcq",
+   "options": [
+    "The spring will always be 11 cm",
+    "The spring gets shorter with more mass",
+    "Mass has no effect",
+    "The length increases by 2 cm for every 100 g added"
+   ],
+   "answer": 3,
+   "hint": "Look at how much it increases each time.",
+   "explanation": "Each extra 100 g adds 2 cm — a steady pattern.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Mass (g)",
+     "Length of spring (cm)"
+    ],
+    "rows": [
+     [
+      "0",
+      "5"
+     ],
+     [
+      "100",
+      "7"
+     ],
+     [
+      "200",
+      "9"
+     ],
+     [
+      "300",
+      "11"
+     ]
+    ]
+   }
+  },
+  {
+   "id": "s-data-x04",
+   "subject": "science",
+   "topic": "s-data",
+   "pool": "mock",
+   "skill": "reasoning",
+   "difficulty": 3,
+   "command": "calculate",
+   "prompt": "Using the spring table, predict the length of the spring with 400 g.",
+   "type": "numeric",
+   "answer": 13,
+   "unit": "cm",
+   "hint": "Continue the pattern.",
+   "explanation": "11 + 2 = 13 cm.",
+   "stimulus": {
+    "type": "table",
+    "headers": [
+     "Mass (g)",
+     "Length of spring (cm)"
+    ],
+    "rows": [
+     [
+      "0",
+      "5"
+     ],
+     [
+      "100",
+      "7"
+     ],
+     [
+      "200",
+      "9"
+     ],
+     [
+      "300",
+      "11"
+     ]
+    ]
+   }
+  }
+ ]
+}

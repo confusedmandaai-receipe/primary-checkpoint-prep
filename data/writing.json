@@ -1,0 +1,160 @@
+{
+ "version": 1,
+ "note": "All tasks and model openings are original.",
+ "tasks": [
+  {
+   "id": "w-story-opening",
+   "type": "Narrative",
+   "title": "A story opening: The Locked Door",
+   "minutes": 25,
+   "prompt": "Write the opening of a story in which a character finds a door that has always been locked — but today it is open.",
+   "purpose": "To entertain",
+   "audience": "Readers of your age",
+   "plan": [
+    "Who is your character and where are they?",
+    "What do they see, hear and feel as they notice the door?",
+    "What tiny detail makes the reader want to read on?",
+    "End on a moment of suspense."
+   ],
+   "criteria": [
+    "I described the setting using at least two senses",
+    "I showed my character’s feelings through actions, not just “she was scared”",
+    "I used at least one simile or metaphor",
+    "I varied my sentence openings (e.g. a fronted adverbial)",
+    "I used a short sentence for effect",
+    "I punctuated any speech correctly",
+    "I ended with suspense"
+   ],
+   "model": "The corridor smelled of dust and old paper, the way it always did. Mina had walked past the door at the end a thousand times. It was painted the colour of storm clouds and it had never — not once — been open. Today, a thin line of golden light was spilling across the floorboards."
+  },
+  {
+   "id": "w-persuasive-letter",
+   "type": "Persuasive letter",
+   "title": "Letter to the head teacher: A school garden",
+   "minutes": 25,
+   "prompt": "Write a letter to your head teacher persuading them to create a school garden.",
+   "purpose": "To persuade",
+   "audience": "Your head teacher (formal)",
+   "plan": [
+    "Opening: who you are and what you are asking for",
+    "Reason 1 with evidence or an example",
+    "Reason 2 with evidence or an example",
+    "Answer a possible objection (e.g. cost)",
+    "Polite closing with a clear request"
+   ],
+   "criteria": [
+    "I used a formal greeting and sign-off",
+    "I stated my request clearly in the first paragraph",
+    "I gave at least two reasons, each in its own paragraph",
+    "I used persuasive techniques (rhetorical question, facts, emotive language)",
+    "I answered a possible objection",
+    "I used linking words (furthermore, however, therefore)",
+    "I kept a polite, formal tone throughout"
+   ],
+   "model": "Dear Mrs Okafor,\nI am writing on behalf of Class 6B to ask you to consider creating a garden in the empty space behind the hall. We believe it would benefit every pupil in the school."
+  },
+  {
+   "id": "w-report",
+   "type": "Non-chronological report",
+   "title": "Report: An amazing animal",
+   "minutes": 25,
+   "prompt": "Write a non-chronological report about an animal of your choice for a children’s encyclopedia.",
+   "purpose": "To inform",
+   "audience": "Children aged 8–11",
+   "plan": [
+    "Introduction: what the animal is",
+    "Appearance",
+    "Habitat and diet",
+    "Adaptations",
+    "An amazing fact to finish"
+   ],
+   "criteria": [
+    "I wrote an introduction that tells the reader what the report is about",
+    "I organised information into paragraphs with clear topics",
+    "I used subheadings",
+    "I used present tense and an impersonal style",
+    "I included technical vocabulary",
+    "I included at least one fact using numbers",
+    "I ended with an interesting conclusion"
+   ],
+   "model": "The axolotl is a type of salamander found only in the lakes and canals near Mexico City. Unlike most amphibians, it spends its whole life underwater."
+  },
+  {
+   "id": "w-diary",
+   "type": "Diary entry",
+   "title": "Diary: The day everything went wrong",
+   "minutes": 20,
+   "prompt": "Write a diary entry about a day when everything seemed to go wrong — but ended well.",
+   "purpose": "To recount and reflect",
+   "audience": "Yourself (informal)",
+   "plan": [
+    "Set the scene: date and how the day began",
+    "Two or three things that went wrong, in order",
+    "How you felt at each stage",
+    "The turning point",
+    "Reflection: what you learned"
+   ],
+   "criteria": [
+    "I wrote in the first person",
+    "I used the past tense for events",
+    "I used time connectives to show order",
+    "I showed my feelings and thoughts",
+    "I used an informal, personal tone",
+    "I included a reflection at the end",
+    "I checked my spelling and punctuation"
+   ],
+   "model": "Tuesday 4th March\nDear Diary,\nIf I had known what today had in store, I would have stayed under my duvet. It started with the alarm clock that never rang…"
+  },
+  {
+   "id": "w-instructions",
+   "type": "Instructions",
+   "title": "Instructions: How to make a bee hotel",
+   "minutes": 20,
+   "prompt": "Write clear instructions for a younger pupil explaining how to make a simple bee hotel.",
+   "purpose": "To instruct",
+   "audience": "Younger pupils",
+   "plan": [
+    "Title and a short introduction",
+    "What you need (a list)",
+    "Numbered steps",
+    "A final tip or safety note"
+   ],
+   "criteria": [
+    "I included a clear title and goal",
+    "I listed the equipment needed",
+    "I used numbered steps in the correct order",
+    "I started steps with imperative verbs (Cut, Place, Fix)",
+    "I used precise vocabulary and measurements",
+    "I added a helpful tip or safety warning",
+    "My instructions are short and easy to follow"
+   ],
+   "model": "How to Make a Bee Hotel\nGive solitary bees a safe place to nest!\nYou will need: an empty tin can, 20 paper straws, string, scissors.\n1. Wash the tin carefully and remove any sharp edges."
+  },
+  {
+   "id": "w-description",
+   "type": "Description",
+   "title": "Description: A market at dawn",
+   "minutes": 20,
+   "prompt": "Describe a busy market as it opens early in the morning.",
+   "purpose": "To describe and entertain",
+   "audience": "General readers",
+   "plan": [
+    "First impression: what you notice first",
+    "Sights",
+    "Sounds and smells",
+    "People and movement",
+    "A closing image"
+   ],
+   "criteria": [
+    "I used all five senses across the piece",
+    "I used precise nouns and powerful verbs",
+    "I used at least two figurative techniques",
+    "I varied sentence length",
+    "I organised the description in a clear order (e.g. near to far)",
+    "I avoided repeating words",
+    "I ended with a memorable image"
+   ],
+   "model": "Before the sun had cleared the rooftops, the market was already stirring. Crates thudded onto trestle tables, and the sharp scent of oranges cut through the cool air."
+  }
+ ]
+}

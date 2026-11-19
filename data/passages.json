@@ -1,0 +1,132 @@
+{
+ "version": 1,
+ "note": "All passages are original texts written for this site.",
+ "passages": [
+  {
+   "id": "pd1",
+   "pool": "diagnostic",
+   "type": "Fiction",
+   "title": "The Last Bus",
+   "paragraphs": [
+    "The rain had been falling since lunchtime, and by six o’clock the bus shelter on Harbour Road was the only dry place Amira could find. She pressed herself against the back wall, clutching her violin case as though it might float away.",
+    "The timetable said the last bus would come at 6:15. Her watch said 6:24. Amira checked it again, then again, as if looking harder might change the numbers.",
+    "“Waiting for the number twelve?” An old man with a dripping umbrella had appeared beside her. Amira nodded, not trusting her voice.",
+    "“It’s always late on Thursdays,” he said cheerfully. “The driver stops to buy his mother’s bread.” He winked, and for the first time that afternoon, Amira felt her shoulders drop a little.",
+    "At 6:31, two yellow headlights swam out of the grey. Amira let out a breath she hadn’t known she was holding. As she climbed aboard, she turned to thank the old man — but the shelter was empty, and only a small puddle marked where he had stood."
+   ]
+  },
+  {
+   "id": "pd2",
+   "pool": "diagnostic",
+   "type": "Non-fiction (information text)",
+   "title": "The Desert Ship",
+   "paragraphs": [
+    "Camels have been called “ships of the desert” for hundreds of years. Like ships crossing an ocean, they carry people and goods across vast, empty landscapes where few other animals could survive.",
+    "Contrary to popular belief, a camel’s hump does not store water. It stores fat, which the camel can use for energy when food is scarce. A camel can, however, drink more than 100 litres of water in about ten minutes, and then go for days without drinking again.",
+    "Its body is built for sand and sun. Two rows of long eyelashes protect its eyes from blowing sand, and it can close its nostrils during a sandstorm. Wide, padded feet stop it sinking into soft ground.",
+    "So next time you see a picture of a camel, look carefully. Every part of it tells a story of survival."
+   ]
+  },
+  {
+   "id": "pp1",
+   "pool": "practice",
+   "type": "Non-fiction (information text)",
+   "title": "Hotels for Bees",
+   "paragraphs": [
+    "Not all bees live in hives. In fact, most of the world’s bee species are solitary: each female builds her own small nest and raises her young alone. These bees are excellent pollinators, but they are finding it harder to locate safe places to nest as gardens are paved over and old walls are repaired.",
+    "One simple solution is a “bee hotel”. A bee hotel is a bundle of hollow tubes — often bamboo canes, paper straws or holes drilled into a block of wood — fixed in a sunny, sheltered spot. Female bees crawl inside, lay an egg, leave a supply of pollen, and seal the tube with mud or chewed leaves.",
+    "Location matters more than appearance. A hotel should face the morning sun, sit at least one metre above the ground and be protected from heavy rain. Tubes that are damp or shaded are usually ignored.",
+    "At Rivermouth Primary School, pupils built six bee hotels last spring. By summer, more than half of the tubes had been sealed. “We didn’t expect so many visitors,” said Year 6 pupil Tomas. “Now we check them every Friday and record what we see.”",
+    "Scientists caution that bee hotels are not a complete answer. Bees also need flowers that bloom from early spring to late autumn. A hotel with no food nearby is like a block of flats in the middle of a desert."
+   ]
+  },
+  {
+   "id": "pp2",
+   "pool": "practice",
+   "type": "Fiction",
+   "title": "The Storm Light",
+   "paragraphs": [
+    "Jonah had promised his grandmother he would be home before dark, but the sea had other plans. By the time he had pulled the last lobster pot aboard, the sky over Gull Point had turned the colour of a bruise.",
+    "The first wave slapped the side of the little boat like an angry hand. Jonah gripped the tiller and pointed the bow towards the harbour, though he could no longer see it. Rain stung his face. The engine coughed, recovered, coughed again.",
+    "Then, through the howling dark, a light blinked. Once. Twice. A pause. Once again. Jonah knew that pattern. Every night for eleven years his grandmother had flashed it from the kitchen window so he would know she was waiting.",
+    "He steered towards it, wave after wave, until the harbour wall rose out of the gloom like a sleeping giant. When he finally tied up the boat, his hands were shaking so much he could barely work the knot.",
+    "His grandmother was standing on the slipway in her nightgown and wellington boots, the torch still in her hand. She did not say a word. She simply wrapped her coat around him and led him home."
+   ]
+  },
+  {
+   "id": "pp3",
+   "pool": "practice",
+   "type": "Poem",
+   "title": "City Morning",
+   "paragraphs": [
+    "Before the buses clear their throats, / before the shutters yawn, / the city stretches, one grey arm / across the edge of dawn.",
+    "A baker’s window glows like gold; / the pigeons strut and wait. / A cyclist hums a half-heard tune / and rattles past the gate.",
+    "Then all at once the streets awake — / a thousand footsteps race, / and every hurried, hopeful face / is rushing to its place."
+   ]
+  },
+  {
+   "id": "pp4",
+   "pool": "practice",
+   "type": "Non-fiction (persuasive leaflet)",
+   "title": "Switch Off, Step Out!",
+   "paragraphs": [
+    "Did you know that the average eleven-year-old now spends more than five hours a day looking at a screen? That is more time than most of us spend in lessons! It is time to switch off and step out.",
+    "Playing outdoors is not just fun — it is good for you. Fresh air and exercise help your body grow strong, and studies suggest that time in green spaces can improve concentration and mood. Wouldn’t you like to feel calmer and sharper in class?",
+    "Join our Saturday Explorers Club at Greenway Park. Every week we build dens, track wildlife and play team games. No experience is needed, and the club is completely free.",
+    "Don’t let another weekend disappear into a screen. Grab a friend, put on your trainers, and come and discover what you have been missing. We will see you on Saturday!"
+   ]
+  },
+  {
+   "id": "px1",
+   "pool": "mock",
+   "type": "Non-fiction (information text)",
+   "title": "Forests That Grow in the Sea",
+   "paragraphs": [
+    "Along warm coastlines, where rivers meet the ocean, grow some of the most remarkable forests on Earth. Mangrove trees can survive in salty water that would kill most plants within days.",
+    "Their secret lies in their roots. Some mangroves have tall, arching roots that hold the tree above the water like stilts. Others send up thin roots called pneumatophores, which poke out of the mud like pencils and allow the tree to “breathe” when the tide is high.",
+    "Mangrove forests are nurseries for the sea. Young fish, crabs and shrimps shelter among the tangled roots, safe from larger predators, until they are big enough to swim into open water.",
+    "Mangroves also protect people. Their roots slow down waves and trap mud, reducing damage from storms and preventing coastlines from washing away. Yet, over the last fifty years, large areas of mangrove forest have been cleared for farms and buildings.",
+    "Today, communities in many countries are replanting mangroves. It is slow work, but each seedling is a small promise: a safer coast and a richer sea for the future."
+   ]
+  },
+  {
+   "id": "px2",
+   "pool": "mock",
+   "type": "Fiction",
+   "title": "The Audition",
+   "paragraphs": [
+    "Leila had practised the piece one hundred and twelve times. She knew because she had kept a tally on the back of her bedroom door, five neat lines for every five attempts.",
+    "Now, standing in the echoing hall, she could not remember the first note.",
+    "Three judges sat behind a long table. The one in the middle, a woman with silver glasses, smiled and said, “Whenever you are ready.” Her voice was kind, but Leila’s fingers felt as though they belonged to someone else.",
+    "She closed her eyes. She thought of her bedroom, of the tally marks, of her little brother pretending to be an audience of thousands. Slowly, the first note returned, and then the second, and then the music was flowing out of her like water from a tap that had been stuck for years.",
+    "When she finished, the hall was silent. Then the woman with silver glasses put down her pen and, very quietly, began to clap."
+   ]
+  },
+  {
+   "id": "px3",
+   "pool": "mock",
+   "type": "Non-fiction (recount)",
+   "title": "A Short History of the Bicycle",
+   "paragraphs": [
+    "The first bicycles had no pedals at all. In 1817, a German inventor built a wooden “running machine”: riders sat on a seat and pushed themselves along with their feet.",
+    "Pedals arrived in the 1860s, attached directly to the front wheel. To travel faster, makers built bigger and bigger front wheels, until some were taller than a grown man. These “penny-farthings” were exciting but dangerous; a rider who hit a stone could be thrown head-first over the handlebars.",
+    "In the 1880s, the “safety bicycle” changed everything. It had two wheels of the same size and a chain that connected the pedals to the back wheel. Air-filled tyres soon followed, making rides far more comfortable.",
+    "Within a few years, cycling became hugely popular. For the first time, many ordinary people could travel several kilometres to work or visit friends without a horse.",
+    "Today, the basic design has hardly changed. Modern bicycles are lighter and have gears, but a rider from 1890 would still recognise one instantly."
+   ]
+  },
+  {
+   "id": "px4",
+   "pool": "mock",
+   "type": "Fiction",
+   "title": "The Fog Market",
+   "paragraphs": [
+    "Every year, on the first foggy morning of autumn, the market appeared in the square. Nobody saw it arrive. One moment the square was empty; the next, it was crowded with stalls selling things that could not be bought anywhere else.",
+    "Ben had heard the stories, of course. Bottled thunderstorms. Maps that redrew themselves. A clock that ran backwards for anyone who wanted one more hour. He had never believed a word.",
+    "Yet here he was, his breath making small clouds, staring at a stall piled high with glass jars. Inside each jar, something glowed faintly — a different colour in every one.",
+    "“Memories,” said the stallholder, a tall woman whose coat seemed to be stitched from a hundred different maps. “Good ones only. One coin each.”",
+    "Ben’s hand closed around the single coin in his pocket. He had been saving it for a week. He looked at the jars for a long time. Then, slowly, he shook his head, turned, and walked home to find his sister."
+   ]
+  }
+ ]
+}
