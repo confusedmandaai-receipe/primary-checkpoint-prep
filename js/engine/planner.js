@@ -12,7 +12,7 @@ export const STAGES = [
   { id: 4, name: 'Final examination readiness', short: 'Get ready', desc: 'Timed mocks and targeted revision. No big new topics.' },
 ];
 
-export const TASK_MINUTES = { diagnostic: 25, lesson: 15, practice: 12, examstyle: 12, mixed: 15, review: 8, writing: 20, weekly: 25, mock: 45, mini: 4, rest: 0 };
+export const TASK_MINUTES = { diagnostic: 12, lesson: 15, practice: 12, examstyle: 12, mixed: 15, review: 8, writing: 20, weekly: 25, mock: 45, mini: 4, rest: 0 };
 
 export const WHY = {
   diagnostic: 'Find out what you need to learn',
@@ -28,13 +28,36 @@ export const WHY = {
   rest: 'Rest well before the exam',
 };
 
-const MOCK_ROTATION = ['maths', 'science', 'english'];
+const SUBJECTS = ['maths', 'science', 'english'];
+const SUBJECT_NAME = { maths: 'Mathematics', science: 'Science', english: 'English' };
 
-/** Stage boundaries (inclusive dates) for a profile. */
+/** Exam date per subject. Older profiles have one date for all three. */
+export function examDates(profile) {
+  const e = profile.examDates || {};
+  return Object.fromEntries(SUBJECTS.map((s) => [s, e[s] || profile.examDate]));
+}
+export function firstExamDate(profile) { return Object.values(examDates(profile)).sort()[0]; }
+export function lastExamDate(profile) { return Object.values(examDates(profile)).sort().pop(); }
+/** Subjects still to be examined on (exam strictly after this date). */
+export function activeSubjects(profile, iso) {
+  const e = examDates(profile);
+  return SUBJECTS.filter((s) => e[s] > iso);
+}
+/** Exams in date order: [{subject, date}] */
+export function examSchedule(profile) {
+  const e = examDates(profile);
+  return SUBJECTS.map((s) => ({ subject: s, date: e[s] })).sort((a, b) => a.date.localeCompare(b.date) || SUBJECTS.indexOf(a.subject) - SUBJECTS.indexOf(b.subject));
+}
+export function nextExam(profile, iso) {
+  return examSchedule(profile).find((x) => x.date >= iso) || null;
+}
+
+/** Stage boundaries (inclusive dates). Stages 1–3 lead to the first exam; stage 4 runs until the last. */
 export function stageBoundaries(profile) {
   const start = profile.startDate;
-  const exam = profile.examDate;
-  const total = Math.max(7, daysBetween(start, exam)); // days of study before exam day
+  const exam = firstExamDate(profile);
+  const last = lastExamDate(profile);
+  const total = Math.max(7, daysBetween(start, exam)); // days of study before the first exam
   const s1Len = total >= 30 ? 3 : 1;
   const s4Len = clamp(Math.round(total * 0.17), 3, 15);
   const middle = total - s1Len - s4Len;
@@ -42,7 +65,7 @@ export function stageBoundaries(profile) {
   const s1 = { from: start, to: addDays(start, s1Len - 1) };
   const s2 = { from: addDays(s1.to, 1), to: addDays(s1.to, s2Len) };
   const s3 = { from: addDays(s2.to, 1), to: addDays(exam, -s4Len - 1) };
-  const s4 = { from: addDays(s3.to, 1), to: addDays(exam, -1) };
+  const s4 = { from: addDays(s3.to, 1), to: addDays(last, -1) };
   return [s1, s2, s3, s4].map((r, i) => ({ ...STAGES[i], ...r }));
 }
 
@@ -57,55 +80,52 @@ export function stageForDate(profile, iso, state) {
 }
 
 export function countdown(profile, todayIso) {
-  const daysLeft = daysBetween(todayIso, profile.examDate);
-  const total = Math.max(1, daysBetween(profile.startDate, profile.examDate));
+  const next = nextExam(profile, todayIso);
+  const daysLeft = next ? daysBetween(todayIso, next.date) : -1;
+  const total = Math.max(1, daysBetween(profile.startDate, lastExamDate(profile)));
   const dayNumber = clamp(daysBetween(profile.startDate, todayIso) + 1, 1, total);
-  return { daysLeft, total, dayNumber, fraction: clamp((dayNumber - 1) / total, 0, 1) };
+  return { daysLeft, total, dayNumber, next, fraction: clamp((dayNumber - 1) / total, 0, 1) };
+}
+
+/** True if any exam falls on this date or the next day (keep those days light). */
+function nearExam(profile, iso) {
+  const e = Object.values(examDates(profile));
+  return e.includes(iso) || e.includes(addDays(iso, 1));
+}
+
+function isMockSlot(profile, b, iso) {
+  if (nearExam(profile, iso) || !activeSubjects(profile, iso).length) return false;
+  if (iso >= b[3].from && iso <= b[3].to) return daysBetween(b[3].from, iso) % 2 === 0;
+  if (iso >= b[2].from && iso <= b[2].to) return daysBetween(b[2].from, iso) % 7 === 3;
+  return false;
 }
 
 /** Scheduled assessment for a date, if any: {type:'weekly'|'mock', subject?} */
 export function scheduledEvent(profile, iso) {
   const b = stageBoundaries(profile);
+  if (isMockSlot(profile, b, iso)) {
+    // Rotate through subjects still to be examined, nearest exam first on ties.
+    let n = 0;
+    for (let x = b[2].from; x < iso; x = addDays(x, 1)) if (isMockSlot(profile, b, x)) n++;
+    const active = activeSubjects(profile, iso).sort((a, c) => examDates(profile)[a].localeCompare(examDates(profile)[c]));
+    return { type: 'mock', subject: active[n % active.length] };
+  }
   const d = daysBetween(profile.startDate, iso);
-  const daysLeft = daysBetween(iso, profile.examDate);
-  if (daysLeft <= 1) return null; // nothing heavy the day before
-  const s3 = b[2], s4 = b[3];
-  if (iso >= s4.from && iso <= s4.to) {
-    const k = daysBetween(s4.from, iso);
-    if (k % 2 === 0) {
-      const before = mocksBefore(profile, iso);
-      return { type: 'mock', subject: MOCK_ROTATION[before % 3] };
-    }
-    return null;
-  }
-  if (iso >= s3.from && iso <= s3.to) {
-    const k = daysBetween(s3.from, iso);
-    if (k % 7 === 3) return { type: 'mock', subject: MOCK_ROTATION[mocksBefore(profile, iso) % 3] };
-  }
-  if (iso >= b[1].from && iso <= s3.to && d % 7 === 6) return { type: 'weekly' };
+  if (iso >= b[1].from && iso <= b[2].to && d % 7 === 6 && !nearExam(profile, iso)) return { type: 'weekly' };
   return null;
-}
-
-function mocksBefore(profile, iso) {
-  const b = stageBoundaries(profile);
-  let n = 0;
-  for (let x = b[2].from; x < iso; x = addDays(x, 1)) {
-    if (x >= b[3].from) { if (daysBetween(b[3].from, x) % 2 === 0) n++; }
-    else if (daysBetween(b[2].from, x) % 7 === 3) n++;
-  }
-  return n;
 }
 
 export function upcomingEvents(profile, fromIso, days = 14) {
   const out = [];
+  const last = lastExamDate(profile);
   for (let i = 0; i < days; i++) {
     const iso = addDays(fromIso, i);
-    if (iso >= profile.examDate) break;
+    if (iso > last) break;
     const e = scheduledEvent(profile, iso);
     if (e) out.push({ date: iso, ...e });
   }
-  out.push({ date: profile.examDate, type: 'exam' });
-  return out;
+  for (const x of examSchedule(profile)) if (x.date >= fromIso) out.push({ date: x.date, type: 'exam', subject: x.subject });
+  return out.sort((a, b) => a.date.localeCompare(b.date));
 }
 
 /** Recent minutes of completed work per subject (for balancing). */
@@ -120,15 +140,59 @@ function recentSubjectMinutes(state, todayIso) {
 }
 
 function subjectOrder(state, content, todayIso) {
+  const active = activeSubjects(state.profile, todayIso);
   const ov = overview(state, content);
   const weights = Object.fromEntries(content.subjects.map((s) => [s.id, 0.6 + (1 - ov.subjects[s.id].score / 100)]));
   const total = sum(Object.values(weights));
   const minutes = recentSubjectMinutes(state, todayIso);
   const done = sum(Object.values(minutes)) || 1;
   return content.subjects
+    .filter((s) => active.includes(s.id))
     .map((s) => ({ id: s.id, deficit: weights[s.id] / total - minutes[s.id] / done }))
     .sort((a, b) => b.deficit - a.deficit)
     .map((x) => x.id);
+}
+
+/** Share of required tasks finished over the last 7 planned days (null if too little data). */
+export function recentCompletion(state, iso) {
+  let total = 0, done = 0;
+  for (let i = 1; i <= 7; i++) {
+    const plan = state.plans[addDays(iso, -i)];
+    if (!plan) continue;
+    for (const t of plan.tasks) {
+      if (t.optional || t.type === 'rest' || t.origin === 'rescheduled') continue;
+      total++;
+      if (t.status === 'done') done++;
+    }
+  }
+  return total >= 4 ? done / total : null;
+}
+
+function recentPlannedTopics(state, iso, days = 2) {
+  const out = new Set();
+  for (let i = 1; i <= days; i++) for (const t of state.plans[addDays(iso, -i)]?.tasks || []) if (t.topic) out.add(t.topic);
+  return out;
+}
+
+/** Subjects whose scheduled mock in the last week was missed and not yet made up. */
+function missedMocks(state, iso) {
+  const out = [];
+  for (let i = 1; i <= 7; i++) {
+    const d = addDays(iso, -i);
+    for (const t of state.plans[d]?.tasks || []) {
+      if (t.type !== 'mock' || t.status === 'done' || out.includes(t.subject)) continue;
+      const since = Date.parse(`${d}T00:00:00`);
+      if (!state.sessions.some((s) => s.kind === 'mock' && s.subject === t.subject && s.finishedAt >= since)) out.push(t.subject);
+    }
+  }
+  return out;
+}
+
+/** Diagnostic parts not yet done, in order. */
+function diagnosticPartsLeft(state, subject) {
+  if (state.diagnostics[subject]) return [];
+  const done = state.diagParts?.[subject] || [];
+  return [1, 2].filter((p) => !done.includes(p));
 }
 
 function task(type, extra = {}) {
@@ -140,63 +204,112 @@ function topicTitle(content, topic) { return content.topics[topic]?.name || topi
 /** Build the plan for one day. Pure apart from task ids. */
 export function generateDayPlan(state, content, iso) {
   const profile = state.profile;
-  const budget = profile.dailyMinutes || 50;
+  // When most of last week's plan went unfinished, keep today's plan short:
+  // finishing a small plan builds the habit better than skipping a big one.
+  const completion = recentCompletion(state, iso);
+  const light = completion != null && completion < 0.5;
+  const budget = light ? Math.max(25, Math.round((profile.dailyMinutes || 50) * 0.6)) : (profile.dailyMinutes || 50);
   const stage = stageForDate(profile, iso, state);
-  const { daysLeft } = countdown(profile, iso);
   const d = daysBetween(profile.startDate, iso);
+  const active = activeSubjects(profile, iso);
+  const allActive = active.length === SUBJECTS.length;
+  const mixedTitle = allActive ? 'Mixed-topic practice (all subjects)' : `Mixed-topic practice (${active.map((x) => SUBJECT_NAME[x]).join(' and ')})`;
   const focus = state.weeklyFocus[weekIndex(profile.startDate, iso)] || [];
-  const prio = priorityList(state, content, { focus, todayIso: iso });
-  const due = dueQuestions(state.srs, iso).filter((q) => content.qById[q]);
+  const prio = priorityList(state, content, { focus, todayIso: iso }).filter((p) => active.includes(p.subject));
+  const due = dueQuestions(state.srs, iso).filter((q) => content.qById[q] && active.includes(content.qById[q].subject));
   const order = subjectOrder(state, content, iso);
   const core = [];
   const extras = [];
+  const sched = examSchedule(profile);
+  const todayExams = sched.filter((x) => x.date === iso);
+  const tomorrowExams = sched.filter((x) => x.date === addDays(iso, 1));
 
-  if (daysLeft <= 0) {
-    return { stage: stage.id, tasks: [task('rest', { title: 'Exam day — trust your preparation', minutes: 0 })] };
+  if (!active.length && !todayExams.length) {
+    return { stage: stage.id, tasks: [task('rest', { title: 'All Checkpoint exams are finished — well done!', minutes: 0 })] };
   }
-  if (daysLeft === 1) {
-    core.push(task('review', { title: 'Light review of past mistakes', minutes: 8 }));
-    core.push(task('mini', { title: '3-minute challenge', optional: false }));
-    core.push(task('rest', { title: 'Pack your equipment and get a good night’s sleep', minutes: 0 }));
+  if (todayExams.length) {
+    const names = todayExams.map((x) => SUBJECT_NAME[x.subject]).join(' and ');
+    const tasks = [task('rest', { title: `${names} exam today — trust your preparation`, minutes: 0 })];
+    // After an exam, a short optional look at the next subject (only if its exam is not tomorrow too).
+    const nextSub = active.find((x) => !todayExams.some((t) => t.subject === x));
+    if (nextSub) tasks.push(task('mini', { title: `Optional: a few ${SUBJECT_NAME[nextSub]} questions after your exam`, subject: nextSub, optional: true }));
+    return { stage: stage.id, tasks };
+  }
+  if (tomorrowExams.length) {
+    const subs = tomorrowExams.map((x) => x.subject);
+    const names = subs.map((x) => SUBJECT_NAME[x]).join(' and ');
+    const dueTomorrow = due.filter((q) => subs.includes(content.qById[q].subject)).length;
+    if (dueTomorrow) core.push(task('review', { title: `Light review: ${names} mistakes`, subject: subs.length === 1 ? subs[0] : undefined, minutes: 8 }));
+    core.push(task('mini', { title: `3-minute ${names} warm-up`, subject: subs.length === 1 ? subs[0] : undefined }));
+    core.push(task('rest', { title: `${names} exam tomorrow — pack your equipment and sleep well`, minutes: 0 }));
     return { stage: stage.id, tasks: core };
   }
 
   // Pick two focus topics from different subjects, led by subject balance.
+  // Prefer topics not planned in the last two days, so weak topics take turns.
+  const recent = recentPlannedTopics(state, iso);
   const pickTopic = (subject, exclude = [], filter = () => true) =>
-    prio.find((p) => p.subject === subject && !exclude.includes(p.topic) && filter(p));
+    prio.find((p) => p.subject === subject && !exclude.includes(p.topic) && !recent.has(p.topic) && filter(p))
+    || prio.find((p) => p.subject === subject && !exclude.includes(p.topic) && filter(p));
+  const lessonDue = (p) => {
+    if (!content.lessons[p.topic]) return false;
+    const last = state.lessonsDone[p.topic];
+    if (!last) return true;
+    // Re-teach a still-weak topic, but not more than once every 10 days.
+    return p.category === 'attention' && Date.parse(`${iso}T23:59:59`) - last > 10 * 86400000;
+  };
+  const writtenRecently = state.writing.some((w) => w.ts > Date.parse(`${addDays(iso, -9)}T00:00:00`));
   const firstSubject = order[0];
-  const secondSubject = order[1];
+  const secondSubject = order[1] || order[0];
 
   if (stage.id === 1) {
+    // Diagnostics come in two short parts per subject, so starting is easy.
     for (const s of content.subjects) {
-      if (!state.diagnostics[s.id]) core.push(task('diagnostic', { subject: s.id, title: `${s.name} diagnostic assessment` }));
+      for (const part of diagnosticPartsLeft(state, s.id)) {
+        core.push(task('diagnostic', { subject: s.id, part, title: `${s.name} diagnostic (part ${part} of 2)` }));
+      }
     }
   } else {
-    const event = scheduledEvent(profile, iso);
+    let event = scheduledEvent(profile, iso);
+    // A missed mock comes back on the next day without a scheduled assessment.
+    if (!event && stage.id >= 3) {
+      const makeUp = missedMocks(state, iso).find((x) => active.includes(x) && examDates(profile)[x] > addDays(iso, 1));
+      if (makeUp) event = { type: 'mock', subject: makeUp, makeUp: true };
+    }
     if (event?.type === 'mock') {
-      core.push(task('mock', { subject: event.subject, title: `${content.subjectById[event.subject].name} mock examination` }));
+      // On light days a half-length mock builds stamina without being overwhelming.
+      core.push(light
+        ? task('mock', { subject: event.subject, half: true, minutes: 25, title: `${content.subjectById[event.subject].name} short mock (half paper)${event.makeUp ? ' — catch-up' : ''}` })
+        : task('mock', { subject: event.subject, title: `${content.subjectById[event.subject].name} mock examination${event.makeUp ? ' (catch-up)' : ''}` }));
     } else if (event?.type === 'weekly') {
-      core.push(task('weekly', { title: 'Weekly check (all subjects)' }));
+      core.push(task('weekly', { title: allActive ? 'Weekly check (all subjects)' : 'Weekly check' }));
     }
 
     if (stage.id === 2) {
       const a = pickTopic(firstSubject, [], (p) => p.category !== 'strong') || pickTopic(firstSubject);
       const b = pickTopic(secondSubject, [a?.topic], (p) => p.category !== 'strong') || pickTopic(secondSubject, [a?.topic]);
       for (const p of [a, b].filter(Boolean)) {
-        const needsLesson = !state.lessonsDone[p.topic] || p.category === 'attention';
-        core.push(needsLesson && content.lessons[p.topic]
+        core.push(lessonDue(p)
           ? task('lesson', { subject: p.subject, topic: p.topic, title: `Learn: ${topicTitle(content, p.topic)}` })
           : task('practice', { subject: p.subject, topic: p.topic, title: `Practise: ${topicTitle(content, p.topic)}` }));
       }
-      if (d % 3 === 1) core.push(task('writing', { subject: 'english', title: 'Writing practice' }));
-      const c = pickTopic(order[2], [a?.topic, b?.topic]);
+      if ((d % 3 === 1 || !writtenRecently) && active.includes('english') && !light) core.push(task('writing', { subject: 'english', title: 'Writing practice' }));
+      else if (!writtenRecently && light && active.includes('english') && d % 2 === 0) {
+        // Short plans lead with writing on writing days, otherwise it is never reached.
+        core.splice(core.length - 1, 1);
+        core.unshift(task('writing', { subject: 'english', title: 'Writing practice (short)', minutes: 15 }));
+      }
+      const c = order[2] ? pickTopic(order[2], [a?.topic, b?.topic]) : null;
       if (c) extras.push(task('practice', { subject: c.subject, topic: c.topic, title: `Practise: ${topicTitle(content, c.topic)}` }));
     } else if (stage.id === 3) {
       if (!event) {
         const a = pickTopic(firstSubject);
         if (a) core.push(task('examstyle', { subject: a.subject, topic: a.topic, title: `Exam-style: ${topicTitle(content, a.topic)}` }));
-        core.push(task('mixed', { title: 'Mixed-topic practice (all subjects)' }));
-        if (d % 4 === 2) core.push(task('writing', { subject: 'english', title: 'Writing practice' }));
+        core.push(task('mixed', { title: mixedTitle, subject: active.length === 1 ? active[0] : undefined }));
+        if ((d % 4 === 2 || !writtenRecently) && active.includes('english')) {
+          if (light) core.unshift(task('writing', { subject: 'english', title: 'Writing practice (short)', minutes: 15 }));
+          else core.splice(1, 0, task('writing', { subject: 'english', title: 'Writing practice' }));
+        }
         else {
           const b = pickTopic(secondSubject, [a?.topic]);
           if (b) extras.push(task('practice', { subject: b.subject, topic: b.topic, title: `Practise: ${topicTitle(content, b.topic)}` }));
@@ -206,18 +319,28 @@ export function generateDayPlan(state, content, iso) {
       if (!event) {
         // Targeted revision on remaining weaknesses; recap only, no new material.
         const weak = prio.filter((p) => p.category === 'attention' || p.category === 'developing');
-        const a = weak.find((p) => p.subject === firstSubject) || weak[0] || prio[0];
-        const b = weak.find((p) => p.subject !== a?.subject && p.topic !== a?.topic);
+        // The subject with the nearest exam leads.
+        const lead = sched.find((x) => active.includes(x.subject))?.subject || firstSubject;
+        const a = weak.find((p) => p.subject === lead) || prio.find((p) => p.subject === lead) || weak[0] || prio[0];
+        const b = weak.find((p) => p.topic !== a?.topic && (active.length === 1 || p.subject !== a?.subject)) || prio.find((p) => p.topic !== a?.topic);
         for (const p of [a, b].filter(Boolean)) {
           core.push(task('examstyle', { subject: p.subject, topic: p.topic, title: `Revise: ${topicTitle(content, p.topic)}` }));
         }
-        core.push(task('mixed', { title: 'Mixed-topic practice (all subjects)' }));
+        core.push(task('mixed', { title: mixedTitle, subject: active.length === 1 ? active[0] : undefined }));
+        if (lead === 'english' && d % 3 === 0) core.push(task('writing', { subject: 'english', title: 'Timed writing practice' }));
       }
     }
     if (due.length >= 3) core.push(task('review', { title: `Correct my mistakes (${Math.min(due.length, 10)} due)` }));
     else if (due.length) extras.push(task('review', { title: `Correct my mistakes (${due.length} due)` }));
   }
 
+  // Light days open with a short, winnable warm-up on a topic already going well.
+  if (light && stage.id !== 1 && !core.some((t) => t.type === 'mock')) {
+    const used = new Set(core.map((t) => t.subject).filter(Boolean));
+    const goodTopics = prio.slice().reverse().filter((p) => p.category === 'strong' || p.category === 'developing');
+    const known = goodTopics.find((p) => !used.has(p.subject)) || goodTopics[0];
+    if (known) core.unshift(task('practice', { subject: known.subject, topic: known.topic, title: `Warm-up: ${topicTitle(content, known.topic)}`, minutes: 4, warmup: true }));
+  }
   // Fit to the daily budget; overflow becomes optional, never compulsory.
   const tasks = [];
   let used = 0;
@@ -226,18 +349,24 @@ export function generateDayPlan(state, content, iso) {
     else extras.unshift({ ...t, optional: true });
   }
   // Rescheduled work fills spare time before optional extras.
-  const backlog = state.backlog || [];
-  while (backlog.length && used + backlog[0].minutes <= budget + 5 && stage.id !== 1) {
-    const t = backlog.shift();
-    tasks.push({ ...t, id: uid('t'), status: 'todo', origin: 'rescheduled' });
-    used += t.minutes;
+  const keyOf = (t) => `${t.type}|${t.subject || ''}|${t.topic || ''}`;
+  const planned = new Set(tasks.map(keyOf));
+  if (stage.id !== 1) {
+    for (const t of (state.backlog || []).slice()) {
+      if (planned.has(keyOf(t)) || (t.subject && !active.includes(t.subject))) { state.backlog = state.backlog.filter((b) => b !== t); continue; }
+      if (used + t.minutes > budget + 5) continue;
+      state.backlog = state.backlog.filter((b) => b !== t);
+      tasks.push({ ...t, id: uid('t'), status: 'todo', origin: 'rescheduled' });
+      planned.add(keyOf(t));
+      used += t.minutes;
+    }
   }
   // Extra activities that fit the budget are part of the plan; overflow is optional.
   for (const t of extras) {
     if (used + t.minutes <= budget) { tasks.push(t); used += t.minutes; }
   }
   if (stage.id !== 1 && used + 4 <= budget + 4) tasks.push(task('mini', { title: '3-minute challenge', optional: true }));
-  return { stage: stage.id, tasks };
+  return { stage: stage.id, tasks, light };
 }
 
 /**
@@ -252,13 +381,17 @@ export function ensureTodayPlan(state, content, todayIso = isoDate()) {
     for (const t of plan.tasks) {
       if (t.status !== 'todo') continue;
       t.status = 'missed';
-      if (t.optional || ['mini', 'rest', 'diagnostic'].includes(t.type)) continue;
+      // Mocks get their own catch-up slot and reviews regenerate daily, so they never pile up here.
+      if (t.optional || t.warmup || ['mini', 'rest', 'diagnostic', 'mock', 'weekly', 'review'].includes(t.type)) continue;
       if (!state.backlog.some((b) => keyOf(b) === keyOf(t))) {
         state.backlog.push({ ...t, missedOn: d });
       }
     }
   }
-  // Keep the backlog short so it never becomes a source of pressure.
+  // Keep the backlog short and current so it never becomes a source of pressure:
+  // drop work for subjects already examined and anything missed over 10 days ago.
+  const active = activeSubjects(state.profile, todayIso);
+  state.backlog = state.backlog.filter((t) => (!t.subject || active.includes(t.subject)) && (!t.missedOn || t.missedOn >= addDays(todayIso, -10)));
   if (state.backlog.length > 6) state.backlog = state.backlog.slice(-6);
   // A new week starts with focus topics taken from last week's report.
   const wk = weekIndex(profile0(state), todayIso);
@@ -314,6 +447,25 @@ export function addBacklogToToday(state, taskId, todayIso = isoDate()) {
   state.plans[todayIso].tasks.push({ ...t, id: uid('t'), status: 'todo', origin: 'rescheduled' });
 }
 
+/**
+ * Let the student swap a topic task for another topic they need, in a
+ * different subject where possible. Returns the new task or null.
+ */
+export function swapTask(state, content, taskId, todayIso = isoDate()) {
+  const plan = state.plans[todayIso];
+  const t = plan?.tasks.find((x) => x.id === taskId);
+  if (!t || !t.topic || t.status !== 'todo') return null;
+  const active = activeSubjects(state.profile, todayIso);
+  const taken = new Set(plan.tasks.map((x) => x.topic).filter(Boolean));
+  const prio = priorityList(state, content, { todayIso }).filter((p) => active.includes(p.subject) && !taken.has(p.topic) && p.category !== 'strong');
+  const pick = prio.find((p) => p.subject !== t.subject) || prio[0];
+  if (!pick) return null;
+  const type = t.type === 'lesson' && content.lessons[pick.topic] && state.lessonsDone[pick.topic] ? 'practice' : t.type;
+  const verb = { lesson: 'Learn', practice: 'Practise', examstyle: t.title.startsWith('Revise') ? 'Revise' : 'Exam-style' }[type] || 'Practise';
+  Object.assign(t, { type, subject: pick.subject, topic: pick.topic, title: `${verb}: ${topicTitle(content, pick.topic)}`, why: WHY[type], minutes: t.warmup ? t.minutes : TASK_MINUTES[type], swapped: true });
+  return t;
+}
+
 export function dropBacklog(state, taskId) {
   state.backlog = state.backlog.filter((t) => t.id !== taskId);
 }
@@ -321,15 +473,15 @@ export function dropBacklog(state, taskId) {
 /** Session options for a plan task. */
 export function sessionFor(task) {
   const map = {
-    diagnostic: ['diagnostic', { subject: task.subject }],
+    diagnostic: ['diagnostic', { subject: task.subject, part: task.part }],
     lesson: ['lesson', { subject: task.subject, topic: task.topic }],
-    practice: ['practice', { subject: task.subject, topic: task.topic }],
+    practice: ['practice', { subject: task.subject, topic: task.topic, n: task.warmup ? 3 : undefined }],
     examstyle: ['examstyle', { subject: task.subject, topic: task.topic }],
     mixed: ['mixed', { subject: task.subject }],
-    review: ['review', {}],
+    review: ['review', { subject: task.subject }],
     weekly: ['weekly', {}],
-    mock: ['mock', { subject: task.subject }],
-    mini: ['mini', {}],
+    mock: ['mock', task.half ? { subject: task.subject, n: 10, minutes: 22 } : { subject: task.subject }],
+    mini: ['mini', { subject: task.subject }],
   };
   return map[task.type] || null;
 }
@@ -339,8 +491,8 @@ export function forecast(state, fromIso, days = 7) {
   const out = [];
   for (let i = 0; i < days; i++) {
     const iso = addDays(fromIso, i);
-    if (iso > state.profile.examDate) break;
-    out.push({ date: iso, stage: stageForDate(state.profile, iso, i === 0 ? state : null).id, event: scheduledEvent(state.profile, iso), exam: iso === state.profile.examDate });
+    if (iso > lastExamDate(state.profile)) break;
+    out.push({ date: iso, stage: stageForDate(state.profile, iso, i === 0 ? state : null).id, event: scheduledEvent(state.profile, iso), exams: examSchedule(state.profile).filter((x) => x.date === iso) });
   }
   return out;
 }

@@ -7,11 +7,13 @@ export function renderDiagnostic(root, ctx) {
   const ov = overview(state, content);
   root.append(h('div', { class: 'page-head' },
     h('h1', {}, 'Diagnostic assessment'),
-    h('p', {}, 'One short assessment per subject (about 20–25 minutes each). No hints and no time limit — just show what you know. Your results set the priorities for the rest of the plan.')));
+    h('p', {}, 'Each subject’s diagnostic comes in two short parts of about 10–12 minutes. No hints and no time limit — just show what you know. Your results set the priorities for the rest of the plan.')));
 
   root.append(h('div', { class: 'grid grid-3' }, content.subjects.map((s) => {
     const d = state.diagnostics[s.id];
-    const sess = d && state.sessions.find((x) => x.id === d.sessionId);
+    const ids = d ? (d.sessionIds || [d.sessionId]) : [];
+    const parts = state.sessions.filter((x) => ids.includes(x.id));
+    const sess = parts.length ? { ...parts[parts.length - 1], score: parts.reduce((a, x) => a + x.score, 0), total: parts.reduce((a, x) => a + x.total, 0) } : null;
     const n = content.questions.filter((q) => q.pool === 'diagnostic' && q.subject === s.id).length;
     return h('div', { class: `sheet tabbed ${subjClass(s.id)}` },
       h('h3', {}, `${s.icon} ${s.name}`),
@@ -20,7 +22,13 @@ export function renderDiagnostic(root, ctx) {
         ? h('div', {}, h('p', {}, `Completed ${formatDate(isoDate(new Date(sess.finishedAt)))} — ${sess.score}/${sess.total} (${pct(sess.score, sess.total)}%)`),
           h('div', { class: 'btn-row' }, h('a', { class: 'btn secondary small', href: `#/result/${sess.id}` }, 'Review answers'),
             h('button', { class: 'btn ghost small', onclick: () => ctx.start('diagnostic', { subject: s.id }) }, 'Retake')))
-        : h('button', { class: 'btn', onclick: () => ctx.start('diagnostic', { subject: s.id }) }, `Start ${s.short} diagnostic`));
+        : (() => {
+          const done = state.diagParts?.[s.id] || [];
+          const next = [1, 2].find((p) => !done.includes(p));
+          return h('div', {},
+            done.length ? h('p', { class: 'small' }, `Part ${done.join(' and ')} done.`) : null,
+            h('button', { class: 'btn', onclick: () => ctx.start('diagnostic', { subject: s.id, part: next }) }, `Start ${s.short} diagnostic — part ${next}`));
+        })());
   })));
 
   if (!Object.keys(state.diagnostics).length) return;

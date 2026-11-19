@@ -222,7 +222,7 @@ export function weeklyReport(state, content, k) {
   for (const t of focus) {
     const name = content.topics[t]?.name ?? t;
     const m = ov.mastery[t];
-    if (m.category === 'attention') recommendations.push({ topic: t, text: `Re-read the ${name} lesson, then do a guided practice set.`, action: 'lesson' });
+    if (m.category === 'attention') recommendations.push({ topic: t, text: `${state.lessonsDone?.[t] ? 'Re-read' : 'Read'} the ${name} lesson, then do a guided practice set.`, action: 'lesson' });
     else recommendations.push({ topic: t, text: `Do an exam-style practice set on ${name} and review each explanation.`, action: 'practice' });
   }
   if (repeatedQuestions.length) recommendations.push({ text: `Work through your mistakes review (${repeatedQuestions.length} question${repeatedQuestions.length > 1 ? 's' : ''} answered wrongly more than once).`, action: 'review' });

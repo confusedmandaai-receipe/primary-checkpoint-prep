@@ -69,6 +69,14 @@ export function buildSession(kind, opts, state, content) {
     qs.sort((a, b) => order.indexOf(a.topic) - order.indexOf(b.topic) || (a.difficulty || 2) - (b.difficulty || 2));
     qs = orderForDisplay(qs);
     title = `${content.subjectById[opts.subject].name} diagnostic`;
+    if (opts.part) {
+      // Two shorter parts: reading passages stay together in part 2.
+      const plain = qs.filter((q) => !q.passage);
+      const withP = qs.filter((q) => q.passage);
+      const half = withP.length ? plain.length : Math.ceil(qs.length / 2);
+      qs = opts.part === 1 ? plain.slice(0, half) : [...plain.slice(half), ...withP];
+      title += ` — part ${opts.part} of 2`;
+    }
   } else if (kind === 'lesson' || kind === 'practice' || kind === 'examstyle' || kind === 'topictest') {
     const t = content.topics[opts.topic];
     let pool = Q.filter((q) => q.pool === 'practice' && q.topic === opts.topic);
@@ -88,7 +96,7 @@ export function buildSession(kind, opts, state, content) {
     title = `Command word practice: “${opts.command}”`;
   } else if (kind === 'mixed' || kind === 'mini' || kind === 'weekly') {
     const prio = priorityList(state, content, { focus: opts.focus || [], todayIso });
-    const subjects = opts.subject ? [opts.subject] : content.subjects.map((s) => s.id);
+    const subjects = opts.subject ? [opts.subject] : (opts.subjects?.length ? opts.subjects : content.subjects.map((s) => s.id));
     const n = opts.n || (kind === 'mini' ? 4 : kind === 'weekly' ? 15 : 10);
     // Weighted topic draw: weaker topics more often, but every subject appears.
     let eligible = prio.filter((p) => subjects.includes(p.subject) && (kind !== 'mini' || p.category !== 'untested'));
@@ -117,10 +125,11 @@ export function buildSession(kind, opts, state, content) {
     if (kind === 'mini') { title = '3-minute challenge'; }
     if (kind === 'weekly') { title = `Weekly check`; }
   } else if (kind === 'review') {
-    const due = dueQuestions(state.srs, todayIso).filter((id) => content.qById[id] && (!opts.subject || content.qById[id].subject === opts.subject));
+    const allowed = opts.subject ? [opts.subject] : opts.subjects;
+    const due = dueQuestions(state.srs, todayIso).filter((id) => content.qById[id] && (!allowed?.length || allowed.includes(content.qById[id].subject)));
     // If nothing is due yet, revisit the most recent mistakes so the button never dead-ends.
     let ids = due.slice(0, opts.n || 10);
-    if (!ids.length) ids = Object.keys(state.srs.questions).filter((id) => content.qById[id]).slice(0, opts.n || 10);
+    if (!ids.length) ids = Object.keys(state.srs.questions).filter((id) => content.qById[id] && (!allowed?.length || allowed.includes(content.qById[id].subject))).slice(0, opts.n || 10);
     qs = orderForDisplay(ids.map((id) => content.qById[id]));
     title = 'Correct my mistakes';
   } else if (kind === 'mock') {
@@ -155,9 +164,20 @@ export function buildSession(kind, opts, state, content) {
     subject: opts.subject || null,
     topic: opts.topic || null,
     taskId: opts.taskId || null,
+    part: opts.part || null,
     questions: qs.map((q) => q.id),
     timeLimitSec,
   };
+}
+
+export const MAX_REVIEW_CARDS = 60;
+
+/** Keep the mistakes queue manageable: drop the oldest one-off slips first. */
+export function capMistakeQueue(state) {
+  const cards = Object.entries(state.srs.questions);
+  if (cards.length <= MAX_REVIEW_CARDS) return;
+  cards.sort((a, b) => (a[1].wrong - b[1].wrong) || a[1].last.localeCompare(b[1].last));
+  for (const [qid] of cards.slice(0, cards.length - MAX_REVIEW_CARDS)) delete state.srs.questions[qid];
 }
 
 /**
@@ -182,7 +202,16 @@ export function recordSession(state, spec, results, { startedAt, finishedAt = Da
   if (spec.topic && ['practice', 'examstyle', 'topictest', 'lesson'].includes(spec.kind)) {
     updateTopicCard(state.srs, spec.topic, results.length ? score / results.length : 0, todayIso);
   }
-  if (spec.kind === 'diagnostic') state.diagnostics[spec.subject] = { sessionId: id, completedAt: finishedAt };
+  if (spec.kind === 'diagnostic') {
+    if (spec.part) {
+      state.diagParts ||= {};
+      const parts = new Set([...(state.diagParts[spec.subject] || []), spec.part]);
+      state.diagParts[spec.subject] = [...parts];
+      (state.diagSessions ||= {})[spec.subject] = [...((state.diagSessions[spec.subject]) || []), id];
+      if (parts.has(1) && parts.has(2)) state.diagnostics[spec.subject] = { sessionId: id, sessionIds: state.diagSessions[spec.subject], completedAt: finishedAt };
+    } else state.diagnostics[spec.subject] = { sessionId: id, completedAt: finishedAt };
+  }
+  capMistakeQueue(state);
   const session = {
     id, kind: spec.kind, title: spec.title, subject: spec.subject, topic: spec.topic, taskId: spec.taskId,
     startedAt, finishedAt, score, total: results.length,

@@ -109,8 +109,9 @@ test('diagnostics come first, then stage 2', () => {
 test('day 1 plan is the three diagnostics', () => {
   const s = freshState();
   const plan = generateDayPlan(s, C, START);
-  const types = plan.tasks.filter((t) => !t.optional).map((t) => t.type);
-  assert.deepEqual(types.filter((t) => t === 'diagnostic').length, 2, 'two diagnostics fit a 50-minute day');
+  const diag = plan.tasks.filter((t) => !t.optional && t.type === 'diagnostic');
+  assert.equal(diag.length, 4, 'four short diagnostic parts fit a 50-minute day');
+  assert.ok(diag.every((t) => t.part && t.minutes <= 15));
 });
 
 test('stage 2 plan focuses on weak topics and fits the budget', () => {

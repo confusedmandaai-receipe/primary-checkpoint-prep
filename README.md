@@ -11,6 +11,8 @@ A personal study coach for Cambridge Primary Checkpoint **Mathematics (0096)**, 
 | 3. Practise | Exam-style and mixed-topic sets, command-word practice, structured writing, and mistakes coming back for spaced review. |
 | 4. Get ready | Timed mocks every other day and targeted revision. No big new topics. |
 
+- **Separate exam dates per subject.** Each subject's revision ends on its own exam day, the day before each exam is light, and the plan carries on for the subjects still to come.
+- **Adapts to the student.** If most of last week's plan went unfinished, the plan gets shorter, starts with a quick-win warm-up and offers half-length mocks. Missed mocks come back as catch-ups, weak topics take turns, and the student can swap a topic.
 - **Daily planner.** Each day's plan fits the student's daily study time. Weaker subjects get more time and all three stay balanced. Missed tasks move to a short "rescheduled" list instead of piling up, and "Later" pushes a task to another day.
 - **Weekly report.** Shows questions attempted, accuracy, subject and topic results, repeated mistakes and improvement on earlier weeks. Its focus topics are fed into the next week's plan automatically.
 - **Mock centre.** Kept separate from practice and uses its own bank of mock-only questions. It has a timer, a question navigator and flags, then answer review, topic and skill analysis, and a history of past mocks.
@@ -73,8 +75,11 @@ All persistence goes through `Store` and an adapter in `js/core/store.js`. To sy
 ## Tests
 
 ```bash
-npm test     # validates all content and the analytics, planner, SRS and badge logic
+npm test                  # content, engine and three full student scenarios
+node tests/simulate.mjs   # writes day-by-day scenario output to tests/sim-output/
 ```
+
+The scenario tests simulate three students day by day from setup to the last exam: a quick learner, a reluctant slower learner, and one who needs a push but learns fast once interested. They check that no planning rule is ever broken.
 
 ## Content note
 

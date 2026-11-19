@@ -3,6 +3,9 @@ import { weeklyReport, weekIndex } from '../engine/analytics.js';
 import { weeklyAchievements } from '../engine/badges.js';
 import { progressBar, barChart, subjectChip, backLink } from '../components/ui.js';
 import { answerText } from '../engine/marking.js';
+import { toast } from '../components/ui.js';
+import { nextExam } from '../engine/planner.js';
+import { daysBetween } from '../core/util.js';
 
 export function renderReport(root, ctx, query) {
   const { state, content } = ctx;
@@ -31,6 +34,25 @@ export function renderReport(root, ctx, query) {
   root.append(h('p', { class: 'note info small' }, 'Accuracy shows how you did on the questions you chose this week. It is one signal only — exam readiness also depends on topic coverage, reasoning questions and timed mocks.'));
 
   const ach = weeklyAchievements(state, content, k);
+  const best = r.byTopic.filter((t) => t.n >= 3).slice().sort((a, b) => b.pct - a.pct)[0];
+  const nx = nextExam(state.profile, ctx.today());
+  const summary = [
+    `${state.profile.name} — Checkpoint prep, week ${k + 1} (${formatDate(r.from)}–${formatDate(r.to)})`,
+    `Studied on ${r.studyDays} of 7 days · ${r.attempted} questions · ${r.accuracy}% correct${r.change != null ? ` (${r.change >= 0 ? '+' : ''}${r.change} vs last week)` : ''}`,
+    best ? `Going well: ${best.name} (${best.pct}%)` : null,
+    r.focus.length ? `Needs a push on: ${r.focus.map((t) => content.topics[t]?.name).join(', ')}` : null,
+    r.mocksThisWeek ? `Mock exams this week: ${r.mocksThisWeek}` : null,
+    nx ? `Next exam: ${content.subjectById[nx.subject].name} in ${daysBetween(ctx.today(), nx.date)} days` : null,
+    r.studyDays < 4 ? 'Tip: a short session most days helps more than one long one. Today’s plan on the site is a good place to start.' : 'Tip: praise the steady effort — consistency is what is working.',
+  ].filter(Boolean).join('\n');
+  const parent = h('section', { class: 'section sheet' },
+    h('h2', {}, 'Summary for a parent'),
+    h('p', { class: 'small muted' }, 'A short update to share. Some students do best with a regular check-in from home.'),
+    h('pre', { style: 'white-space:pre-wrap;font-family:inherit;background:var(--paper-2);padding:.8rem 1rem;border-radius:var(--radius-m);margin:0 0 .8rem' }, summary),
+    h('button', { class: 'btn secondary small', onclick: async () => {
+      try { await navigator.clipboard.writeText(summary); toast('Summary copied.'); }
+      catch { toast('Select the text above and copy it.'); }
+    } }, 'Copy summary'));
   if (ach.length) root.append(h('section', { class: 'section' }, h('h2', {}, 'Achievements this week'),
     h('div', { class: 'path' }, ach.map((a) => h('span', { class: 'stone strong' }, `${a.icon} ${a.text}`)))));
 
@@ -64,6 +86,7 @@ export function renderReport(root, ctx, query) {
   }
   root.append(rep);
 
+  root.append(parent);
   const nextFocus = state.weeklyFocus[k + 1];
   const applied = nextFocus && JSON.stringify(nextFocus) === JSON.stringify(r.focus);
   root.append(h('section', { class: 'section' }, h('h2', {}, 'Recommended revision'),

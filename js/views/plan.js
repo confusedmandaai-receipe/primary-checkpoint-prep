@@ -51,7 +51,7 @@ export function renderPlan(root, ctx) {
     h('ul', { class: 'list sheet' }, fc.map((d) => h('li', {},
       h('b', { style: 'min-width:7.5rem' }, formatDate(d.date)),
       h('div', { class: 'grow' },
-        d.exam ? '🎓 Checkpoint examination'
+        d.exams.length ? `🎓 Checkpoint ${d.exams.map((x) => content.subjectById[x.subject].name).join(' & ')} exam`
           : d.event?.type === 'mock' ? `📝 ${content.subjectById[d.event.subject].name} mock exam + short review`
             : d.event?.type === 'weekly' ? '📊 Weekly check + targeted practice'
               : `Stage ${d.stage} study: ${['', 'diagnostics', 'learn and practise weak topics', 'exam-style and mixed practice', 'targeted revision'][d.stage]}`),

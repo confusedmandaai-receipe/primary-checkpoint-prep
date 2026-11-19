@@ -14,6 +14,8 @@ export function emptyState() {
     attempts: [], // {qid, s, t, sk, cw, ok, hint, ns, mode, ts, mis, sid}
     sessions: [], // {id, kind, title, subject, topic, startedAt, finishedAt, score, total, durationSec, timeLimitSec, results:[{qid, ok, resp, ns}]}
     diagnostics: {}, // subject -> {sessionId, completedAt}
+    diagParts: {}, // subject -> [1, 2] parts finished
+    diagSessions: {}, // subject -> session ids
     srs: { questions: {}, topics: {} },
     plans: {}, // date -> {generatedAt, stage, tasks:[...]}
     backlog: [], // rescheduled tasks

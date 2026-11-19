@@ -2,7 +2,7 @@
 import { Store, LocalStorageAdapter, MemoryAdapter } from './core/store.js';
 import { loadContent } from './core/content.js';
 import { isoDate, h } from './core/util.js';
-import { ensureTodayPlan, regenerateToday, completeTask, findTask, sessionFor } from './engine/planner.js';
+import { ensureTodayPlan, regenerateToday, completeTask, findTask, sessionFor, activeSubjects } from './engine/planner.js';
 import { buildSession, recordSession, KINDS } from './engine/sessions.js';
 import { awardBadges } from './engine/badges.js';
 import { runQuiz } from './components/quiz.js';
@@ -51,7 +51,9 @@ const ctx = {
       toast('You have a mock exam in progress. Finish or discard it first.');
       return ctx.go('#/quiz');
     }
-    const spec = buildSession(kind, { ...opts, today: isoDate() }, store.get(), content);
+    const act = store.get().profile ? activeSubjects(store.get().profile, isoDate()) : [];
+    const subjects = ['mixed', 'mini', 'weekly', 'review'].includes(kind) && !opts.subject && act.length ? act : undefined;
+    const spec = buildSession(kind, { subjects, ...opts, today: isoDate() }, store.get(), content);
     if (!spec.questions.length) {
       toast(kind === 'review' ? 'No mistakes to review yet — great!' : 'No questions available for this yet.');
       return;
